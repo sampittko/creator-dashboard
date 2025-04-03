@@ -2,8 +2,6 @@
 
 A transparent, open-source dashboard to track the weekly progress of building a personal brand from scratch. This project documents content creation, time investment, and resources spent — all in the open.
 
-> Live demo coming soon (or link here if public)
-
 ## ✨ Why this project?
 
 **Free With Tech** is about showing the real journey behind building something online. The dashboard shows week-by-week:
