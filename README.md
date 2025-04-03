@@ -1,6 +1,6 @@
 # [Free With Tech](https://fwt.wtf/sign) - Creator Dashboard
 
-A transparent, open-source dashboard to track the weekly progress of building a personal brand from scratch. This project documents content creation, time investment, and resources spent — all in the open.
+A transparent, open-source dashboard to track the weekly progress of building a content brand from scratch. This project documents content creation, time investment, and resources spent — all in the open.
 
 ## ✨ Why this project?
 
@@ -25,10 +25,10 @@ It’s part experiment, part accountability, part resource for other creators.
 Clone the repo and install dependencies:
 
 ```bash
-git clone https://github.com/your-username/free-with-tech-dashboard.git
-cd free-with-tech-dashboard
-pnpm install
-pnpm dev
+git clone https://github.com/sampittko/dash-fwtwtf-website.git
+cd dash-fwtwtf-website
+npm install
+npm run dev
 ```
 
 Open `http://localhost:3000` in your browser.
