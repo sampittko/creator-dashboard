@@ -63,7 +63,7 @@ export default function DashboardPage() {
           </li>
           <li>
             🎬 Total Video Takes: {stats.totalVideoTakes}
-            <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.videoTakes}/week)</span>
+            <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.videoTakes}/week in {stats.videoWeeks} video weeks)</span>
           </li>
           <li>
             💸 Total Expenses: €{stats.totalExpenses.all.toFixed(2)}
@@ -71,11 +71,11 @@ export default function DashboardPage() {
           </li>
           <li>
             📝 Blogs Published: {stats.totalContent.blogCount}
-            <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.blogs}/week)</span>
+            <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.blogs}/week in {stats.blogWeeks} blog weeks)</span>
           </li>
           <li>
             📹 Videos Published: {stats.totalContent.videoCount}
-            <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.videos}/week)</span>
+            <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.videos}/week in {stats.videoWeeks} video weeks)</span>
           </li>
           <li>🔥 Perfect Weeks: {stats.totalContent.perfectWeeks}</li>
           <li>⚡ Current Streak: {stats.streaks?.current ?? 0}</li>
