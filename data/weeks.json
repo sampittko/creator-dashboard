@@ -329,5 +329,22 @@
     ],
     "notes": "Wrapped up video and blog tasks while presenting at the Tatry IT meetup\u2014finalized the presentation PDF, delivered the talk, and built supporting promotional websites including a quiz to engage the audience.",
     "weekStatus": "perfect"
+  },
+  {
+    "weekId": "2025-W13",
+    "topic": "",
+    "content": {
+      "blogPublished": false,
+      "videoPublished": false,
+      "videoTakes": 0,
+      "publishedAt": {}
+    },
+    "time": {
+      "minutesWorked": 0,
+      "daysWorked": 0
+    },
+    "expenses": [],
+    "notes": "",
+    "weekStatus": "pending"
   }
 ]

@@ -1,6 +1,7 @@
 import data from "@/data/weeks.json";
 import { WeeklyEntry } from "@/types";
 import { getAggregatedStats } from "@/lib/stats";
+import { YearGrid } from "./components/year-grid";
 
 export default function DashboardPage() {
   const weeks = [...(data as WeeklyEntry[])].reverse();
@@ -44,6 +45,8 @@ export default function DashboardPage() {
           <li>🏆 Longest Streak: {stats.streaks?.longest ?? 0}</li>
         </ul>
       </section>
+
+      <YearGrid />
 
       {/* Weekly Breakdown */}
       <div className="grid gap-4">
