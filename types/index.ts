@@ -1,5 +1,7 @@
 export type WeekStatus =
   | "not_started"
+  | "future"
+  | "pending"
   | "perfect"
   | "incomplete"
   | "skipped";
