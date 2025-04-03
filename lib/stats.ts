@@ -98,7 +98,7 @@ export function getAggregatedStats() {
 
   stats.averages.hoursWorked = average(stats.totalHoursWorked, activeWeeks);
   stats.averages.daysWorked = average(stats.totalDaysWorked, activeWeeks);
-  stats.averages.videoTakes = average(stats.totalVideoTakes, activeWeeks);
+  stats.averages.videoTakes = average(stats.totalVideoTakes, videoWeeks);
   stats.averages.expenses = average(stats.totalExpenses.all, activeWeeks);
   stats.averages.blogs = average(stats.totalContent.blogCount, blogWeeks);
   stats.averages.videos = average(stats.totalContent.videoCount, videoWeeks);
