@@ -67,7 +67,7 @@ export default function DashboardPage() {
           </li>
           <li>
             🚗 Total Travel Distance for Video Recording: {stats.totalVideoKilometersTraveled}
-            <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.videoKilometersTraveled}/week in {stats.videoWeeks} video weeks)</span>
+            <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.videoKilometersTraveled}km/week in {stats.videoWeeks} video weeks)</span>
           </li>
           <li>
             💸 Total Expenses: €{stats.totalExpenses.all.toFixed(2)}
@@ -116,7 +116,7 @@ export default function DashboardPage() {
                 </div>
 
                 <div className="text-sm mt-1">
-                  <span className="font-medium">Travel Distance for Video Recording:</span> {week.content.videoKilometersTraveled}
+                  <span className="font-medium">Travel Distance for Video Recording:</span> {week.content.videoKilometersTraveled}km
                 </div>
 
                 <div className="text-sm mt-2">
