@@ -24,8 +24,6 @@ export function getAggregatedStats() {
         travel: 0,
         equipment: 0,
         subscription: 0,
-        hosting: 0,
-        software: 0,
         website: 0,
         other: 0,
       } as Record<ExpenseType, number>,
