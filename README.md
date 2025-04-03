@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ☕ Free With Tech – Weekly Creator Dashboard
 
-## Getting Started
+A transparent, open-source dashboard to track the weekly progress of building a personal brand from scratch. This project documents content creation, time investment, and resources spent — all in the open.
 
-First, run the development server:
+> Live demo coming soon (or link here if public)
+
+## ✨ Why this project?
+
+**Free With Tech** is about showing the real journey behind building something online. The dashboard shows week-by-week:
+
+- Topics covered
+- Hours & days worked
+- Blog and video publishing activity
+- Expenses made
+- Creator streaks and progress metrics
+
+It’s part experiment, part accountability, part resource for other creators.
+
+## 🧱 Tech Stack
+
+- **Next.js + TypeScript**
+- **Tailwind CSS** for styling
+- **Local JSON data** (`/data/weeks.json`)
+- Modular UI with components like `YearGrid`
+
+## 🚀 Getting Started
+
+Clone the repo and install dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+git clone https://github.com/your-username/free-with-tech-dashboard.git
+cd free-with-tech-dashboard
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
 
-## Learn More
+/data                # Weekly data (JSON)
+/lib                 # Utility functions (e.g., stats aggregation)
+/types               # TypeScript types
+/app                 # Next.js app routes and components
 
-To learn more about Next.js, take a look at the following resources:
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📊 Add your own data
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To track your own weekly progress:
 
-## Deploy on Vercel
+Copy the structure from /data/weeks.json
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Replace with your own data (make sure it matches the WeeklyEntry type)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Extend or tweak the stats logic in /lib/stats.ts if needed
+
+## 🤝 Contributing
+
+Pull requests welcome! If you'd like to:
+
+Improve the design
+
+Add new insights or metrics
+
+Add export features (CSV, JSON, etc.)
+
+Feel free to open an issue or PR.
+
+## 💡 Inspiration
+
+This project was inspired by a desire to build in public and stay accountable — while also giving others a blueprint to follow.
+
+## ☕ Support
+
+If you find this project valuable, consider buying me a coffee!
