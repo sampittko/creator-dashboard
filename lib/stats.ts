@@ -9,10 +9,10 @@ export function getAggregatedStats() {
   const activeWeeks = totalProjectWeeks;
 
   const firstBlogIndex = weeks.findIndex(w => w.content.blogPublished);
-  const blogWeeks = firstBlogIndex === -1 ? 0 : weeks.slice(firstBlogIndex).filter(w => w.weekStatus !== "not_started").length;
+  const blogWeeks = firstBlogIndex === -1 ? 0 : weeks.slice(firstBlogIndex).filter(w => w.weekStatus !== "not_started" && w.weekStatus !== "pending").length;
 
   const firstVideoIndex = weeks.findIndex(w => w.content.videoPublished);
-  const videoWeeks = firstVideoIndex === -1 ? 0 : weeks.slice(firstVideoIndex).filter(w => w.weekStatus !== "not_started").length;
+  const videoWeeks = firstVideoIndex === -1 ? 0 : weeks.slice(firstVideoIndex).filter(w => w.weekStatus !== "not_started" && w.weekStatus !== "pending").length;
 
   const stats = {
     totalMinutesWorked: 0,
@@ -54,7 +54,7 @@ export function getAggregatedStats() {
   };
 
   for (const week of weeks) {
-    if (week.weekStatus === "not_started") continue;
+    if (week.weekStatus === "not_started" || week.weekStatus === "pending") continue;
 
     stats.totalMinutesWorked += week.time.minutesWorked;
     stats.totalDaysWorked += week.time.daysWorked;
