@@ -15,3 +15,7 @@ export function getActiveWeeksSinceFirstContent(type: "blog" | "video"): number 
 export function averagePer(total: number, count: number): number {
   return count > 0 ? Math.round(total / count) : 0;
 }
+
+export function getTotalProjectWeeks(): number {
+  return weeks.filter((w) => w.weekStatus !== "not_started").length;
+}

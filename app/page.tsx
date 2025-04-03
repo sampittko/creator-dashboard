@@ -1,7 +1,7 @@
 import data from "@/data/weeks.json";
 import { WeeklyEntry } from "@/types";
 import { getAggregatedStats } from "@/lib/stats";
-import { averagePer, getActiveWeeksCount, getActiveWeeksSinceFirstContent } from "@/lib/stats-helpers";
+import { averagePer, getActiveWeeksCount, getActiveWeeksSinceFirstContent, getTotalProjectWeeks } from "@/lib/stats-helpers";
 
 export const metadata = {
   title: "Free With Tech – Weekly Creator Dashboard",
@@ -14,6 +14,8 @@ export default function DashboardPage() {
   const stats = getAggregatedStats();
 
   const totalHoursWorked = Math.round(stats.totalMinutesWorked / 60);
+
+  const totalProjectWeeks = getTotalProjectWeeks();
 
   const blogWeeks = getActiveWeeksSinceFirstContent("blog");
   const videoWeeks = getActiveWeeksSinceFirstContent("video");
@@ -29,12 +31,16 @@ export default function DashboardPage() {
 
   return (
     <main className="p-4">
-      <h1 className="text-xl font-bold mb-6">Free With Tech: Weekly Dashboard</h1>
+      <h1 className="text-xl font-bold mb-6">Free With Tech – Weekly Creator Dashboard</h1>
 
       {/* Aggregated Stats */}
       <section className="mb-8 border rounded p-4">
         <h2 className="text-lg font-semibold mb-2">📊 Aggregated Stats</h2>
         <ul className="text-sm space-y-1">
+          <li>
+            📆 Total Project Weeks: {totalProjectWeeks}
+          </li>
+
           <li>
             🕒 Total Hours Worked: {totalHoursWorked}h
             <span className="text-gray-500"> (avg {avg.hoursWorked}h/week)</span>
@@ -81,7 +87,10 @@ export default function DashboardPage() {
             </div>
 
             <div className="text-sm mt-1">
-              <span className="font-medium">Time:</span> {week.time.minutesWorked} min over {week.time.daysWorked} day(s)
+              <div className="text-sm mt-1">
+                <span className="font-medium">Time:</span> {Math.round(week.time.minutesWorked / 60)}h over {week.time.daysWorked} day(s)
+              </div>
+
             </div>
 
             <div className="text-sm mt-1">
