@@ -18,27 +18,27 @@ export default function DashboardPage() {
           <li>📆 Total Project Weeks: {stats.totalProjectWeeks}</li>
           <li>
             🕒 Total Hours Worked: {stats.totalHoursWorked}h
-            <span className="text-gray-500"> (avg {stats.averages.hoursWorked}h/week)</span>
+            <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.hoursWorked}h/week)</span>
           </li>
           <li>
             📅 Total Days Worked: {stats.totalDaysWorked}
-            <span className="text-gray-500"> (avg {stats.averages.daysWorked}/week)</span>
+            <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.daysWorked}/week)</span>
           </li>
           <li>
             🎬 Total Video Takes: {stats.totalVideoTakes}
-            <span className="text-gray-500"> (avg {stats.averages.videoTakes}/week)</span>
+            <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.videoTakes}/week)</span>
           </li>
           <li>
             💸 Total Expenses: €{stats.totalExpenses.all.toFixed(2)}
-            <span className="text-gray-500"> (avg €{stats.averages.expenses}/week)</span>
+            <span className="text-gray-500 dark:text-gray-400"> (avg €{stats.averages.expenses}/week)</span>
           </li>
           <li>
             📝 Blogs Published: {stats.totalContent.blogCount}
-            <span className="text-gray-500"> (avg {stats.averages.blogs}/week)</span>
+            <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.blogs}/week)</span>
           </li>
           <li>
             📹 Videos Published: {stats.totalContent.videoCount}
-            <span className="text-gray-500"> (avg {stats.averages.videos}/week)</span>
+            <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.videos}/week)</span>
           </li>
           <li>🔥 Perfect Weeks: {stats.totalContent.perfectWeeks}</li>
           <li>⚡ Current Streak: {stats.streaks?.current ?? 0}</li>
@@ -52,7 +52,7 @@ export default function DashboardPage() {
       <div className="grid gap-4">
         {weeks.map((week) => (
           <div key={week.weekId} className="border rounded p-4">
-            <div className="text-sm text-gray-500">{week.weekId}</div>
+            <div className="text-sm text-gray-500 dark:text-gray-400">{week.weekId}</div>
             <div className={
               week.weekStatus === "not_started"
                 ? "font-semibold text-gray-400 italic"
@@ -107,7 +107,7 @@ export default function DashboardPage() {
                 <ul className="ml-4 list-disc">
                   {week.expenses.map((exp, i) => (
                     <li key={i}>
-                      {exp.label} — €{exp.amountEUR.toFixed(2)} <span className="text-gray-500">({exp.type})</span>
+                      {exp.label} — €{exp.amountEUR.toFixed(2)} <span className="text-gray-500 dark:text-gray-400">({exp.type})</span>
                     </li>
                   ))}
                 </ul>
@@ -115,7 +115,7 @@ export default function DashboardPage() {
             )}
 
             {/* Notes */}
-            <div className="mt-2 text-sm text-gray-700 whitespace-pre-wrap">
+            <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 whitespace-pre-wrap">
               {week.notes || "No notes for this week."}
             </div>
           </div>
