@@ -17,7 +17,6 @@ export default function DashboardPage() {
     <main className="p-4">
       <h1 className="text-xl font-bold mb-6">Free With Tech: Weekly Dashboard</h1>
 
-      {/* Aggregated Stats */}
       <section className="mb-8 border rounded p-4">
         <h2 className="text-lg font-semibold mb-2">📊 Aggregated Stats</h2>
         <ul className="text-sm space-y-1">
@@ -54,79 +53,87 @@ export default function DashboardPage() {
 
       <YearGrid />
 
-      {/* Weekly Breakdown */}
-      <div className="grid gap-4">
+      <div className="grid gap-4 mb-4">
         {weeks.map((week) => (
           <div key={week.weekId} className="border rounded p-4">
             <div className="text-sm text-gray-500 dark:text-gray-400">{week.weekId}</div>
-            <div className={
-              week.weekStatus === "not_started"
-                ? "font-semibold text-gray-400 italic"
-                : week.weekStatus === "skipped"
-                  ? "font-semibold text-yellow-600"
-                  : "font-semibold"
-            }>
-              {week.weekStatus === "not_started"
-                ? "—"
-                : week.weekStatus === "skipped"
-                  ? "Skipped week"
-                  : week.topic}
+            <div className="font-semibold">
+              {week.topic || "—"}
             </div>
 
-            <div className="text-sm mt-1">
-              <span className="font-medium">Status:</span> {week.weekStatus}
-            </div>
-
-            <div className="text-sm mt-1">
-              <span className="font-medium">Time:</span> {Math.round(week.time.minutesWorked / 60)}h over {week.time.daysWorked} day(s)
-            </div>
-
-            <div className="text-sm mt-1">
-              <span className="font-medium">Video Takes:</span> {week.content.videoTakes}
-            </div>
-
-            <div className="text-sm mt-2">
-              {week.content.blogPublished && (
-                <a
-                  href={week.content.links?.blogUrl}
-                  target="_blank"
-                  className="text-blue-600 underline mr-2"
-                >
-                  Blog
-                </a>
-              )}
-              {week.content.videoPublished && (
-                <a
-                  href={week.content.links?.videoUrl}
-                  target="_blank"
-                  className="text-blue-600 underline"
-                >
-                  Video
-                </a>
-              )}
-            </div>
-
-            {/* Expenses */}
-            {week.expenses.length > 0 && (
-              <div className="mt-2 text-sm">
-                <div className="font-medium">Expenses:</div>
-                <ul className="ml-4 list-disc">
-                  {week.expenses.map((exp, i) => (
-                    <li key={i}>
-                      {exp.label} — €{exp.amountEUR.toFixed(2)} <span className="text-gray-500 dark:text-gray-400">({exp.type})</span>
-                    </li>
-                  ))}
-                </ul>
+            {week.weekStatus === "pending" ? (
+              <div className="mt-2 text-sm text-blue-700 bg-blue-100 border border-blue-300 rounded p-2">
+                ⏳ Data is added every Saturday. Check back soon!
               </div>
-            )}
+            ) : (
+              <>
+                <div className="text-sm mt-1">
+                  <span className="font-medium">Status:</span> {week.weekStatus}
+                </div>
 
-            {/* Notes */}
-            <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 whitespace-pre-wrap">
-              {week.notes || "No notes for this week."}
-            </div>
+                <div className="text-sm mt-1">
+                  <span className="font-medium">Time:</span> {Math.round(week.time.minutesWorked / 60)}h over {week.time.daysWorked} day(s)
+                </div>
+
+                <div className="text-sm mt-1">
+                  <span className="font-medium">Video Takes:</span> {week.content.videoTakes}
+                </div>
+
+                <div className="text-sm mt-2">
+                  {week.content.blogPublished && (
+                    <a
+                      href={week.content.links?.blogUrl}
+                      target="_blank"
+                      className="text-blue-600 underline mr-2"
+                    >
+                      Blog
+                    </a>
+                  )}
+                  {week.content.videoPublished && (
+                    <a
+                      href={week.content.links?.videoUrl}
+                      target="_blank"
+                      className="text-blue-600 underline"
+                    >
+                      Video
+                    </a>
+                  )}
+                </div>
+
+                {week.expenses.length > 0 && (
+                  <div className="mt-2 text-sm">
+                    <div className="font-medium">Expenses:</div>
+                    <ul className="ml-4 list-disc">
+                      {week.expenses.map((exp, i) => (
+                        <li key={i}>
+                          {exp.label} — €{exp.amountEUR.toFixed(2)} <span className="text-gray-500 dark:text-gray-400">({exp.type})</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 whitespace-pre-wrap">
+                  {week.notes || "No notes for this week."}
+                </div>
+              </>
+            )}
           </div>
+
         ))}
       </div>
+
+      <footer className="text-center text-sm text-gray-500 dark:text-gray-400">
+        View the project on{" "}
+        <a
+          href="https://github.com/sampittko/dash-fwtwtf-website"
+          target="_blank"
+          className="text-blue-600 underline"
+        >
+          GitHub
+        </a>
+        .
+      </footer>
     </main>
   );
 }
