@@ -1,7 +1,7 @@
 import data from "@/data/weeks.json";
 import { WeeklyEntry, WeekStatus } from "@/types";
 import { statusToEmoji } from "@/lib/visuals";
-import { getISOWeek, getISOWeekYear, isBefore, startOfWeek } from "date-fns";
+import { getISOWeek, getISOWeekYear } from "date-fns";
 
 const projectStartWeek = "2025-W04";
 
