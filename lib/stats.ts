@@ -18,6 +18,7 @@ export function getAggregatedStats() {
     totalMinutesWorked: 0,
     totalDaysWorked: 0,
     totalVideoTakes: 0,
+    totalVideoKilometersTraveled: 0,
     totalExpenses: {
       all: 0,
       byType: {
@@ -45,6 +46,7 @@ export function getAggregatedStats() {
       hoursWorked: 0,
       daysWorked: 0,
       videoTakes: 0,
+      videoKilometersTraveled: 0,
       expenses: 0,
       blogs: 0,
       videos: 0,
@@ -57,6 +59,7 @@ export function getAggregatedStats() {
     stats.totalMinutesWorked += week.time.minutesWorked;
     stats.totalDaysWorked += week.time.daysWorked;
     stats.totalVideoTakes += week.content.videoTakes;
+    stats.totalVideoKilometersTraveled += week.content.videoKilometersTraveled;
 
     if (week.content.blogPublished) stats.totalContent.blogCount++;
     if (week.content.videoPublished) stats.totalContent.videoCount++;
@@ -97,6 +100,7 @@ export function getAggregatedStats() {
   stats.averages.hoursWorked = average(stats.totalHoursWorked, activeWeeks);
   stats.averages.daysWorked = average(stats.totalDaysWorked, activeWeeks);
   stats.averages.videoTakes = average(stats.totalVideoTakes, videoWeeks);
+  stats.averages.videoKilometersTraveled = average(stats.totalVideoKilometersTraveled, videoWeeks);
   stats.averages.expenses = average(stats.totalExpenses.all, activeWeeks);
   stats.averages.blogs = average(stats.totalContent.blogCount, blogWeeks);
   stats.averages.videos = average(stats.totalContent.videoCount, videoWeeks);

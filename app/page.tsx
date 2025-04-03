@@ -66,6 +66,10 @@ export default function DashboardPage() {
             <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.videoTakes}/week in {stats.videoWeeks} video weeks)</span>
           </li>
           <li>
+            🚗 Total Video Kilometers Traveled: {stats.totalVideoKilometersTraveled}
+            <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.videoKilometersTraveled}/week in {stats.videoWeeks} video weeks)</span>
+          </li>
+          <li>
             💸 Total Expenses: €{stats.totalExpenses.all.toFixed(2)}
             <span className="text-gray-500 dark:text-gray-400"> (avg €{stats.averages.expenses}/week)</span>
           </li>
@@ -109,6 +113,10 @@ export default function DashboardPage() {
 
                 <div className="text-sm mt-1">
                   <span className="font-medium">Video Takes:</span> {week.content.videoTakes}
+                </div>
+
+                <div className="text-sm mt-1">
+                  <span className="font-medium">Video Kilometers Traveled:</span> {week.content.videoKilometersTraveled}
                 </div>
 
                 <div className="text-sm mt-2">
