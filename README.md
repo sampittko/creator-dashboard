@@ -1,4 +1,4 @@
-# ☕ Free With Tech – Weekly Creator Dashboard
+# ☕ Free With Tech – Creator Dashboard
 
 A transparent, open-source dashboard to track the weekly progress of building a personal brand from scratch. This project documents content creation, time investment, and resources spent — all in the open.
 
