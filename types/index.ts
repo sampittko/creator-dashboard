@@ -47,7 +47,6 @@ export interface ExpenseEntry {
   type: ExpenseType;
   amountEUR: number;
   date: string;
-  recurring?: boolean;
 }
 
 export interface AggregatedStats {
@@ -58,7 +57,6 @@ export interface AggregatedStats {
   totalExpenses: {
     all: number;
     byType: Record<ExpenseType, number>;
-    recurringMonthly?: number;
   };
 
   totalContent: {
