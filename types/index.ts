@@ -1,4 +1,8 @@
-export type WeekStatus = "perfect" | "incomplete" | "skipped";
+export type WeekStatus =
+  | "not_started"
+  | "perfect"
+  | "incomplete"
+  | "skipped";
 
 export interface WeeklyEntry {
   weekId: string;
