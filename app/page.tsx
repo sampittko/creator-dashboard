@@ -3,6 +3,12 @@ import { WeeklyEntry } from "@/types";
 import { getAggregatedStats } from "@/lib/stats";
 import { YearGrid } from "./components/year-grid";
 
+export const metadata = {
+  title: "Free With Tech – Weekly Creator Dashboard",
+  description:
+    "A transparent look behind the scenes of the Free With Tech project. Follow weekly progress, content publishing, time invested, and resources spent on building a public brand from scratch.",
+};
+
 export default function DashboardPage() {
   const weeks = [...(data as WeeklyEntry[])].reverse();
   const stats = getAggregatedStats();
