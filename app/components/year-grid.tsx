@@ -23,7 +23,7 @@ function simpleWeekStatus(
   if (weekId > currentWeekId) return "future";
   if (weekId === currentWeekId) return "pending";
   if (weekId < projectStartWeek) return "not_started";
-  return "skipped"; // Optional: could remove this and make all default "not_started"
+  return "skipped";
 }
 
 export function YearGrid() {
