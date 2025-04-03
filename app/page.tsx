@@ -1,6 +1,7 @@
 import data from "@/data/weeks.json";
 import { WeeklyEntry } from "@/types";
 import { getAggregatedStats } from "@/lib/stats";
+import { averagePer, getActiveWeeksCount, getActiveWeeksSinceFirstContent } from "@/lib/stats-helpers";
 
 export const metadata = {
   title: "Free With Tech – Weekly Creator Dashboard",
@@ -12,6 +13,20 @@ export default function DashboardPage() {
   const weeks = [...(data as WeeklyEntry[])].reverse();
   const stats = getAggregatedStats();
 
+  const totalHoursWorked = Math.round(stats.totalMinutesWorked / 60);
+
+  const blogWeeks = getActiveWeeksSinceFirstContent("blog");
+  const videoWeeks = getActiveWeeksSinceFirstContent("video");
+
+  const avg = {
+    hoursWorked: averagePer(totalHoursWorked, getActiveWeeksCount()),
+    daysWorked: averagePer(stats.totalDaysWorked, getActiveWeeksCount()),
+    videoTakes: averagePer(stats.totalVideoTakes, getActiveWeeksCount()),
+    expenses: averagePer(stats.totalExpenses.all, getActiveWeeksCount()),
+    blogs: averagePer(stats.totalContent.blogCount, blogWeeks),
+    videos: averagePer(stats.totalContent.videoCount, videoWeeks),
+  };
+
   return (
     <main className="p-4">
       <h1 className="text-xl font-bold mb-6">Free With Tech: Weekly Dashboard</h1>
@@ -20,12 +35,30 @@ export default function DashboardPage() {
       <section className="mb-8 border rounded p-4">
         <h2 className="text-lg font-semibold mb-2">📊 Aggregated Stats</h2>
         <ul className="text-sm space-y-1">
-          <li>🕒 Total Minutes Worked: {stats.totalMinutesWorked}</li>
-          <li>📅 Total Days Worked: {stats.totalDaysWorked}</li>
-          <li>🎬 Total Video Takes: {stats.totalVideoTakes}</li>
-          <li>💸 Total Expenses: €{stats.totalExpenses.all.toFixed(2)}</li>
-          <li>📝 Blogs Published: {stats.totalContent.blogCount}</li>
-          <li>📹 Videos Published: {stats.totalContent.videoCount}</li>
+          <li>
+            🕒 Total Hours Worked: {totalHoursWorked}h
+            <span className="text-gray-500"> (avg {avg.hoursWorked}h/week)</span>
+          </li>
+          <li>
+            📅 Total Days Worked: {stats.totalDaysWorked}
+            <span className="text-gray-500"> (avg {avg.daysWorked}/week)</span>
+          </li>
+          <li>
+            🎬 Total Video Takes: {stats.totalVideoTakes}
+            <span className="text-gray-500"> (avg {avg.videoTakes}/week)</span>
+          </li>
+          <li>
+            💸 Total Expenses: €{stats.totalExpenses.all.toFixed(2)}
+            <span className="text-gray-500"> (avg €{avg.expenses}/week)</span>
+          </li>
+          <li>
+            📝 Blogs Published: {stats.totalContent.blogCount}
+            <span className="text-gray-500"> (avg {avg.blogs}/week over {blogWeeks} blog weeks)</span>
+          </li>
+          <li>
+            📹 Videos Published: {stats.totalContent.videoCount}
+            <span className="text-gray-500"> (avg {avg.videos}/week over {videoWeeks} video weeks)</span>
+          </li>
           <li>🔥 Perfect Weeks: {stats.totalContent.perfectWeeks}</li>
           <li>⚡ Current Streak: {stats.streaks?.current ?? 0}</li>
           <li>🏆 Longest Streak: {stats.streaks?.longest ?? 0}</li>
