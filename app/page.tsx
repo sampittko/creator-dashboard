@@ -15,7 +15,17 @@ export default function DashboardPage() {
 
   return (
     <main className="p-4">
-      <h1 className="text-xl font-bold mb-6">Free With Tech: Weekly Dashboard</h1>
+      <div className="flex justify-between items-center mb-6">
+        <h1 className="text-xl font-bold">Free With Tech: Weekly Dashboard</h1>
+        <a
+          href="https://www.buymeacoffee.com/sampittko"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sm bg-yellow-400 hover:bg-yellow-300 text-black font-semibold py-1 px-3 rounded shadow"
+        >
+          ☕ Buy Me a Coffee
+        </a>
+      </div>
 
       <section className="mb-8 border rounded p-4">
         <h2 className="text-lg font-semibold mb-2">📊 Aggregated Stats</h2>
