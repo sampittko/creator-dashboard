@@ -1,7 +1,10 @@
-import weeks from "@/data/weeks.json";
+import originalWeeks from "@/data/weeks.json";
 import { ExpenseType } from "@/types";
 
 export function getAggregatedStats() {
+  const weeks = [...originalWeeks];
+  const reversedWeeks = [...originalWeeks].reverse();
+
   const totalProjectWeeks = weeks.filter(w => w.weekStatus !== "not_started").length;
   const activeWeeks = totalProjectWeeks;
 
@@ -50,8 +53,6 @@ export function getAggregatedStats() {
     }
   };
 
-  let currentStreak = 0;
-
   for (const week of weeks) {
     if (week.weekStatus === "not_started") continue;
 
@@ -61,12 +62,9 @@ export function getAggregatedStats() {
 
     if (week.content.blogPublished) stats.totalContent.blogCount++;
     if (week.content.videoPublished) stats.totalContent.videoCount++;
+
     if (week.weekStatus === "perfect") {
       stats.totalContent.perfectWeeks++;
-      currentStreak++;
-      stats.streaks.longest = Math.max(stats.streaks.longest, currentStreak);
-    } else {
-      currentStreak = 0;
     }
 
     for (const exp of week.expenses || []) {
@@ -77,7 +75,22 @@ export function getAggregatedStats() {
     }
   }
 
+  let currentStreak = 0;
+  let longestStreak = 0;
+  for (const week of reversedWeeks) {
+    if (week.weekStatus === "not_started") continue;
+    if (week.weekStatus === "pending") continue;
+
+    if (week.weekStatus === "perfect") {
+      currentStreak++;
+      longestStreak = Math.max(longestStreak, currentStreak);
+    } else {
+      break;
+    }
+  }
+
   stats.streaks.current = currentStreak;
+  stats.streaks.longest = longestStreak;
   stats.totalHoursWorked = Math.round(stats.totalMinutesWorked / 60);
 
   const average = (total: number, weeks: number) =>
