@@ -66,7 +66,7 @@ export default function DashboardPage() {
             <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.videoTakes}/week in {stats.videoWeeks} video weeks)</span>
           </li>
           <li>
-            🚗 Total Travel Distance for Video Recording: {stats.totalVideoKilometersTraveled}
+            🚗 Total Travel Distance for Video Recording: {stats.totalVideoKilometersTraveled}km
             <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.videoKilometersTraveled}km/week in {stats.videoWeeks} video weeks)</span>
           </li>
           <li>
