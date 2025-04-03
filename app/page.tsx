@@ -1,103 +1,97 @@
-import Image from "next/image";
+import data from "@/data/weeks.json";
+import { WeeklyEntry } from "@/types";
+import { getAggregatedStats } from "@/lib/stats";
 
-export default function Home() {
+export default function DashboardPage() {
+  const weeks = [...(data as WeeklyEntry[])].reverse();
+  const stats = getAggregatedStats();
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="p-4">
+      <h1 className="text-xl font-bold mb-6">Free With Tech: Weekly Dashboard</h1>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      {/* Aggregated Stats */}
+      <section className="mb-8 border rounded p-4">
+        <h2 className="text-lg font-semibold mb-2">📊 Aggregated Stats</h2>
+        <ul className="text-sm space-y-1">
+          <li>🕒 Total Minutes Worked: {stats.totalMinutesWorked}</li>
+          <li>📅 Total Days Worked: {stats.totalDaysWorked}</li>
+          <li>🎬 Total Video Takes: {stats.totalVideoTakes}</li>
+          <li>💸 Total Expenses: €{stats.totalExpenses.all.toFixed(2)}</li>
+          <li>📝 Blogs Published: {stats.totalContent.blogCount}</li>
+          <li>📹 Videos Published: {stats.totalContent.videoCount}</li>
+          <li>🔥 Perfect Weeks: {stats.totalContent.perfectWeeks}</li>
+          <li>⚡ Current Streak: {stats.streaks?.current ?? 0}</li>
+          <li>🏆 Longest Streak: {stats.streaks?.longest ?? 0}</li>
+        </ul>
+      </section>
+
+      {/* Weekly Breakdown */}
+      <div className="grid gap-4">
+        {weeks.map((week) => (
+          <div key={week.weekId} className="border rounded p-4">
+            <div className="text-sm text-gray-500">{week.weekId}</div>
+            <div className="font-semibold">{week.weekStatus === "not_started"
+              ? "—"
+              : week.weekStatus === "skipped"
+                ? "Skipped week"
+                : week.topic}</div>
+
+            <div className="text-sm mt-1">
+              <span className="font-medium">Status:</span> {week.weekStatus}
+            </div>
+
+            <div className="text-sm mt-1">
+              <span className="font-medium">Time:</span> {week.time.minutesWorked} min over {week.time.daysWorked} day(s)
+            </div>
+
+            <div className="text-sm mt-1">
+              <span className="font-medium">Video Takes:</span> {week.content.videoTakes}
+            </div>
+
+            <div className="text-sm mt-2">
+              {week.content.blogPublished && (
+                <a
+                  href={week.content.links?.blogUrl}
+                  target="_blank"
+                  className="text-blue-600 underline mr-2"
+                >
+                  Blog
+                </a>
+              )}
+              {week.content.videoPublished && (
+                <a
+                  href={week.content.links?.videoUrl}
+                  target="_blank"
+                  className="text-blue-600 underline"
+                >
+                  Video
+                </a>
+              )}
+            </div>
+
+            {/* Expenses */}
+            {week.expenses.length > 0 && (
+              <div className="mt-2 text-sm">
+                <div className="font-medium">Expenses:</div>
+                <ul className="ml-4 list-disc">
+                  {week.expenses.map((exp, i) => (
+                    <li key={i}>
+                      {exp.label} — €{exp.amountEUR.toFixed(2)}{" "}
+                      <span className="text-gray-500">({exp.type})</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {/* Notes */}
+            <div className="mt-2 text-sm text-gray-700 whitespace-pre-wrap">
+              {week.notes || "No notes for this week."}
+            </div>
+          </div>
+        ))}
+      </div>
+    </main>
   );
 }
