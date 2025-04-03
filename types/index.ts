@@ -38,15 +38,13 @@ export type ExpenseType =
   | "travel"
   | "equipment"
   | "subscription"
-  | "hosting"
-  | "software"
+  | "website"
   | "other";
 
 export interface ExpenseEntry {
   label: string;
   type: ExpenseType;
   amountEUR: number;
-  date: string;
 }
 
 export interface AggregatedStats {
