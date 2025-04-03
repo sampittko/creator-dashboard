@@ -14,6 +14,7 @@ export interface WeeklyEntry {
     blogPublished: boolean;
     videoPublished: boolean;
     videoTakes: number;
+    videoKilometersTraveled: number;
     publishedAt?: {
       blog?: string;
       video?: string;
@@ -53,6 +54,7 @@ export interface AggregatedStats {
   totalMinutesWorked: number;
   totalDaysWorked: number;
   totalVideoTakes: number;
+  totalVideoKilometersTraveled: number;
 
   totalExpenses: {
     all: number;

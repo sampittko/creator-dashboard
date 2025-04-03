@@ -6,6 +6,7 @@
       "blogPublished": false,
       "videoPublished": false,
       "videoTakes": 0,
+      "videoKilometersTraveled": 0,
       "publishedAt": {}
     },
     "time": {
@@ -23,6 +24,7 @@
       "blogPublished": false,
       "videoPublished": false,
       "videoTakes": 0,
+      "videoKilometersTraveled": 0,
       "publishedAt": {}
     },
     "time": {
@@ -40,6 +42,7 @@
       "blogPublished": false,
       "videoPublished": false,
       "videoTakes": 0,
+      "videoKilometersTraveled": 0,
       "publishedAt": {}
     },
     "time": {
@@ -57,6 +60,7 @@
       "blogPublished": false,
       "videoPublished": false,
       "videoTakes": 0,
+      "videoKilometersTraveled": 0,
       "publishedAt": {}
     },
     "time": {
@@ -74,6 +78,7 @@
       "blogPublished": true,
       "videoPublished": false,
       "videoTakes": 0,
+      "videoKilometersTraveled": 0,
       "publishedAt": {
         "blog": "2025-01-31"
       },
@@ -96,6 +101,7 @@
       "blogPublished": true,
       "videoPublished": false,
       "videoTakes": 0,
+      "videoKilometersTraveled": 0,
       "publishedAt": {
         "blog": "2025-02-07"
       },
@@ -118,6 +124,7 @@
       "blogPublished": true,
       "videoPublished": false,
       "videoTakes": 0,
+      "videoKilometersTraveled": 0,
       "publishedAt": {
         "blog": "2025-02-14"
       },
@@ -156,6 +163,7 @@
       "blogPublished": true,
       "videoPublished": false,
       "videoTakes": 0,
+      "videoKilometersTraveled": 0,
       "publishedAt": {
         "blog": "2025-02-21"
       },
@@ -184,6 +192,7 @@
       "blogPublished": true,
       "videoPublished": true,
       "videoTakes": 9,
+      "videoKilometersTraveled": 28,
       "publishedAt": {
         "blog": "2025-02-27",
         "video": "2025-02-28"
@@ -214,6 +223,7 @@
       "blogPublished": true,
       "videoPublished": true,
       "videoTakes": 4,
+      "videoKilometersTraveled": 14,
       "publishedAt": {
         "blog": "2025-03-06",
         "video": "2025-03-07"
@@ -244,6 +254,7 @@
       "blogPublished": true,
       "videoPublished": true,
       "videoTakes": 1,
+      "videoKilometersTraveled": 14,
       "publishedAt": {
         "blog": "2025-03-13",
         "video": "2025-03-14"
@@ -274,6 +285,7 @@
       "blogPublished": true,
       "videoPublished": true,
       "videoTakes": 2,
+      "videoKilometersTraveled": 14,
       "publishedAt": {
         "blog": "2025-03-20",
         "video": "2025-03-21"
@@ -304,6 +316,7 @@
       "blogPublished": true,
       "videoPublished": true,
       "videoTakes": 1,
+      "videoKilometersTraveled": 27,
       "publishedAt": {
         "blog": "2025-03-27",
         "video": "2025-03-28"
@@ -354,6 +367,7 @@
       "blogPublished": false,
       "videoPublished": false,
       "videoTakes": 0,
+      "videoKilometersTraveled": 0,
       "publishedAt": {}
     },
     "time": {
