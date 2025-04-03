@@ -38,7 +38,7 @@ export default function DashboardPage() {
   return (
     <main className="p-4">
       <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 mb-6">
-        <h1 className="text-xl font-bold"><a href="https://fwt.wtf/sign" target="_blank" className="underline hover:no-underline">Free With Tech</a>: Creator Dashboard</h1>
+        <h1 className="text-xl font-bold"><a href="https://fwt.wtf/sign" target="_blank" className="underline hover:no-underline">Free With Tech</a> - Creator Dashboard</h1>
         <a
           href="https://www.buymeacoffee.com/sampittko"
           target="_blank"
