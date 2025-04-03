@@ -1,5 +1,3 @@
-'use client';
-
 import data from "@/data/weeks.json";
 import { WeeklyEntry, WeekStatus } from "@/types";
 import { statusToEmoji } from "@/lib/visuals";
@@ -51,9 +49,6 @@ export function YearGrid() {
 
   const mergedWeeks = allWeeks.map((weekId) => {
     const existing = weeksMap.get(weekId);
-
-    const isMissing = !existing;
-    const isCurrentWeek = weekId === currentWeekId;
 
     const status = getStatusForWeek(
       weekId,
