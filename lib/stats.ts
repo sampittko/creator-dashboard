@@ -5,7 +5,7 @@ export function getAggregatedStats() {
   const weeks = [...originalWeeks];
   const reversedWeeks = [...originalWeeks].reverse();
 
-  const totalProjectWeeks = weeks.filter(w => w.weekStatus !== "not_started").length;
+  const totalProjectWeeks = weeks.filter(w => w.weekStatus !== "not_started" && w.weekStatus !== "pending").length;
   const activeWeeks = totalProjectWeeks;
 
   const firstBlogIndex = weeks.findIndex(w => w.content.blogPublished);
