@@ -1,10 +1,17 @@
-// lib/stats.ts
-
 import weeks from "@/data/weeks.json";
-import { AggregatedStats, ExpenseType } from "@/types";
+import { ExpenseType } from "@/types";
 
-export function getAggregatedStats(): AggregatedStats {
-  const result: AggregatedStats = {
+export function getAggregatedStats() {
+  const totalProjectWeeks = weeks.filter(w => w.weekStatus !== "not_started").length;
+  const activeWeeks = totalProjectWeeks;
+
+  const firstBlogIndex = weeks.findIndex(w => w.content.blogPublished);
+  const blogWeeks = firstBlogIndex === -1 ? 0 : weeks.slice(firstBlogIndex).filter(w => w.weekStatus !== "not_started").length;
+
+  const firstVideoIndex = weeks.findIndex(w => w.content.videoPublished);
+  const videoWeeks = firstVideoIndex === -1 ? 0 : weeks.slice(firstVideoIndex).filter(w => w.weekStatus !== "not_started").length;
+
+  const stats = {
     totalMinutesWorked: 0,
     totalDaysWorked: 0,
     totalVideoTakes: 0,
@@ -14,9 +21,11 @@ export function getAggregatedStats(): AggregatedStats {
         travel: 0,
         equipment: 0,
         subscription: 0,
+        hosting: 0,
+        software: 0,
         website: 0,
         other: 0,
-      },
+      } as Record<ExpenseType, number>,
     },
     totalContent: {
       blogCount: 0,
@@ -27,37 +36,59 @@ export function getAggregatedStats(): AggregatedStats {
       current: 0,
       longest: 0,
     },
+    totalHoursWorked: 0,
+    totalProjectWeeks,
+    blogWeeks,
+    videoWeeks,
+    averages: {
+      hoursWorked: 0,
+      daysWorked: 0,
+      videoTakes: 0,
+      expenses: 0,
+      blogs: 0,
+      videos: 0,
+    }
   };
 
   let currentStreak = 0;
+
   for (const week of weeks) {
-    result.totalMinutesWorked += week.time.minutesWorked;
-    result.totalDaysWorked += week.time.daysWorked;
-    result.totalVideoTakes += week.content.videoTakes;
+    if (week.weekStatus === "not_started") continue;
 
-    const blog = week.content.blogPublished;
-    const video = week.content.videoPublished;
+    stats.totalMinutesWorked += week.time.minutesWorked;
+    stats.totalDaysWorked += week.time.daysWorked;
+    stats.totalVideoTakes += week.content.videoTakes;
 
-    if (blog) result.totalContent.blogCount++;
-    if (video) result.totalContent.videoCount++;
+    if (week.content.blogPublished) stats.totalContent.blogCount++;
+    if (week.content.videoPublished) stats.totalContent.videoCount++;
     if (week.weekStatus === "perfect") {
-      result.totalContent.perfectWeeks++;
+      stats.totalContent.perfectWeeks++;
       currentStreak++;
-      result.streaks!.longest = Math.max(result.streaks!.longest, currentStreak);
-    } else if (week.weekStatus !== "not_started") {
+      stats.streaks.longest = Math.max(stats.streaks.longest, currentStreak);
+    } else {
       currentStreak = 0;
     }
 
     for (const exp of week.expenses || []) {
       const amount = exp.amountEUR || 0;
       const type = exp.type as ExpenseType;
-
-      result.totalExpenses.all += amount;
-      result.totalExpenses.byType[type] = (result.totalExpenses.byType[type] || 0) + amount;
+      stats.totalExpenses.all += amount;
+      stats.totalExpenses.byType[type] = (stats.totalExpenses.byType[type] || 0) + amount;
     }
   }
 
-  result.streaks!.current = currentStreak;
+  stats.streaks.current = currentStreak;
+  stats.totalHoursWorked = Math.round(stats.totalMinutesWorked / 60);
 
-  return result;
+  const average = (total: number, weeks: number) =>
+    weeks > 0 ? Math.round(total / weeks) : 0;
+
+  stats.averages.hoursWorked = average(stats.totalHoursWorked, activeWeeks);
+  stats.averages.daysWorked = average(stats.totalDaysWorked, activeWeeks);
+  stats.averages.videoTakes = average(stats.totalVideoTakes, activeWeeks);
+  stats.averages.expenses = average(stats.totalExpenses.all, activeWeeks);
+  stats.averages.blogs = average(stats.totalContent.blogCount, blogWeeks);
+  stats.averages.videos = average(stats.totalContent.videoCount, videoWeeks);
+
+  return stats;
 }
