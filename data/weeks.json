@@ -1,0 +1,333 @@
+[
+  {
+    "weekId": "2025-W01",
+    "topic": "",
+    "content": {
+      "blogPublished": false,
+      "videoPublished": false,
+      "videoTakes": 0,
+      "publishedAt": {}
+    },
+    "time": {
+      "minutesWorked": 0,
+      "daysWorked": 0
+    },
+    "expenses": [],
+    "notes": "",
+    "weekStatus": "not_started"
+  },
+  {
+    "weekId": "2025-W02",
+    "topic": "",
+    "content": {
+      "blogPublished": false,
+      "videoPublished": false,
+      "videoTakes": 0,
+      "publishedAt": {}
+    },
+    "time": {
+      "minutesWorked": 0,
+      "daysWorked": 0
+    },
+    "expenses": [],
+    "notes": "",
+    "weekStatus": "not_started"
+  },
+  {
+    "weekId": "2025-W03",
+    "topic": "",
+    "content": {
+      "blogPublished": false,
+      "videoPublished": false,
+      "videoTakes": 0,
+      "publishedAt": {}
+    },
+    "time": {
+      "minutesWorked": 0,
+      "daysWorked": 0
+    },
+    "expenses": [],
+    "notes": "",
+    "weekStatus": "not_started"
+  },
+  {
+    "weekId": "2025-W04",
+    "topic": "Freedom with Technology: Reclaiming Your Focus in a World Designed to Distract",
+    "content": {
+      "blogPublished": true,
+      "videoPublished": false,
+      "videoTakes": 0,
+      "publishedAt": {
+        "blog": "2025-01-31"
+      },
+      "links": {
+        "blogUrl": "https://fwt.wtf/kickoff"
+      }
+    },
+    "time": {
+      "minutesWorked": 487,
+      "daysWorked": 6
+    },
+    "expenses": [],
+    "notes": "Progressed through 7 Day Creator course from David Boland, supported by brainstorming and consistent content drafting sessions. Maintained momentum with blog writing and reflective planning sessions.",
+    "weekStatus": "incomplete"
+  },
+  {
+    "weekId": "2025-W05",
+    "topic": "1. Self-Awareness: The Foundation of Intentional Tech Use",
+    "content": {
+      "blogPublished": true,
+      "videoPublished": false,
+      "videoTakes": 0,
+      "publishedAt": {
+        "blog": "2025-02-07"
+      },
+      "links": {
+        "blogUrl": "https://fwt.wtf/self-awareness"
+      }
+    },
+    "time": {
+      "minutesWorked": 815,
+      "daysWorked": 6
+    },
+    "expenses": [],
+    "notes": "Focused heavily on article headline work (45% of time); balanced remainder across blog writing, mindmapping, Substack setup, and content planning (YouTube, socials, community).",
+    "weekStatus": "incomplete"
+  },
+  {
+    "weekId": "2025-W06",
+    "topic": "2. Digital Minimalism: Owning Your Attention",
+    "content": {
+      "blogPublished": true,
+      "videoPublished": false,
+      "videoTakes": 0,
+      "publishedAt": {
+        "blog": "2025-02-14"
+      },
+      "links": {
+        "blogUrl": "https://fwt.wtf/digital-minimalism"
+      }
+    },
+    "time": {
+      "minutesWorked": 635,
+      "daysWorked": 3
+    },
+    "expenses": [
+      {
+        "label": "DJI Mic Mini",
+        "type": "equipment",
+        "amountEUR": 188
+      },
+      {
+        "label": "iPhone tripod",
+        "type": "equipment",
+        "amountEUR": 32.97
+      },
+      {
+        "label": "fwt.wtf domain",
+        "type": "website",
+        "amountEUR": 4.93
+      }
+    ],
+    "notes": "Balanced content creation (blogs #3\u20134, personal journey), strategic planning (linear setup, FWT shortlinks), and technical setup (mic + tripod). Manifesto writing and reflection also played a key role.",
+    "weekStatus": "incomplete"
+  },
+  {
+    "weekId": "2025-W07",
+    "topic": "3. Tech Independence: The Final Step to True Digital Freedom",
+    "content": {
+      "blogPublished": true,
+      "videoPublished": false,
+      "videoTakes": 0,
+      "publishedAt": {
+        "blog": "2025-02-21"
+      },
+      "links": {
+        "blogUrl": "https://fwt.wtf/tech-independence"
+      }
+    },
+    "time": {
+      "minutesWorked": 1297,
+      "daysWorked": 6
+    },
+    "expenses": [
+      {
+        "label": "ChatGPT",
+        "type": "subscription",
+        "amountEUR": 23.6
+      }
+    ],
+    "notes": "Deep focus on building the manifesto website, complemented by branding ideation, video content creation, and business learning. Balanced execution and creative thinking with foundational setup tasks.",
+    "weekStatus": "incomplete"
+  },
+  {
+    "weekId": "2025-W08",
+    "topic": "My Journey to Becoming Free With Tech",
+    "content": {
+      "blogPublished": true,
+      "videoPublished": true,
+      "videoTakes": 9,
+      "publishedAt": {
+        "blog": "2025-02-27",
+        "video": "2025-02-28"
+      },
+      "links": {
+        "blogUrl": "https://fwt.wtf/my-story",
+        "videoUrl": "https://fwt.wtf/my-story-video"
+      }
+    },
+    "time": {
+      "minutesWorked": 1599,
+      "daysWorked": 6
+    },
+    "expenses": [
+      {
+        "label": "Fuel",
+        "type": "travel",
+        "amountEUR": 3.99
+      }
+    ],
+    "notes": "Heavy focus on video production\u2014rehearsals, recording, editing, and publishing\u2014paired with manifesto site progress and brand communication. Rounded out with email setup, and YouTube research for creative expansion.",
+    "weekStatus": "perfect"
+  },
+  {
+    "weekId": "2025-W09",
+    "topic": "From Lost in Tech to Found in Focus",
+    "content": {
+      "blogPublished": true,
+      "videoPublished": true,
+      "videoTakes": 4,
+      "publishedAt": {
+        "blog": "2025-03-06",
+        "video": "2025-03-07"
+      },
+      "links": {
+        "blogUrl": "https://fwt.wtf/first-step",
+        "videoUrl": "https://fwt.wtf/first-step-video"
+      }
+    },
+    "time": {
+      "minutesWorked": 1356,
+      "daysWorked": 6
+    },
+    "expenses": [
+      {
+        "label": "Fuel",
+        "type": "travel",
+        "amountEUR": 1.99
+      }
+    ],
+    "notes": "Strong focus on YouTube content pipeline\u2014scripting, recording, publishing, and promotion\u2014paired with social media work (X threads, branding, engagement). Significant time also spent refining content strategy, weekly planning, and assets cleanup.",
+    "weekStatus": "perfect"
+  },
+  {
+    "weekId": "2025-W10",
+    "topic": "Drawing Boundaries to Define Your Digital Life",
+    "content": {
+      "blogPublished": true,
+      "videoPublished": true,
+      "videoTakes": 1,
+      "publishedAt": {
+        "blog": "2025-03-13",
+        "video": "2025-03-14"
+      },
+      "links": {
+        "blogUrl": "https://fwt.wtf/second-step",
+        "videoUrl": "https://fwt.wtf/second-step-video"
+      }
+    },
+    "time": {
+      "minutesWorked": 1413,
+      "daysWorked": 7
+    },
+    "expenses": [
+      {
+        "label": "Fuel",
+        "type": "travel",
+        "amountEUR": 1.99
+      }
+    ],
+    "notes": "Focused heavily on brand visuals (thumbnails, feel), manifesto updates, and scheduling systems (Buffer). Continued momentum on video production\u2014scripting, recording, publishing, alongside YouTube education and short planning bursts.",
+    "weekStatus": "perfect"
+  },
+  {
+    "weekId": "2025-W11",
+    "topic": "Guarding Digital Footprint for a Life in Control",
+    "content": {
+      "blogPublished": true,
+      "videoPublished": true,
+      "videoTakes": 2,
+      "publishedAt": {
+        "blog": "2025-03-20",
+        "video": "2025-03-21"
+      },
+      "links": {
+        "blogUrl": "https://fwt.wtf/final-step",
+        "videoUrl": "https://fwt.wtf/final-step-video"
+      }
+    },
+    "time": {
+      "minutesWorked": 1122,
+      "daysWorked": 7
+    },
+    "expenses": [
+      {
+        "label": "Fuel",
+        "type": "travel",
+        "amountEUR": 1.99
+      }
+    ],
+    "notes": "Continued video production workflow while beginning prep for the Tatry IT meetup\u2014drafting the presentation alongside scripting, recording, and publishing videos. Balanced creative output with foundational speaking prep.",
+    "weekStatus": "perfect"
+  },
+  {
+    "weekId": "2025-W12",
+    "topic": "A Street-Level Mindset for Digital Communication",
+    "content": {
+      "blogPublished": true,
+      "videoPublished": true,
+      "videoTakes": 1,
+      "publishedAt": {
+        "blog": "2025-03-27",
+        "video": "2025-03-28"
+      },
+      "links": {
+        "blogUrl": "https://fwt.wtf/delete-your-chats",
+        "videoUrl": "https://fwt.wtf/delete-your-chats-video"
+      }
+    },
+    "time": {
+      "minutesWorked": 2143,
+      "daysWorked": 5
+    },
+    "expenses": [
+      {
+        "label": "Fuel",
+        "type": "travel",
+        "amountEUR": 3.85
+      },
+      {
+        "label": "digitalneotroctvo.sk",
+        "type": "website",
+        "amountEUR": 12.18
+      },
+      {
+        "label": "digitalnasloboda.sk",
+        "type": "website",
+        "amountEUR": 12.18
+      },
+      {
+        "label": "sloboda.digital",
+        "type": "website",
+        "amountEUR": 2.48
+      },
+      {
+        "label": "ChatGPT",
+        "type": "subscription",
+        "amountEUR": 22.81
+      }
+    ],
+    "notes": "Wrapped up video and blog tasks while presenting at the Tatry IT meetup\u2014finalized the presentation PDF, delivered the talk, and built supporting promotional websites including a quiz to engage the audience.",
+    "weekStatus": "perfect"
+  }
+]
