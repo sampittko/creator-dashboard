@@ -12,6 +12,10 @@ export interface WeeklyEntry {
       blog?: string;
       video?: string;
     };
+    links?: {
+      blogUrl?: string;
+      videoUrl?: string;
+    };
   };
 
   time: {
