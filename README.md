@@ -19,7 +19,6 @@ It’s part experiment, part accountability, part resource for other creators.
 - **Next.js + TypeScript**
 - **Tailwind CSS** for styling
 - **Local JSON data** (`/data/weeks.json`)
-- Modular UI with components like `YearGrid`
 
 ## 🚀 Getting Started
 
@@ -32,7 +31,7 @@ pnpm install
 pnpm dev
 ```
 
-Open http://localhost:3000 in your browser.
+Open `http://localhost:3000` in your browser.
 
 ## 📁 Project Structure
 
@@ -49,23 +48,18 @@ Open http://localhost:3000 in your browser.
 
 To track your own weekly progress:
 
-Copy the structure from /data/weeks.json
-
-Replace with your own data (make sure it matches the WeeklyEntry type)
-
-Extend or tweak the stats logic in /lib/stats.ts if needed
+1. Copy the structure from /data/weeks.json
+2. Replace with your own data (make sure it matches the `WeeklyEntry` type)
+3. Extend or tweak the stats logic in `/lib/stats.ts` if needed
 
 ## 🤝 Contributing
 
-Pull requests welcome! If you'd like to:
+Pull requests welcome! Feel free to open an issue or PR if you'd like to:
 
-Improve the design
-
-Add new insights or metrics
-
-Add export features (CSV, JSON, etc.)
-
-Feel free to open an issue or PR.
+- Improve the design
+- Add new insights or metrics
+- Add export features (CSV, JSON, etc.)
+- ...
 
 ## 💡 Inspiration
 
