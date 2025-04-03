@@ -1,7 +1,9 @@
 import data from "@/data/weeks.json";
 import { WeeklyEntry, WeekStatus } from "@/types";
 import { statusToEmoji } from "@/lib/visuals";
-import { getISOWeek, getISOWeekYear } from "date-fns";
+import { getISOWeek, getISOWeekYear, isBefore, startOfWeek } from "date-fns";
+
+const projectStartWeek = "2025-W04";
 
 function generateAllWeekIds(year: number): string[] {
   return Array.from({ length: 52 }, (_, i) => `${year}-W${String(i + 1).padStart(2, "0")}`);
@@ -12,34 +14,20 @@ function getCurrentWeekId(): string {
   return `${getISOWeekYear(now)}-W${String(getISOWeek(now)).padStart(2, "0")}`;
 }
 
-function getStatusForWeek(
+function simpleWeekStatus(
   weekId: string,
-  projectStartWeek: string,
   currentWeekId: string,
   existingStatus?: WeekStatus
-): WeekStatus | "future" | "pending" {
-  if (weekId > currentWeekId) {
-    return "future";
-  }
-
-  const isCurrentWeek = weekId === currentWeekId;
-
-  if (isCurrentWeek) {
-    return existingStatus || "pending";
-  }
-
+): WeekStatus | "pending" | "future" | "not_started" {
   if (existingStatus) return existingStatus;
-
-  if (weekId >= projectStartWeek && weekId < currentWeekId) {
-    return "skipped";
-  }
-
-  return "not_started";
+  if (weekId > currentWeekId) return "future";
+  if (weekId === currentWeekId) return "pending";
+  if (weekId < projectStartWeek) return "not_started";
+  return "skipped"; // Optional: could remove this and make all default "not_started"
 }
 
 export function YearGrid() {
   const year = new Date().getFullYear();
-  const projectStartWeek = "2025-W04";
   const currentWeekId = getCurrentWeekId();
 
   const weeksData = data as WeeklyEntry[];
@@ -49,13 +37,7 @@ export function YearGrid() {
 
   const mergedWeeks = allWeeks.map((weekId) => {
     const existing = weeksMap.get(weekId);
-
-    const status = getStatusForWeek(
-      weekId,
-      projectStartWeek,
-      currentWeekId,
-      existing?.weekStatus
-    );
+    const status = simpleWeekStatus(weekId, currentWeekId, existing?.weekStatus);
 
     return {
       weekId,
