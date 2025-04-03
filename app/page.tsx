@@ -15,13 +15,13 @@ export default function DashboardPage() {
 
   return (
     <main className="p-4">
-      <div className="flex justify-between items-center mb-6">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 mb-6">
         <h1 className="text-xl font-bold">Free With Tech: Weekly Dashboard</h1>
         <a
-          href="https://www.buymeacoffee.com/sampittko"
+          href="https://www.buymeacoffee.com/yourname"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm bg-yellow-400 hover:bg-yellow-300 text-black font-semibold py-1 px-3 rounded shadow"
+          className="text-sm bg-yellow-400 hover:bg-yellow-300 text-black font-semibold py-1 px-3 rounded shadow whitespace-nowrap"
         >
           ☕ Buy Me a Coffee
         </a>
