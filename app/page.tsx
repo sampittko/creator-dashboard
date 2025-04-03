@@ -7,6 +7,28 @@ export const metadata = {
   title: "Free With Tech – Weekly Creator Dashboard",
   description:
     "A transparent look behind the scenes of the Free With Tech project. Follow weekly progress, content publishing, time invested, and resources spent on building a public brand from scratch.",
+  openGraph: {
+    type: "website",
+    url: "https://dash.fwt.wtf",
+    title: "Free With Tech – Weekly Creator Dashboard",
+    description:
+      "A transparent look behind the scenes of the Free With Tech project. Follow weekly progress, content publishing, time invested, and resources spent on building a public brand from scratch.",
+    images: [
+      {
+        url: "https://dash.fwt.wtf/assets/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Free With Tech – Weekly Creator Dashboard",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Free With Tech – Weekly Creator Dashboard",
+    description:
+      "A transparent look behind the scenes of the Free With Tech project. Follow weekly progress, content publishing, time invested, and resources spent on building a public brand from scratch.",
+    images: ["https://dash.fwt.wtf/assets/og-image.png"],
+  },
 };
 
 export default function DashboardPage() {
