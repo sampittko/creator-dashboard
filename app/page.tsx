@@ -39,14 +39,16 @@ export default function DashboardPage() {
     <main className="p-4">
       <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 mb-6">
         <h1 className="text-xl font-bold"><a href="https://fwt.wtf/sign" target="_blank" className="underline hover:no-underline">Free With Tech</a> - Creator Dashboard</h1>
-        <a
-          href="https://www.buymeacoffee.com/sampittko"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-sm bg-yellow-400 hover:bg-yellow-300 text-black font-semibold py-1 px-3 rounded shadow whitespace-nowrap"
-        >
-          ☕ Buy Me a Coffee
-        </a>
+        <span>
+          View the project on{" "}
+          <a
+            href="https://github.com/sampittko/dash-fwtwtf-website"
+            target="_blank"
+            className="text-blue-600 underline hover:no-underline"
+          >
+            GitHub
+          </a>
+        </span>
       </div>
 
       <section className="mb-8 border rounded p-4">
@@ -164,15 +166,14 @@ export default function DashboardPage() {
       </div>
 
       <footer className="text-center text-sm text-gray-500 dark:text-gray-400">
-        View the project on{" "}
         <a
-          href="https://github.com/sampittko/dash-fwtwtf-website"
+          href="https://www.buymeacoffee.com/sampittko"
           target="_blank"
-          className="text-blue-600 underline"
+          rel="noopener noreferrer"
+          className="text-sm bg-yellow-400 hover:bg-yellow-300 text-black font-semibold py-1 px-3 rounded shadow whitespace-nowrap"
         >
-          GitHub
+          ☕ Buy Me a Coffee
         </a>
-        .
       </footer>
     </main>
   );
