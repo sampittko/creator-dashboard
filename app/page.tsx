@@ -60,7 +60,7 @@ export default function DashboardPage() {
             <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.hoursWorked}h/week)</span>
           </li>
           <li>
-            📅 Total Days Worked: {stats.totalDaysWorked}
+            📅 Total Days Worked: {stats.totalDaysWorked} (1 hour or more counts as a day worked)
             <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.daysWorked}/week)</span>
           </li>
           <li>
@@ -110,7 +110,7 @@ export default function DashboardPage() {
                 </div>
 
                 <div className="text-sm mt-1">
-                  <span className="font-medium">Time:</span> {Math.round(week.time.minutesWorked / 60)}h over {week.time.daysWorked} day(s)
+                  <span className="font-medium">Time:</span> {Math.round(week.time.minutesWorked / 60)}h over {week.time.daysWorked} day(s) (1 hour or more counts as a day worked)
                 </div>
 
                 <div className="text-sm mt-1">
