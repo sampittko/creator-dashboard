@@ -362,6 +362,27 @@
   },
   {
     "weekId": "2025-W14",
+    "topic": "Beat Social Media Addiction With a Two Phase Method",
+    "content": {
+      "blogPublished": true,
+      "videoPublished": true,
+      "videoTakes": 3,
+      "videoKilometersTraveled": 40,
+      "publishedAt": {
+        "blog": "2025-04-03",
+        "video": "2025-04-04"
+      }
+    },
+    "time": {
+      "minutesWorked": 1401,
+      "daysWorked": 4
+    },
+    "expenses": [],
+    "notes": "Most of the week centered around setting up membership tools and working on the main dashboard. A good chunk of time went into video creation and some AI-focused brainstorming. The rest was split across planning, publishing, and a mix of smaller tasks.",
+    "weekStatus": "perfect"
+  },
+  {
+    "weekId": "2025-W15",
     "topic": "",
     "content": {
       "blogPublished": false,

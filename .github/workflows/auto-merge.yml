@@ -2,8 +2,7 @@ name: Auto Merge Weekly PR
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
-  workflow_dispatch:
+    - cron: '0 0 * * 6'
 
 jobs:
   auto-merge:
