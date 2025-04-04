@@ -17,12 +17,6 @@ jobs:
           sudo apt update
           sudo apt install gh -y
 
-      - name: Authenticate GitHub CLI
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          echo $GH_TOKEN | gh auth login --with-token
-
       - name: Merge PRs with 'weekly-update' label
         run: |
           prs=$(gh pr list --label "weekly-update" --state open --json number -q '.[].number')
