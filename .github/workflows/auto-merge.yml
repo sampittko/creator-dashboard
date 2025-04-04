@@ -19,7 +19,7 @@ jobs:
 
       - name: Merge PRs with 'weekly-update' label
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           prs=$(gh pr list --label "weekly-update" --state open --json number -q '.[].number')
           for pr in $prs; do
