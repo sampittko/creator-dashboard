@@ -377,7 +377,13 @@
       "minutesWorked": 1440,
       "daysWorked": 4
     },
-    "expenses": [],
+    "expenses": [
+      {
+        "label": "Fuel",
+        "type": "travel",
+        "amountEUR": 5.70
+      }
+    ],
     "notes": "Most of the week centered around setting up membership tools and working on the main dashboard. A good chunk of time went into video creation and some AI-focused brainstorming. The rest was split across planning, publishing, and a mix of smaller tasks.",
     "weekStatus": "perfect"
   },
