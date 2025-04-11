@@ -409,6 +409,11 @@
         "label": "Fuel",
         "type": "travel",
         "amountEUR": 3.10
+      },
+      {
+        "label": "Brainstorm meeting",
+        "type": "other",
+        "amountEUR": 8
       }
     ],
     "notes": "Recorded and transcribed my Tatry IT talk on Path to Digital Freedom. Pushed blog on Low Data Living. Met with another Samuel on visual identity. Had a beer with Jonathan to brainstorm an idea. Prepped gear, fixed fuel data, published video. Steady forward.",
