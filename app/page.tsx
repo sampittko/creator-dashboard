@@ -65,7 +65,7 @@ export default function DashboardPage() {
           </li>
           <li>
             🎬 Total Video Takes: {stats.totalVideoTakes}
-            <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.videoTakes}/week in {stats.videoWeeks} video weeks)</span>
+            <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.videoTakes}/week in {stats.videoWeeks} video weeks)</span>  <i>&ldquo;Bring value. Next action. Repeat.&rdquo;</i>
           </li>
           <li>
             🚗 Total Travel Distance for Video Recording: {stats.totalVideoKilometersTraveled}km
@@ -73,7 +73,7 @@ export default function DashboardPage() {
           </li>
           <li>
             💸 Total Expenses: €{stats.totalExpenses.all.toFixed(2)}
-            <span className="text-gray-500 dark:text-gray-400"> (avg €{stats.averages.expenses}/week)</span>
+            <span className="text-gray-500 dark:text-gray-400"> (avg €{stats.averages.expenses}/week)</span> <i>&ldquo;Put your money where your mouth is.&rdquo;</i>
           </li>
           <li>
             📝 Blogs Published: {stats.totalContent.blogCount}
@@ -85,7 +85,7 @@ export default function DashboardPage() {
           </li>
           <li>🔥 Perfect Weeks: {stats.totalContent.perfectWeeks}</li>
           <li>⚡ Current Streak: {stats.streaks?.current ?? 0}</li>
-          <li>🏆 Longest Streak: {stats.streaks?.longest ?? 0}</li>
+          <li>🏆 Longest Streak: {stats.streaks?.longest ?? 0}  <i>&ldquo;Don&apos;t break the chain.&rdquo;</i></li>
         </ul>
       </section>
 
