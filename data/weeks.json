@@ -421,6 +421,38 @@
   },
   {
     "weekId": "2025-W16",
+    "topic": "Reclaim Your Digital Footprint and Own Your Online Life",
+    "content": {
+      "blogPublished": true,
+      "videoPublished": true,
+      "videoTakes": 12,
+      "videoKilometersTraveled": 11,
+      "publishedAt": {
+        "blog": "2025-04-17",
+        "video": "2025-04-18"
+      }
+    },
+    "time": {
+      "minutesWorked": 1304,
+      "daysWorked": 3
+    },
+    "expenses": [
+      {
+        "label": "Fuel",
+        "type": "travel",
+        "amountEUR": 1.60
+      },
+      {
+        "label": "Taller iPhone tripod",
+        "type": "equipment",
+        "amountEUR": 57.56
+      }
+    ],
+    "notes": "Focused on FWT branding strategy, sloboda.digital podcast production, and YouTube + Substack content publishing, alongside project management, platform updates, and social media setup across multiple ventures.",
+    "weekStatus": "perfect"
+  },
+  {
+    "weekId": "2025-W17",
     "topic": "",
     "content": {
       "blogPublished": false,
