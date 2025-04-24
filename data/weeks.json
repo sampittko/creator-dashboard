@@ -455,6 +455,33 @@
     "weekId": "2025-W17",
     "topic": "",
     "content": {
+      "blogPublished": true,
+      "videoPublished": true,
+      "videoTakes": 5,
+      "videoKilometersTraveled": 42,
+      "publishedAt": {
+        "blog": "2025-04-24",
+        "video": "2025-04-25"
+      }
+    },
+    "time": {
+      "minutesWorked": 0,
+      "daysWorked": 0
+    },
+    "expenses": [
+      {
+        "label": "Fuel",
+        "type": "travel",
+        "amountEUR": 6.10
+      }
+    ],
+    "notes": "",
+    "weekStatus": "perfect"
+  },
+  {
+    "weekId": "2025-W18",
+    "topic": "",
+    "content": {
       "blogPublished": false,
       "videoPublished": false,
       "videoTakes": 0,
