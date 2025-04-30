@@ -505,6 +505,10 @@
       "publishedAt": {
         "blog": "2025-05-01",
         "video": "2025-05-02"
+      },
+      "links": {
+        "blogUrl": "https://fwt.wtf/slow-your-scroll",
+        "videoUrl": "https://fwt.wtf/slow-your-scroll-video"
       }
     },
     "time": {
