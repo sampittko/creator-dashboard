@@ -70,9 +70,9 @@ export default function DashboardPage() {
         <span>
           View this <span className="font-bold">Creator Dashboard</span> on{" "}
           <a
-            href="https://github.com/sampittko/dash-fwtwtf-website"
+            href="https://github.com/sampittko/creator-dashboard"
             target="_blank"
-            className="text-[#CEBAF4] underline hover:no-underline"
+            className="text-sm bg-[#CEBAF4] hover:bg-[#DBF631] text-black font-bold py-1 px-3 rounded shadow whitespace-nowrap"
           >
             GitHub
           </a>
@@ -197,7 +197,6 @@ export default function DashboardPage() {
         <a
           href="https://www.buymeacoffee.com/sampittko"
           target="_blank"
-          rel="noopener noreferrer"
           className="text-sm bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-1 px-3 rounded shadow whitespace-nowrap"
         >
           ☕ Buy Me a Coffee
