@@ -371,6 +371,10 @@
       "publishedAt": {
         "blog": "2025-04-03",
         "video": "2025-04-04"
+      },
+      "links": {
+        "blogUrl": "https://fwt.wtf/outsmart-the-feed",
+        "videoUrl": "https://fwt.wtf/outsmart-the-feed-video"
       }
     },
     "time": {
@@ -398,6 +402,10 @@
       "publishedAt": {
         "blog": "2025-04-10",
         "video": "2025-04-11"
+      },
+      "links": {
+        "blogUrl": "https://fwt.wtf/low-data-living",
+        "videoUrl": "https://fwt.wtf/low-data-living-video"
       }
     },
     "time": {
@@ -430,6 +438,10 @@
       "publishedAt": {
         "blog": "2025-04-17",
         "video": "2025-04-18"
+      },
+      "links": {
+        "blogUrl": "https://fwt.wtf/choose-your-digital-path",
+        "videoUrl": "https://fwt.wtf/choose-your-digital-path-video"
       }
     },
     "time": {
@@ -462,6 +474,10 @@
       "publishedAt": {
         "blog": "2025-04-24",
         "video": "2025-04-25"
+      },
+      "links": {
+        "blogUrl": "https://fwt.wtf/break-the-default",
+        "videoUrl": "https://fwt.wtf/break-the-default-video"
       }
     },
     "time": {
