@@ -154,7 +154,7 @@ export default function DashboardPage() {
                     <a
                       href={week.content.links?.blogUrl}
                       target="_blank"
-                      className="text-[#CEBAF4] underline mr-2"
+                      className="text-[#CEBAF4] hover:text-[#DBF631] hover:no-underline underline mr-2"
                     >
                       Blog
                     </a>
@@ -163,7 +163,7 @@ export default function DashboardPage() {
                     <a
                       href={week.content.links?.videoUrl}
                       target="_blank"
-                      className="text-[#CEBAF4] underline"
+                      className="text-[#CEBAF4] hover:text-[#DBF631] hover:no-underline underline"
                     >
                       Video
                     </a>
