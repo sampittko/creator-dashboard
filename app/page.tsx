@@ -68,11 +68,11 @@ export default function DashboardPage() {
         </a>
 
         <span>
-          View the project on{" "}
+          View this <span className="font-bold">Creator Dashboard</span> on{" "}
           <a
             href="https://github.com/sampittko/dash-fwtwtf-website"
             target="_blank"
-            className="text-blue-600 underline hover:no-underline"
+            className="text-[#CEBAF4] underline hover:no-underline"
           >
             GitHub
           </a>
@@ -80,7 +80,7 @@ export default function DashboardPage() {
       </div>
 
       <section className="mb-8 border rounded p-4">
-        <h2 className="text-lg font-semibold mb-2">📊 Aggregated Stats</h2>
+        <h2 className="text-lg font-bold mb-2">📊 Aggregated Stats</h2>
         <ul className="text-sm space-y-1">
           <li>📆 Total Project Weeks: {stats.totalProjectWeeks}</li>
           <li>
@@ -88,8 +88,8 @@ export default function DashboardPage() {
             <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.hoursWorked}h/week)</span>
           </li>
           <li>
-            📅 Total Days Worked: {stats.totalDaysWorked} (1 hour or more counts as a day worked)
-            <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.daysWorked}/week)</span>
+            📅 Total Days Worked: {stats.totalDaysWorked}
+            <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.daysWorked}/week)</span> (1 hour or more counts as a day worked)
           </li>
           <li>
             🎬 Total Video Takes: {stats.totalVideoTakes}
@@ -123,12 +123,12 @@ export default function DashboardPage() {
         {weeks.map((week) => (
           <div key={week.weekId} className="border rounded p-4">
             <div className="text-sm text-gray-500 dark:text-gray-400">{week.weekId}</div>
-            <div className="font-semibold">
+            <div className="font-bold">
               {week.topic || "—"}
             </div>
 
             {week.weekStatus === "pending" ? (
-              <div className="mt-2 text-sm text-blue-700 bg-blue-100 border border-blue-300 rounded p-2">
+              <div className="mt-2 text-sm text-[#333] bg-[#CEBAF4] rounded p-2">
                 ⏳ Data is added every Saturday. Check back soon!
               </div>
             ) : (
@@ -138,7 +138,7 @@ export default function DashboardPage() {
                 </div>
 
                 <div className="text-sm mt-1">
-                  <span className="font-medium">Time:</span> {Math.round(week.time.minutesWorked / 60)}h over {week.time.daysWorked} day(s) (1 hour or more counts as a day worked)
+                  <span className="font-medium">Time:</span> {Math.round(week.time.minutesWorked / 60)}h over {week.time.daysWorked} day(s)
                 </div>
 
                 <div className="text-sm mt-1">
@@ -154,7 +154,7 @@ export default function DashboardPage() {
                     <a
                       href={week.content.links?.blogUrl}
                       target="_blank"
-                      className="text-blue-600 underline mr-2"
+                      className="text-[#CEBAF4] underline mr-2"
                     >
                       Blog
                     </a>
@@ -163,7 +163,7 @@ export default function DashboardPage() {
                     <a
                       href={week.content.links?.videoUrl}
                       target="_blank"
-                      className="text-blue-600 underline"
+                      className="text-[#CEBAF4] underline"
                     >
                       Video
                     </a>
@@ -198,7 +198,7 @@ export default function DashboardPage() {
           href="https://www.buymeacoffee.com/sampittko"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm bg-yellow-400 hover:bg-yellow-300 text-black font-semibold py-1 px-3 rounded shadow whitespace-nowrap"
+          className="text-sm bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-1 px-3 rounded shadow whitespace-nowrap"
         >
           ☕ Buy Me a Coffee
         </a>
