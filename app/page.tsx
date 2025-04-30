@@ -4,29 +4,29 @@ import { getAggregatedStats } from "@/lib/stats";
 import { YearGrid } from "./components/year-grid";
 
 export const metadata = {
-  title: "Free With Tech – Creator Dashboard",
+  title: "free with tech – Creator Dashboard",
   description:
-    "A transparent look behind the scenes of the Free With Tech project. Follow weekly progress, content publishing, time invested, and resources spent on building a public brand from scratch.",
+    "A transparent look behind the scenes of the free with tech project. Follow weekly progress, content publishing, time invested, and resources spent on building a public brand from scratch.",
   openGraph: {
     type: "website",
     url: "https://dash.fwt.wtf",
-    title: "Free With Tech – Creator Dashboard",
+    title: "free with tech – Creator Dashboard",
     description:
-      "A transparent look behind the scenes of the Free With Tech project. Follow weekly progress, content publishing, time invested, and resources spent on building a public brand from scratch.",
+      "A transparent look behind the scenes of the free with tech project. Follow weekly progress, content publishing, time invested, and resources spent on building a public brand from scratch.",
     images: [
       {
         url: "https://dash.fwt.wtf/assets/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Free With Tech – Creator Dashboard",
+        alt: "free with tech – Creator Dashboard",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Free With Tech – Creator Dashboard",
+    title: "free with tech – Creator Dashboard",
     description:
-      "A transparent look behind the scenes of the Free With Tech project. Follow weekly progress, content publishing, time invested, and resources spent on building a public brand from scratch.",
+      "A transparent look behind the scenes of the free with tech project. Follow weekly progress, content publishing, time invested, and resources spent on building a public brand from scratch.",
     images: ["https://dash.fwt.wtf/assets/og-image.png"],
   },
 };
