@@ -37,7 +37,7 @@ export default function DashboardPage() {
 
   return (
     <main className="p-4">
-      <div className="flex flex-col items-center sm:flex-row sm:justify-between sm:items-center gap-2 mb-6">
+      <div className="flex flex-col items-center gap-1 mb-6">
         <a href="https://fwt.wtf" target="_blank" title="YouTube channel" className="group max-w-[490px] w-full h-auto">
           <svg
             xmlns="http://www.w3.org/2000/svg"
