@@ -72,7 +72,7 @@ export default function DashboardPage() {
           <a
             href="https://github.com/sampittko/creator-dashboard"
             target="_blank"
-            className="text-sm bg-[#CEBAF4] hover:bg-transparent text-black font-bold py-1 px-3 rounded shadow whitespace-nowrap"
+            className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] font-bold py-1 px-3 rounded shadow whitespace-nowrap"
           >
             GitHub
           </a>
@@ -154,7 +154,7 @@ export default function DashboardPage() {
                     <a
                       href={week.content.links?.videoUrl}
                       target="_blank"
-                      className="text-sm bg-[#CEBAF4] hover:bg-transparent text-black font-bold py-1 px-3 rounded shadow whitespace-nowrap"
+                      className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] font-bold py-1 px-3 rounded shadow whitespace-nowrap"
                     >
                       Video
                     </a>
@@ -163,7 +163,7 @@ export default function DashboardPage() {
                     <a
                       href={week.content.links?.blogUrl}
                       target="_blank"
-                      className="text-sm bg-[#CEBAF4] hover:bg-transparent text-black font-bold py-1 px-3 rounded shadow whitespace-nowrap"
+                      className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] font-bold py-1 px-3 rounded shadow whitespace-nowrap"
                     >
                       Blog
                     </a>
