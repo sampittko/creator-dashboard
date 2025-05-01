@@ -72,7 +72,7 @@ export default function DashboardPage() {
           <a
             href="https://github.com/sampittko/creator-dashboard"
             target="_blank"
-            className="text-sm bg-[#CEBAF4] hover:bg-[#DBF631] text-black font-bold py-1 px-3 rounded shadow whitespace-nowrap"
+            className="text-sm bg-[#CEBAF4] hover:bg-transparent text-black font-bold py-1 px-3 rounded shadow whitespace-nowrap"
           >
             GitHub
           </a>
@@ -149,23 +149,23 @@ export default function DashboardPage() {
                   <span className="font-medium">Travel Distance for Video Recording:</span> {week.content.videoKilometersTraveled}km
                 </div>
 
-                <div className="text-sm mt-2">
-                  {week.content.blogPublished && (
-                    <a
-                      href={week.content.links?.blogUrl}
-                      target="_blank"
-                      className="text-[#CEBAF4] hover:text-[#DBF631] hover:no-underline underline mr-2"
-                    >
-                      Blog
-                    </a>
-                  )}
+                <div className="text-sm mt-2 space-x-1">
                   {week.content.videoPublished && (
                     <a
                       href={week.content.links?.videoUrl}
                       target="_blank"
-                      className="text-[#CEBAF4] hover:text-[#DBF631] hover:no-underline underline"
+                      className="text-sm bg-[#CEBAF4] hover:bg-transparent text-black font-bold py-1 px-3 rounded shadow whitespace-nowrap"
                     >
                       Video
+                    </a>
+                  )}
+                  {week.content.blogPublished && (
+                    <a
+                      href={week.content.links?.blogUrl}
+                      target="_blank"
+                      className="text-sm bg-[#CEBAF4] hover:bg-transparent text-black font-bold py-1 px-3 rounded shadow whitespace-nowrap"
+                    >
+                      Blog
                     </a>
                   )}
                 </div>
