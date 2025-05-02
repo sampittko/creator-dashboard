@@ -1,5 +1,4 @@
 import originalWeeks from "@/data/weeks.json";
-import { ExpenseType } from "@/types";
 
 export function getAggregatedStats() {
   const weeks = [...originalWeeks];
@@ -19,16 +18,6 @@ export function getAggregatedStats() {
     totalDaysWorked: 0,
     totalVideoTakes: 0,
     totalVideoKilometersTraveled: 0,
-    totalExpenses: {
-      all: 0,
-      byType: {
-        travel: 0,
-        equipment: 0,
-        subscription: 0,
-        website: 0,
-        other: 0,
-      } as Record<ExpenseType, number>,
-    },
     totalContent: {
       blogCount: 0,
       videoCount: 0,
@@ -47,7 +36,6 @@ export function getAggregatedStats() {
       daysWorked: 0,
       videoTakes: 0,
       videoKilometersTraveled: 0,
-      expenses: 0,
       blogs: 0,
       videos: 0,
     }
@@ -66,13 +54,6 @@ export function getAggregatedStats() {
 
     if (week.weekStatus === "perfect") {
       stats.totalContent.perfectWeeks++;
-    }
-
-    for (const exp of week.expenses || []) {
-      const amount = exp.amountEUR || 0;
-      const type = exp.type as ExpenseType;
-      stats.totalExpenses.all += amount;
-      stats.totalExpenses.byType[type] = (stats.totalExpenses.byType[type] || 0) + amount;
     }
   }
 
@@ -101,7 +82,6 @@ export function getAggregatedStats() {
   stats.averages.daysWorked = average(stats.totalDaysWorked, activeWeeks);
   stats.averages.videoTakes = average(stats.totalVideoTakes, videoWeeks);
   stats.averages.videoKilometersTraveled = average(stats.totalVideoKilometersTraveled, videoWeeks);
-  stats.averages.expenses = average(stats.totalExpenses.all, activeWeeks);
   stats.averages.blogs = average(stats.totalContent.blogCount, blogWeeks);
   stats.averages.videos = average(stats.totalContent.videoCount, videoWeeks);
 
