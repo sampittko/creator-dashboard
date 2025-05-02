@@ -392,13 +392,6 @@
       "minutesWorked": 0,
       "daysWorked": 0
     },
-    "expenses": [
-      {
-        "label": "Fuel",
-        "type": "travel",
-        "amountEUR": 18
-      }
-    ],
     "notes": "",
     "weekStatus": "perfect"
   },
