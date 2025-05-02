@@ -30,24 +30,9 @@ export interface WeeklyEntry {
     daysWorked: number;
   };
 
-  expenses: ExpenseEntry[];
-
   notes?: string;
 
   weekStatus: WeekStatus;
-}
-
-export type ExpenseType =
-  | "travel"
-  | "equipment"
-  | "subscription"
-  | "website"
-  | "other";
-
-export interface ExpenseEntry {
-  label: string;
-  type: ExpenseType;
-  amountEUR: number;
 }
 
 export interface AggregatedStats {
@@ -55,11 +40,6 @@ export interface AggregatedStats {
   totalDaysWorked: number;
   totalVideoTakes: number;
   totalVideoKilometersTraveled: number;
-
-  totalExpenses: {
-    all: number;
-    byType: Record<ExpenseType, number>;
-  };
 
   totalContent: {
     blogCount: number;

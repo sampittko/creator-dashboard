@@ -9,7 +9,6 @@ A transparent, open-source dashboard to track the weekly progress of building a 
 - Topics covered
 - Hours & days worked
 - Blog and video publishing activity
-- Expenses made
 - Creator streaks and progress metrics
 
 It’s part experiment, part accountability, part resource for other creators.
