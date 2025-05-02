@@ -50,7 +50,6 @@ export function YearGrid() {
         links: {}
       },
       time: existing?.time || { minutesWorked: 0, daysWorked: 0 },
-      expenses: existing?.expenses || [],
       notes: existing?.notes || "",
       weekStatus: status,
     };

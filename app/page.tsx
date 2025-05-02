@@ -100,10 +100,6 @@ export default function DashboardPage() {
             <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.videoKilometersTraveled}km/week in {stats.videoWeeks} video weeks)</span>
           </li>
           <li>
-            💸 Total Expenses: €{stats.totalExpenses.all.toFixed(2)}
-            <span className="text-gray-500 dark:text-gray-400"> (avg €{stats.averages.expenses}/week)</span> <i>&ldquo;Put your money where your mouth is.&rdquo;</i>
-          </li>
-          <li>
             📝 Blogs Published: {stats.totalContent.blogCount}
             <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.blogs}/week in {stats.blogWeeks} blog weeks)</span>
           </li>
@@ -169,19 +165,6 @@ export default function DashboardPage() {
                     </a>
                   )}
                 </div>
-
-                {week.expenses.length > 0 && (
-                  <div className="mt-2 text-sm">
-                    <div className="font-medium">Expenses:</div>
-                    <ul className="ml-4 list-disc">
-                      {week.expenses.map((exp, i) => (
-                        <li key={i}>
-                          {exp.label} — €{exp.amountEUR.toFixed(2)} <span className="text-gray-500 dark:text-gray-400">({exp.type})</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
 
                 <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 whitespace-pre-wrap">
                   {week.notes || "No notes for this week."}
