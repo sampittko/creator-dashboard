@@ -373,6 +373,30 @@
   },
   {
     "weekId": "2025-W18",
+    "topic": "Intentional Friction When Using Addictive Apps",
+    "content": {
+      "blogPublished": true,
+      "videoPublished": true,
+      "videoTakes": 4,
+      "videoKilometersTraveled": 124,
+      "publishedAt": {
+        "blog": "2025-05-01",
+        "video": "2025-05-02"
+      },
+      "links": {
+        "blogUrl": "https://fwt.wtf/slow-your-scroll",
+        "videoUrl": "https://fwt.wtf/slow-your-scroll-video"
+      }
+    },
+    "time": {
+      "minutesWorked": 1580,
+      "daysWorked": 5
+    },
+    "notes": "This week, I focused on video production, project management, and visual identity updates for the FWT project. I worked on refining the style guide, provided Figma feedback, and helped organize branding assets like stickers and avatar frames. I also managed fan communication and publishing tasks across channels.",
+    "weekStatus": "perfect"
+  },
+  {
+    "weekId": "2025-W19",
     "topic": "",
     "content": {
       "blogPublished": false,
