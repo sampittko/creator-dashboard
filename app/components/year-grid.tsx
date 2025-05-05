@@ -6,7 +6,10 @@ import { getISOWeek, getISOWeekYear } from "date-fns";
 const projectStartWeek = "2025-W04";
 
 function generateAllWeekIds(year: number): string[] {
-  return Array.from({ length: 52 }, (_, i) => `${year}-W${String(i + 1).padStart(2, "0")}`);
+  return Array.from(
+    { length: 52 },
+    (_, i) => `${year}-W${String(i + 1).padStart(2, "0")}`
+  );
 }
 
 function getCurrentWeekId(): string {
@@ -37,7 +40,11 @@ export function YearGrid() {
 
   const mergedWeeks = allWeeks.map((weekId) => {
     const existing = weeksMap.get(weekId);
-    const status = simpleWeekStatus(weekId, currentWeekId, existing?.weekStatus);
+    const status = simpleWeekStatus(
+      weekId,
+      currentWeekId,
+      existing?.weekStatus
+    );
 
     return {
       weekId,
@@ -47,9 +54,9 @@ export function YearGrid() {
         videoPublished: false,
         videoTakes: 0,
         publishedAt: {},
-        links: {}
+        links: {},
       },
-      time: existing?.time || { minutesWorked: 0, daysWorked: 0 },
+      time: existing?.time || { minutesWorked: 0 },
       notes: existing?.notes || "",
       weekStatus: status,
     };
@@ -63,15 +70,17 @@ export function YearGrid() {
           <div
             key={week.weekId}
             title={`${week.weekId}${week.topic ? " — " + week.topic : ""}`}
-            className={`w-6 h-6 flex items-center justify-center border rounded cursor-help ${week.weekStatus === "not_started" ? "text-gray-400" : ""
-              }`}
+            className={`w-6 h-6 flex items-center justify-center border rounded cursor-help ${
+              week.weekStatus === "not_started" ? "text-gray-400" : ""
+            }`}
           >
             {statusToEmoji(week.weekStatus)}
           </div>
         ))}
       </div>
       <div className="text-xs text-gray-500 dark:text-gray-400 mt-2">
-        ✅ Perfect &nbsp; ⚠️ Incomplete &nbsp; ❌ Skipped &nbsp; 🕒 Pending &nbsp; ◻️ Future &nbsp; ▫️ Not started
+        ✅ Perfect &nbsp; ⚠️ Incomplete &nbsp; ❌ Skipped &nbsp; 🕒 Pending
+        &nbsp; ◻️ Future &nbsp; ▫️ Not started
       </div>
     </section>
   );

@@ -27,7 +27,6 @@ export interface WeeklyEntry {
 
   time: {
     minutesWorked: number;
-    daysWorked: number;
   };
 
   notes?: string;
@@ -37,7 +36,6 @@ export interface WeeklyEntry {
 
 export interface AggregatedStats {
   totalMinutesWorked: number;
-  totalDaysWorked: number;
   totalVideoTakes: number;
   totalVideoKilometersTraveled: number;
 

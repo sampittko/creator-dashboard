@@ -7,7 +7,7 @@ A transparent, open-source dashboard to track the weekly progress of building a 
 [**free with tech**](https://fwt.wtf) is about showing the real journey behind building something online. The dashboard shows week-by-week:
 
 - Topics covered
-- Hours & days worked
+- Hours worked
 - Blog and video publishing activity
 - Creator streaks and progress metrics
 

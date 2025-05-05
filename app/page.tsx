@@ -38,7 +38,12 @@ export default function DashboardPage() {
   return (
     <main className="p-4">
       <div className="flex flex-col items-center gap-1 mb-6">
-        <a href="https://fwt.wtf" target="_blank" title="YouTube channel" className="group max-w-[490px] w-full h-auto">
+        <a
+          href="https://fwt.wtf"
+          target="_blank"
+          title="YouTube channel"
+          className="group max-w-[490px] w-full h-auto"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 490 116"
@@ -85,31 +90,50 @@ export default function DashboardPage() {
           <li>📆 Total Project Weeks: {stats.totalProjectWeeks}</li>
           <li>
             🕒 Total Hours Worked: {stats.totalHoursWorked}h
-            <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.hoursWorked}h/week)</span>
-          </li>
-          <li>
-            📅 Total Days Worked: {stats.totalDaysWorked}
-            <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.daysWorked}/week)</span> (1 hour or more counts as a day worked)
+            <span className="text-gray-500 dark:text-gray-400">
+              {" "}
+              (avg {stats.averages.hoursWorked}h/week)
+            </span>
           </li>
           <li>
             🎬 Total Video Takes: {stats.totalVideoTakes}
-            <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.videoTakes}/week in {stats.videoWeeks} video weeks)</span>  <i>&ldquo;Bring value. Next action. Repeat.&rdquo;</i>
+            <span className="text-gray-500 dark:text-gray-400">
+              {" "}
+              (avg {stats.averages.videoTakes}/week in {stats.videoWeeks} video
+              weeks)
+            </span>{" "}
+            <i>&ldquo;Bring value. Next action. Repeat.&rdquo;</i>
           </li>
           <li>
-            🚗 Total Travel Distance for Video Recording: {stats.totalVideoKilometersTraveled}km
-            <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.videoKilometersTraveled}km/week in {stats.videoWeeks} video weeks)</span>
+            🚗 Total Travel Distance for Video Recording:{" "}
+            {stats.totalVideoKilometersTraveled}km
+            <span className="text-gray-500 dark:text-gray-400">
+              {" "}
+              (avg {stats.averages.videoKilometersTraveled}km/week in{" "}
+              {stats.videoWeeks} video weeks)
+            </span>
           </li>
           <li>
             📝 Blogs Published: {stats.totalContent.blogCount}
-            <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.blogs}/week in {stats.blogWeeks} blog weeks)</span>
+            <span className="text-gray-500 dark:text-gray-400">
+              {" "}
+              (avg {stats.averages.blogs}/week in {stats.blogWeeks} blog weeks)
+            </span>
           </li>
           <li>
             📹 Videos Published: {stats.totalContent.videoCount}
-            <span className="text-gray-500 dark:text-gray-400"> (avg {stats.averages.videos}/week in {stats.videoWeeks} video weeks)</span>
+            <span className="text-gray-500 dark:text-gray-400">
+              {" "}
+              (avg {stats.averages.videos}/week in {stats.videoWeeks} video
+              weeks)
+            </span>
           </li>
           <li>🔥 Perfect Weeks: {stats.totalContent.perfectWeeks}</li>
           <li>⚡ Current Streak: {stats.streaks?.current ?? 0}</li>
-          <li>🏆 Longest Streak: {stats.streaks?.longest ?? 0}  <i>&ldquo;Don&apos;t break the chain.&rdquo;</i></li>
+          <li>
+            🏆 Longest Streak: {stats.streaks?.longest ?? 0}{" "}
+            <i>&ldquo;Don&apos;t break the chain.&rdquo;</i>
+          </li>
         </ul>
       </section>
 
@@ -118,10 +142,10 @@ export default function DashboardPage() {
       <div className="grid gap-4 mb-4">
         {weeks.map((week) => (
           <div key={week.weekId} className="border rounded p-4">
-            <div className="text-sm text-gray-500 dark:text-gray-400">{week.weekId}</div>
-            <div className="font-bold">
-              {week.topic || "—"}
+            <div className="text-sm text-gray-500 dark:text-gray-400">
+              {week.weekId}
             </div>
+            <div className="font-bold">{week.topic || "—"}</div>
 
             {week.weekStatus === "pending" ? (
               <div className="mt-2 text-sm text-[#333] bg-[#CEBAF4] rounded p-2">
@@ -134,15 +158,20 @@ export default function DashboardPage() {
                 </div>
 
                 <div className="text-sm mt-1">
-                  <span className="font-medium">Time:</span> {Math.round(week.time.minutesWorked / 60)}h over {week.time.daysWorked} day(s)
+                  <span className="font-medium">Time:</span>{" "}
+                  {Math.round(week.time.minutesWorked / 60)}h
                 </div>
 
                 <div className="text-sm mt-1">
-                  <span className="font-medium">Video Takes:</span> {week.content.videoTakes}
+                  <span className="font-medium">Video Takes:</span>{" "}
+                  {week.content.videoTakes}
                 </div>
 
                 <div className="text-sm mt-1">
-                  <span className="font-medium">Travel Distance for Video Recording:</span> {week.content.videoKilometersTraveled}km
+                  <span className="font-medium">
+                    Travel Distance for Video Recording:
+                  </span>{" "}
+                  {week.content.videoKilometersTraveled}km
                 </div>
 
                 <div className="text-sm mt-2 space-x-1">
@@ -172,7 +201,6 @@ export default function DashboardPage() {
               </>
             )}
           </div>
-
         ))}
       </div>
 
