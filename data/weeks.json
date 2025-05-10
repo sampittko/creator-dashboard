@@ -379,6 +379,29 @@
   },
   {
     "weekId": "2025-W19",
+    "topic": "Living in the Moment Starts with Your Notification Settings",
+    "content": {
+      "blogPublished": true,
+      "videoPublished": true,
+      "videoTakes": 10,
+      "videoKilometersTraveled": 32,
+      "publishedAt": {
+        "blog": "2025-05-08",
+        "video": "2025-05-09"
+      },
+      "links": {
+        "blogUrl": "https://fwt.wtf/cut-the-spam",
+        "videoUrl": "https://fwt.wtf/cut-the-spam-video"
+      }
+    },
+    "time": {
+      "minutesWorked": 1548
+    },
+    "notes": "",
+    "weekStatus": "perfect"
+  },
+  {
+    "weekId": "2025-W20",
     "topic": "",
     "content": {
       "blogPublished": false,
