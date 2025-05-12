@@ -196,7 +196,7 @@ export default function DashboardPage() {
                 </div>
 
                 <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 whitespace-pre-wrap">
-                  {week.notes || "No notes for this week."}
+                  Weekly win(s): {week.wins || "None documented"}
                 </div>
               </>
             )}

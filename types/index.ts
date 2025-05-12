@@ -29,7 +29,7 @@ export interface WeeklyEntry {
     minutesWorked: number;
   };
 
-  notes?: string;
+  wins?: string;
 
   weekStatus: WeekStatus;
 }

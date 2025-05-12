@@ -57,7 +57,7 @@ export function YearGrid() {
         links: {},
       },
       time: existing?.time || { minutesWorked: 0 },
-      notes: existing?.notes || "",
+      wins: existing?.wins || "",
       weekStatus: status,
     };
   });

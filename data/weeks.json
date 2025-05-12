@@ -12,7 +12,6 @@
     "time": {
       "minutesWorked": 0
     },
-    "notes": "",
     "weekStatus": "not_started"
   },
   {
@@ -28,7 +27,6 @@
     "time": {
       "minutesWorked": 0
     },
-    "notes": "",
     "weekStatus": "not_started"
   },
   {
@@ -44,7 +42,6 @@
     "time": {
       "minutesWorked": 0
     },
-    "notes": "",
     "weekStatus": "not_started"
   },
   {
@@ -60,7 +57,6 @@
     "time": {
       "minutesWorked": 0
     },
-    "notes": "",
     "weekStatus": "not_started"
   },
   {
@@ -81,7 +77,6 @@
     "time": {
       "minutesWorked": 487
     },
-    "notes": "Progressed through 7 Day Creator course from David Boland, supported by brainstorming and consistent content drafting sessions. Maintained momentum with blog writing and reflective planning sessions.",
     "weekStatus": "incomplete"
   },
   {
@@ -102,7 +97,6 @@
     "time": {
       "minutesWorked": 815
     },
-    "notes": "Focused heavily on article headline work (45% of time); balanced remainder across blog writing, mindmapping, Substack setup, and content planning (YouTube, socials, community).",
     "weekStatus": "incomplete"
   },
   {
@@ -123,7 +117,6 @@
     "time": {
       "minutesWorked": 635
     },
-    "notes": "Balanced content creation (blogs #3\u20134, personal journey), strategic planning (linear setup, FWT shortlinks), and technical setup (mic + tripod). Manifesto writing and reflection also played a key role.",
     "weekStatus": "incomplete"
   },
   {
@@ -144,7 +137,6 @@
     "time": {
       "minutesWorked": 1297
     },
-    "notes": "Deep focus on building the manifesto website, complemented by branding ideation, video content creation, and business learning. Balanced execution and creative thinking with foundational setup tasks.",
     "weekStatus": "incomplete"
   },
   {
@@ -167,7 +159,6 @@
     "time": {
       "minutesWorked": 1599
     },
-    "notes": "Heavy focus on video production\u2014rehearsals, recording, editing, and publishing\u2014paired with manifesto site progress and brand communication. Rounded out with email setup, and YouTube research for creative expansion.",
     "weekStatus": "perfect"
   },
   {
@@ -190,7 +181,6 @@
     "time": {
       "minutesWorked": 1356
     },
-    "notes": "Strong focus on YouTube content pipeline\u2014scripting, recording, publishing, and promotion\u2014paired with social media work (X threads, branding, engagement). Significant time also spent refining content strategy, weekly planning, and assets cleanup.",
     "weekStatus": "perfect"
   },
   {
@@ -213,7 +203,6 @@
     "time": {
       "minutesWorked": 1413
     },
-    "notes": "Focused heavily on brand visuals (thumbnails, feel), manifesto updates, and scheduling systems (Buffer). Continued momentum on video production\u2014scripting, recording, publishing, alongside YouTube education and short planning bursts.",
     "weekStatus": "perfect"
   },
   {
@@ -236,7 +225,6 @@
     "time": {
       "minutesWorked": 1122
     },
-    "notes": "Continued video production workflow while beginning prep for the Tatry IT meetup\u2014drafting the presentation alongside scripting, recording, and publishing videos. Balanced creative output with foundational speaking prep.",
     "weekStatus": "perfect"
   },
   {
@@ -259,7 +247,6 @@
     "time": {
       "minutesWorked": 2143
     },
-    "notes": "Wrapped up video and blog tasks while presenting at the Tatry IT meetup\u2014finalized the presentation PDF, delivered the talk, and built supporting promotional websites including a quiz to engage the audience.",
     "weekStatus": "perfect"
   },
   {
@@ -282,7 +269,6 @@
     "time": {
       "minutesWorked": 1440
     },
-    "notes": "Most of the week centered around setting up membership tools and working on the main dashboard. A good chunk of time went into video creation and some AI-focused brainstorming. The rest was split across planning, publishing, and a mix of smaller tasks.",
     "weekStatus": "perfect"
   },
   {
@@ -305,7 +291,6 @@
     "time": {
       "minutesWorked": 1256
     },
-    "notes": "Recorded and transcribed my Tatry IT talk on Path to Digital Freedom. Pushed blog on Low Data Living. Met with another Samuel on visual identity. Had a beer with Jonathan to brainstorm an idea. Prepped gear, fixed fuel data, published video. Steady forward.",
     "weekStatus": "perfect"
   },
   {
@@ -328,7 +313,6 @@
     "time": {
       "minutesWorked": 1304
     },
-    "notes": "Focused on FWT branding strategy, sloboda.digital podcast production, and YouTube + Substack content publishing, alongside project management, platform updates, and social media setup across multiple ventures.",
     "weekStatus": "perfect"
   },
   {
@@ -351,7 +335,6 @@
     "time": {
       "minutesWorked": 973
     },
-    "notes": "I've been heavily involved in creating a blog post and a video. A significant amount of my time has also been dedicated to developing my brand and working on my digital presence. I've also spent time brainstorming content ideas and conducting research for a potential product.",
     "weekStatus": "perfect"
   },
   {
@@ -374,7 +357,7 @@
     "time": {
       "minutesWorked": 1580
     },
-    "notes": "This week, I focused on video production, project management, and visual identity updates for the FWT project. I worked on refining the style guide, provided Figma feedback, and helped organize branding assets like stickers and avatar frames. I also managed fan communication and publishing tasks across channels.",
+    "wins": "10 perfect weeks in a row; professional branding project finished",
     "weekStatus": "perfect"
   },
   {
@@ -397,7 +380,7 @@
     "time": {
       "minutesWorked": 1548
     },
-    "notes": "",
+    "wins": "11 perfect weeks in a row; thorough analysis within online courses landscape",
     "weekStatus": "perfect"
   },
   {
@@ -413,7 +396,7 @@
     "time": {
       "minutesWorked": 0
     },
-    "notes": "",
+    "wins": "",
     "weekStatus": "pending"
   }
 ]
