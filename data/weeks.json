@@ -389,6 +389,25 @@
   },
   {
     "weekId": "2025-W20",
+    "topic": "I’m a Software Engineer and I Was Addicted to Tech",
+    "content": {
+      "blogPublished": true,
+      "videoPublished": true,
+      "videoTakes": 12,
+      "videoKilometersTraveled": 62,
+      "publishedAt": {
+        "blog": "2025-05-15",
+        "video": "2025-05-16"
+      }
+    },
+    "time": {
+      "minutesWorked": 1287
+    },
+    "wins": "Bought 500 branded stickers",
+    "weekStatus": "perfect"
+  },
+  {
+    "weekId": "2025-W21",
     "topic": "",
     "content": {
       "blogPublished": false,
