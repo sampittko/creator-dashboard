@@ -398,6 +398,10 @@
       "publishedAt": {
         "blog": "2025-05-15",
         "video": "2025-05-16"
+      },
+      "links": {
+        "blogUrl": "https://fwt.wtf/engineers-regret",
+        "videoUrl": "https://fwt.wtf/engineers-regret-video"
       }
     },
     "time": {
@@ -414,7 +418,8 @@
       "videoPublished": false,
       "videoTakes": 0,
       "videoKilometersTraveled": 0,
-      "publishedAt": {}
+      "publishedAt": {},
+      "links": {}
     },
     "time": {
       "minutesWorked": 0
