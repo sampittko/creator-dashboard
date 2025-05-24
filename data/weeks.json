@@ -412,6 +412,29 @@
   },
   {
     "weekId": "2025-W21",
+    "topic": "Why I Still Use a Journal in a Digital World",
+    "content": {
+      "blogPublished": true,
+      "videoPublished": true,
+      "videoTakes": 3,
+      "videoKilometersTraveled": 42,
+      "publishedAt": {
+        "blog": "2025-05-23",
+        "video": "2025-05-23"
+      },
+      "links": {
+        "blogUrl": "https://fwt.wtf/the-analog-edge",
+        "videoUrl": "https://fwt.wtf/the-analog-edge-video"
+      }
+    },
+    "time": {
+      "minutesWorked": 1256
+    },
+    "wins": "Against all odds, I got the 13th video done and recorded—celebrating this small win",
+    "weekStatus": "perfect"
+  },
+  {
+    "weekId": "2025-W22",
     "topic": "",
     "content": {
       "blogPublished": false,
