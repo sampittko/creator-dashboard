@@ -147,46 +147,46 @@ export default function DashboardPage() {
             </div>
             <div className="font-bold">{week.topic || "—"}</div>
 
-            {week.weekStatus === "pending" ? (
+            {week.status === "pending" ? (
               <div className="mt-2 text-sm text-[#333] bg-[#CEBAF4] rounded p-2">
                 ⏳ Data is added every Saturday. Check back soon!
               </div>
             ) : (
               <>
                 <div className="text-sm mt-1">
-                  <span className="font-medium">Status:</span> {week.weekStatus}
+                  <span className="font-medium">Status:</span> {week.status}
                 </div>
 
                 <div className="text-sm mt-1">
                   <span className="font-medium">Time:</span>{" "}
-                  {Math.round(week.time.minutesWorked / 60)}h
+                  {Math.round(week.minutesWorked / 60)}h
                 </div>
 
                 <div className="text-sm mt-1">
                   <span className="font-medium">Video Takes:</span>{" "}
-                  {week.content.videoTakes}
+                  {week.video?.takes || 0}
                 </div>
 
                 <div className="text-sm mt-1">
                   <span className="font-medium">
                     Travel Distance for Video Recording:
                   </span>{" "}
-                  {week.content.videoKilometersTraveled}km
+                  {week.video?.kilometersRecorded || 0}km
                 </div>
 
                 <div className="text-sm mt-2 space-x-1">
-                  {week.content.videoPublished && (
+                  {week.video && (
                     <a
-                      href={week.content.links?.videoUrl}
+                      href={week.video.url}
                       target="_blank"
                       className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] font-bold py-1 px-3 rounded shadow whitespace-nowrap"
                     >
                       Video
                     </a>
                   )}
-                  {week.content.blogPublished && (
+                  {week.blog && (
                     <a
-                      href={week.content.links?.blogUrl}
+                      href={week.blog.url}
                       target="_blank"
                       className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] font-bold py-1 px-3 rounded shadow whitespace-nowrap"
                     >

@@ -5,28 +5,28 @@ export function getAggregatedStats() {
   const reversedWeeks = [...originalWeeks].reverse();
 
   const totalProjectWeeks = weeks.filter(
-    (w) => w.weekStatus !== "not_started" && w.weekStatus !== "pending"
+    (w) => w.status !== "not_started" && w.status !== "pending"
   ).length;
   const activeWeeks = totalProjectWeeks;
 
-  const firstBlogIndex = weeks.findIndex((w) => w.content.blogPublished);
+  const firstBlogIndex = weeks.findIndex((w) => w.blog !== null);
   const blogWeeks =
     firstBlogIndex === -1
       ? 0
       : weeks
           .slice(firstBlogIndex)
           .filter(
-            (w) => w.weekStatus !== "not_started" && w.weekStatus !== "pending"
+            (w) => w.status !== "not_started" && w.status !== "pending"
           ).length;
 
-  const firstVideoIndex = weeks.findIndex((w) => w.content.videoPublished);
+  const firstVideoIndex = weeks.findIndex((w) => w.video !== null);
   const videoWeeks =
     firstVideoIndex === -1
       ? 0
       : weeks
           .slice(firstVideoIndex)
           .filter(
-            (w) => w.weekStatus !== "not_started" && w.weekStatus !== "pending"
+            (w) => w.status !== "not_started" && w.status !== "pending"
           ).length;
 
   const stats = {
@@ -56,17 +56,20 @@ export function getAggregatedStats() {
   };
 
   for (const week of weeks) {
-    if (week.weekStatus === "not_started" || week.weekStatus === "pending")
+    if (week.status === "not_started" || week.status === "pending")
       continue;
 
-    stats.totalMinutesWorked += week.time.minutesWorked;
-    stats.totalVideoTakes += week.content.videoTakes;
-    stats.totalVideoKilometersTraveled += week.content.videoKilometersTraveled;
+    stats.totalMinutesWorked += week.minutesWorked;
+    
+    if (week.video) {
+      stats.totalVideoTakes += week.video.takes;
+      stats.totalVideoKilometersTraveled += week.video.kilometersRecorded;
+    }
 
-    if (week.content.blogPublished) stats.totalContent.blogCount++;
-    if (week.content.videoPublished) stats.totalContent.videoCount++;
+    if (week.blog) stats.totalContent.blogCount++;
+    if (week.video) stats.totalContent.videoCount++;
 
-    if (week.weekStatus === "perfect") {
+    if (week.status === "perfect") {
       stats.totalContent.perfectWeeks++;
     }
   }
@@ -74,10 +77,10 @@ export function getAggregatedStats() {
   let currentStreak = 0;
   let longestStreak = 0;
   for (const week of reversedWeeks) {
-    if (week.weekStatus === "not_started") continue;
-    if (week.weekStatus === "pending") continue;
+    if (week.status === "not_started") continue;
+    if (week.status === "pending") continue;
 
-    if (week.weekStatus === "perfect") {
+    if (week.status === "perfect") {
       currentStreak++;
       longestStreak = Math.max(longestStreak, currentStreak);
     } else {
