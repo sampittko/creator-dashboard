@@ -43,22 +43,17 @@ export function YearGrid() {
     const status = simpleWeekStatus(
       weekId,
       currentWeekId,
-      existing?.weekStatus
+      existing?.status
     );
 
     return {
       weekId,
       topic: existing?.topic || "",
-      content: existing?.content || {
-        blogPublished: false,
-        videoPublished: false,
-        videoTakes: 0,
-        publishedAt: {},
-        links: {},
-      },
-      time: existing?.time || { minutesWorked: 0 },
+      status,
+      minutesWorked: existing?.minutesWorked || 0,
       wins: existing?.wins || "",
-      weekStatus: status,
+      blog: existing?.blog || null,
+      video: existing?.video || null,
     };
   });
 
@@ -70,11 +65,10 @@ export function YearGrid() {
           <div
             key={week.weekId}
             title={`${week.weekId}${week.topic ? " — " + week.topic : ""}`}
-            className={`w-6 h-6 flex items-center justify-center border rounded cursor-help ${
-              week.weekStatus === "not_started" ? "text-gray-400" : ""
-            }`}
+            className={`w-6 h-6 flex items-center justify-center border rounded cursor-help ${week.status === "not_started" ? "text-gray-400" : ""
+              }`}
           >
-            {statusToEmoji(week.weekStatus)}
+            {statusToEmoji(week.status)}
           </div>
         ))}
       </div>

@@ -2,452 +2,315 @@
   {
     "weekId": "2025-W01",
     "topic": "",
-    "content": {
-      "blogPublished": false,
-      "videoPublished": false,
-      "videoTakes": 0,
-      "videoKilometersTraveled": 0,
-      "publishedAt": {}
-    },
-    "time": {
-      "minutesWorked": 0
-    },
-    "weekStatus": "not_started"
+    "status": "not_started",
+    "minutesWorked": 0,
+    "wins": "",
+    "blog": null,
+    "video": null
   },
   {
     "weekId": "2025-W02",
     "topic": "",
-    "content": {
-      "blogPublished": false,
-      "videoPublished": false,
-      "videoTakes": 0,
-      "videoKilometersTraveled": 0,
-      "publishedAt": {}
-    },
-    "time": {
-      "minutesWorked": 0
-    },
-    "weekStatus": "not_started"
+    "status": "not_started",
+    "minutesWorked": 0,
+    "wins": "",
+    "blog": null,
+    "video": null
   },
   {
     "weekId": "2025-W03",
     "topic": "",
-    "content": {
-      "blogPublished": false,
-      "videoPublished": false,
-      "videoTakes": 0,
-      "videoKilometersTraveled": 0,
-      "publishedAt": {}
-    },
-    "time": {
-      "minutesWorked": 0
-    },
-    "weekStatus": "not_started"
+    "status": "not_started",
+    "minutesWorked": 0,
+    "wins": "",
+    "blog": null,
+    "video": null
   },
   {
     "weekId": "2025-W04",
     "topic": "",
-    "content": {
-      "blogPublished": false,
-      "videoPublished": false,
-      "videoTakes": 0,
-      "videoKilometersTraveled": 0,
-      "publishedAt": {}
-    },
-    "time": {
-      "minutesWorked": 0
-    },
-    "weekStatus": "not_started"
+    "status": "not_started",
+    "minutesWorked": 0,
+    "wins": "",
+    "blog": null,
+    "video": null
   },
   {
     "weekId": "2025-W05",
     "topic": "Freedom with Technology: Reclaiming Your Focus in a World Designed to Distract",
-    "content": {
-      "blogPublished": true,
-      "videoPublished": false,
-      "videoTakes": 0,
-      "videoKilometersTraveled": 0,
-      "publishedAt": {
-        "blog": "2025-01-31"
-      },
-      "links": {
-        "blogUrl": "https://fwt.wtf/kickoff"
-      }
-    },
-    "time": {
-      "minutesWorked": 487
-    },
+    "status": "incomplete",
+    "minutesWorked": 487,
     "wins": "1st blog post published",
-    "weekStatus": "incomplete"
+    "blog": {
+      "publishedAt": "2025-01-31",
+      "url": "https://fwt.wtf/kickoff"
+    },
+    "video": null
   },
   {
     "weekId": "2025-W06",
     "topic": "1. Self-Awareness: The Foundation of Intentional Tech Use",
-    "content": {
-      "blogPublished": true,
-      "videoPublished": false,
-      "videoTakes": 0,
-      "videoKilometersTraveled": 0,
-      "publishedAt": {
-        "blog": "2025-02-07"
-      },
-      "links": {
-        "blogUrl": "https://fwt.wtf/self-awareness"
-      }
+    "status": "incomplete",
+    "minutesWorked": 815,
+    "wins": "",
+    "blog": {
+      "publishedAt": "2025-02-07",
+      "url": "https://fwt.wtf/self-awareness"
     },
-    "time": {
-      "minutesWorked": 815
-    },
-    "weekStatus": "incomplete"
+    "video": null
   },
   {
     "weekId": "2025-W07",
     "topic": "2. Digital Minimalism: Owning Your Attention",
-    "content": {
-      "blogPublished": true,
-      "videoPublished": false,
-      "videoTakes": 0,
-      "videoKilometersTraveled": 0,
-      "publishedAt": {
-        "blog": "2025-02-14"
-      },
-      "links": {
-        "blogUrl": "https://fwt.wtf/digital-minimalism"
-      }
+    "status": "incomplete",
+    "minutesWorked": 635,
+    "wins": "",
+    "blog": {
+      "publishedAt": "2025-02-14",
+      "url": "https://fwt.wtf/digital-minimalism"
     },
-    "time": {
-      "minutesWorked": 635
-    },
-    "weekStatus": "incomplete"
+    "video": null
   },
   {
     "weekId": "2025-W08",
     "topic": "3. Tech Independence: The Final Step to True Digital Freedom",
-    "content": {
-      "blogPublished": true,
-      "videoPublished": false,
-      "videoTakes": 0,
-      "videoKilometersTraveled": 0,
-      "publishedAt": {
-        "blog": "2025-02-21"
-      },
-      "links": {
-        "blogUrl": "https://fwt.wtf/tech-independence"
-      }
+    "status": "incomplete",
+    "minutesWorked": 1297,
+    "wins": "",
+    "blog": {
+      "publishedAt": "2025-02-21",
+      "url": "https://fwt.wtf/tech-independence"
     },
-    "time": {
-      "minutesWorked": 1297
-    },
-    "weekStatus": "incomplete"
+    "video": null
   },
   {
     "weekId": "2025-W09",
     "topic": "My Journey to Becoming Free With Tech",
-    "content": {
-      "blogPublished": true,
-      "videoPublished": true,
-      "videoTakes": 9,
-      "videoKilometersTraveled": 28,
-      "publishedAt": {
-        "blog": "2025-02-27",
-        "video": "2025-02-28"
-      },
-      "links": {
-        "blogUrl": "https://fwt.wtf/my-story",
-        "videoUrl": "https://fwt.wtf/my-story-video"
-      }
-    },
-    "time": {
-      "minutesWorked": 1599
-    },
+    "status": "perfect",
+    "minutesWorked": 1599,
     "wins": "1st video published",
-    "weekStatus": "perfect"
+    "blog": {
+      "publishedAt": "2025-02-27",
+      "url": "https://fwt.wtf/my-story"
+    },
+    "video": {
+      "publishedAt": "2025-02-28",
+      "url": "https://fwt.wtf/my-story-video",
+      "takes": 9,
+      "kilometersRecorded": 28
+    }
   },
   {
     "weekId": "2025-W10",
     "topic": "From Lost in Tech to Found in Focus",
-    "content": {
-      "blogPublished": true,
-      "videoPublished": true,
-      "videoTakes": 4,
-      "videoKilometersTraveled": 14,
-      "publishedAt": {
-        "blog": "2025-03-06",
-        "video": "2025-03-07"
-      },
-      "links": {
-        "blogUrl": "https://fwt.wtf/first-step",
-        "videoUrl": "https://fwt.wtf/first-step-video"
-      }
+    "status": "perfect",
+    "minutesWorked": 1356,
+    "wins": "",
+    "blog": {
+      "publishedAt": "2025-03-06",
+      "url": "https://fwt.wtf/first-step"
     },
-    "time": {
-      "minutesWorked": 1356
-    },
-    "weekStatus": "perfect"
+    "video": {
+      "publishedAt": "2025-03-07",
+      "url": "https://fwt.wtf/first-step-video",
+      "takes": 4,
+      "kilometersRecorded": 14
+    }
   },
   {
     "weekId": "2025-W11",
     "topic": "Drawing Boundaries to Define Your Digital Life",
-    "content": {
-      "blogPublished": true,
-      "videoPublished": true,
-      "videoTakes": 1,
-      "videoKilometersTraveled": 14,
-      "publishedAt": {
-        "blog": "2025-03-13",
-        "video": "2025-03-14"
-      },
-      "links": {
-        "blogUrl": "https://fwt.wtf/second-step",
-        "videoUrl": "https://fwt.wtf/second-step-video"
-      }
+    "status": "perfect",
+    "minutesWorked": 1413,
+    "wins": "",
+    "blog": {
+      "publishedAt": "2025-03-13",
+      "url": "https://fwt.wtf/second-step"
     },
-    "time": {
-      "minutesWorked": 1413
-    },
-    "weekStatus": "perfect"
+    "video": {
+      "publishedAt": "2025-03-14",
+      "url": "https://fwt.wtf/second-step-video",
+      "takes": 1,
+      "kilometersRecorded": 14
+    }
   },
   {
     "weekId": "2025-W12",
     "topic": "Guarding Digital Footprint for a Life in Control",
-    "content": {
-      "blogPublished": true,
-      "videoPublished": true,
-      "videoTakes": 2,
-      "videoKilometersTraveled": 14,
-      "publishedAt": {
-        "blog": "2025-03-20",
-        "video": "2025-03-21"
-      },
-      "links": {
-        "blogUrl": "https://fwt.wtf/final-step",
-        "videoUrl": "https://fwt.wtf/final-step-video"
-      }
+    "status": "perfect",
+    "minutesWorked": 1122,
+    "wins": "",
+    "blog": {
+      "publishedAt": "2025-03-20",
+      "url": "https://fwt.wtf/final-step"
     },
-    "time": {
-      "minutesWorked": 1122
-    },
-    "weekStatus": "perfect"
+    "video": {
+      "publishedAt": "2025-03-21",
+      "url": "https://fwt.wtf/final-step-video",
+      "takes": 2,
+      "kilometersRecorded": 14
+    }
   },
   {
     "weekId": "2025-W13",
     "topic": "A Street-Level Mindset for Digital Communication",
-    "content": {
-      "blogPublished": true,
-      "videoPublished": true,
-      "videoTakes": 1,
-      "videoKilometersTraveled": 27,
-      "publishedAt": {
-        "blog": "2025-03-27",
-        "video": "2025-03-28"
-      },
-      "links": {
-        "blogUrl": "https://fwt.wtf/delete-your-chats",
-        "videoUrl": "https://fwt.wtf/delete-your-chats-video"
-      }
-    },
-    "time": {
-      "minutesWorked": 2143
-    },
+    "status": "perfect",
+    "minutesWorked": 2143,
     "wins": "presented My path to digital freedom at Tatry IT meetup",
-    "weekStatus": "perfect"
+    "blog": {
+      "publishedAt": "2025-03-27",
+      "url": "https://fwt.wtf/delete-your-chats"
+    },
+    "video": {
+      "publishedAt": "2025-03-28",
+      "url": "https://fwt.wtf/delete-your-chats-video",
+      "takes": 1,
+      "kilometersRecorded": 27
+    }
   },
   {
     "weekId": "2025-W14",
     "topic": "Beat Social Media Addiction With a Two Phase Method",
-    "content": {
-      "blogPublished": true,
-      "videoPublished": true,
-      "videoTakes": 3,
-      "videoKilometersTraveled": 40,
-      "publishedAt": {
-        "blog": "2025-04-03",
-        "video": "2025-04-04"
-      },
-      "links": {
-        "blogUrl": "https://fwt.wtf/outsmart-the-feed",
-        "videoUrl": "https://fwt.wtf/outsmart-the-feed-video"
-      }
+    "status": "perfect",
+    "minutesWorked": 1440,
+    "wins": "",
+    "blog": {
+      "publishedAt": "2025-04-03",
+      "url": "https://fwt.wtf/outsmart-the-feed"
     },
-    "time": {
-      "minutesWorked": 1440
-    },
-    "weekStatus": "perfect"
+    "video": {
+      "publishedAt": "2025-04-04",
+      "url": "https://fwt.wtf/outsmart-the-feed-video",
+      "takes": 3,
+      "kilometersRecorded": 40
+    }
   },
   {
     "weekId": "2025-W15",
-    "topic": "I Chose the Lowest Tier Mobile Plan and I’m Keeping It",
-    "content": {
-      "blogPublished": true,
-      "videoPublished": true,
-      "videoTakes": 6,
-      "videoKilometersTraveled": 22,
-      "publishedAt": {
-        "blog": "2025-04-10",
-        "video": "2025-04-11"
-      },
-      "links": {
-        "blogUrl": "https://fwt.wtf/low-data-living",
-        "videoUrl": "https://fwt.wtf/low-data-living-video"
-      }
+    "topic": "I Chose the Lowest Tier Mobile Plan and I'm Keeping It",
+    "status": "perfect",
+    "minutesWorked": 1256,
+    "wins": "",
+    "blog": {
+      "publishedAt": "2025-04-10",
+      "url": "https://fwt.wtf/low-data-living"
     },
-    "time": {
-      "minutesWorked": 1256
-    },
-    "weekStatus": "perfect"
+    "video": {
+      "publishedAt": "2025-04-11",
+      "url": "https://fwt.wtf/low-data-living-video",
+      "takes": 6,
+      "kilometersRecorded": 22
+    }
   },
   {
     "weekId": "2025-W16",
     "topic": "Reclaim Your Digital Footprint and Own Your Online Life",
-    "content": {
-      "blogPublished": true,
-      "videoPublished": true,
-      "videoTakes": 12,
-      "videoKilometersTraveled": 11,
-      "publishedAt": {
-        "blog": "2025-04-17",
-        "video": "2025-04-18"
-      },
-      "links": {
-        "blogUrl": "https://fwt.wtf/choose-your-digital-path",
-        "videoUrl": "https://fwt.wtf/choose-your-digital-path-video"
-      }
-    },
-    "time": {
-      "minutesWorked": 1304
-    },
+    "status": "perfect",
+    "minutesWorked": 1304,
     "wins": "My path to digital freedom episode recorded on Video Podcast Poprad",
-    "weekStatus": "perfect"
+    "blog": {
+      "publishedAt": "2025-04-17",
+      "url": "https://fwt.wtf/choose-your-digital-path"
+    },
+    "video": {
+      "publishedAt": "2025-04-18",
+      "url": "https://fwt.wtf/choose-your-digital-path-video",
+      "takes": 12,
+      "kilometersRecorded": 11
+    }
   },
   {
     "weekId": "2025-W17",
     "topic": "Digital Freedom Starts with Breaking the Default App Trap",
-    "content": {
-      "blogPublished": true,
-      "videoPublished": true,
-      "videoTakes": 5,
-      "videoKilometersTraveled": 42,
-      "publishedAt": {
-        "blog": "2025-04-24",
-        "video": "2025-04-25"
-      },
-      "links": {
-        "blogUrl": "https://fwt.wtf/break-the-default",
-        "videoUrl": "https://fwt.wtf/break-the-default-video"
-      }
+    "status": "perfect",
+    "minutesWorked": 973,
+    "wins": "",
+    "blog": {
+      "publishedAt": "2025-04-24",
+      "url": "https://fwt.wtf/break-the-default"
     },
-    "time": {
-      "minutesWorked": 973
-    },
-    "weekStatus": "perfect"
+    "video": {
+      "publishedAt": "2025-04-25",
+      "url": "https://fwt.wtf/break-the-default-video",
+      "takes": 5,
+      "kilometersRecorded": 42
+    }
   },
   {
     "weekId": "2025-W18",
     "topic": "Intentional Friction When Using Addictive Apps",
-    "content": {
-      "blogPublished": true,
-      "videoPublished": true,
-      "videoTakes": 4,
-      "videoKilometersTraveled": 124,
-      "publishedAt": {
-        "blog": "2025-05-01",
-        "video": "2025-05-02"
-      },
-      "links": {
-        "blogUrl": "https://fwt.wtf/slow-your-scroll",
-        "videoUrl": "https://fwt.wtf/slow-your-scroll-video"
-      }
-    },
-    "time": {
-      "minutesWorked": 1580
-    },
+    "status": "perfect",
+    "minutesWorked": 1580,
     "wins": "10 perfect weeks in a row; professional visual identity project finished",
-    "weekStatus": "perfect"
+    "blog": {
+      "publishedAt": "2025-05-01",
+      "url": "https://fwt.wtf/slow-your-scroll"
+    },
+    "video": {
+      "publishedAt": "2025-05-02",
+      "url": "https://fwt.wtf/slow-your-scroll-video",
+      "takes": 4,
+      "kilometersRecorded": 124
+    }
   },
   {
     "weekId": "2025-W19",
     "topic": "Living in the Moment Starts with Your Notification Settings",
-    "content": {
-      "blogPublished": true,
-      "videoPublished": true,
-      "videoTakes": 10,
-      "videoKilometersTraveled": 32,
-      "publishedAt": {
-        "blog": "2025-05-08",
-        "video": "2025-05-09"
-      },
-      "links": {
-        "blogUrl": "https://fwt.wtf/cut-the-spam",
-        "videoUrl": "https://fwt.wtf/cut-the-spam-video"
-      }
-    },
-    "time": {
-      "minutesWorked": 1548
-    },
+    "status": "perfect",
+    "minutesWorked": 1548,
     "wins": "11 perfect weeks in a row; thorough analysis within online courses landscape",
-    "weekStatus": "perfect"
+    "blog": {
+      "publishedAt": "2025-05-08",
+      "url": "https://fwt.wtf/cut-the-spam"
+    },
+    "video": {
+      "publishedAt": "2025-05-09",
+      "url": "https://fwt.wtf/cut-the-spam-video",
+      "takes": 10,
+      "kilometersRecorded": 32
+    }
   },
   {
     "weekId": "2025-W20",
-    "topic": "I’m a Software Engineer and I Was Addicted to Tech",
-    "content": {
-      "blogPublished": true,
-      "videoPublished": true,
-      "videoTakes": 12,
-      "videoKilometersTraveled": 62,
-      "publishedAt": {
-        "blog": "2025-05-15",
-        "video": "2025-05-16"
-      },
-      "links": {
-        "blogUrl": "https://fwt.wtf/engineers-regret",
-        "videoUrl": "https://fwt.wtf/engineers-regret-video"
-      }
-    },
-    "time": {
-      "minutesWorked": 1287
-    },
+    "topic": "I'm a Software Engineer and I Was Addicted to Tech",
+    "status": "perfect",
+    "minutesWorked": 1287,
     "wins": "Bought 500 branded stickers",
-    "weekStatus": "perfect"
+    "blog": {
+      "publishedAt": "2025-05-15",
+      "url": "https://fwt.wtf/engineers-regret"
+    },
+    "video": {
+      "publishedAt": "2025-05-16",
+      "url": "https://fwt.wtf/engineers-regret-video",
+      "takes": 12,
+      "kilometersRecorded": 62
+    }
   },
   {
     "weekId": "2025-W21",
     "topic": "Why I Still Use a Journal in a Digital World",
-    "content": {
-      "blogPublished": true,
-      "videoPublished": true,
-      "videoTakes": 3,
-      "videoKilometersTraveled": 42,
-      "publishedAt": {
-        "blog": "2025-05-23",
-        "video": "2025-05-23"
-      },
-      "links": {
-        "blogUrl": "https://fwt.wtf/the-analog-edge",
-        "videoUrl": "https://fwt.wtf/the-analog-edge-video"
-      }
-    },
-    "time": {
-      "minutesWorked": 1256
-    },
+    "status": "perfect",
+    "minutesWorked": 1256,
     "wins": "Against all odds, I got the 13th video done and recorded—celebrating this small win",
-    "weekStatus": "perfect"
+    "blog": {
+      "publishedAt": "2025-05-23",
+      "url": "https://fwt.wtf/the-analog-edge"
+    },
+    "video": {
+      "publishedAt": "2025-05-23",
+      "url": "https://fwt.wtf/the-analog-edge-video",
+      "takes": 3,
+      "kilometersRecorded": 42
+    }
   },
   {
     "weekId": "2025-W22",
     "topic": "",
-    "content": {
-      "blogPublished": false,
-      "videoPublished": false,
-      "videoTakes": 0,
-      "videoKilometersTraveled": 0,
-      "publishedAt": {},
-      "links": {}
-    },
-    "time": {
-      "minutesWorked": 0
-    },
+    "status": "pending",
+    "minutesWorked": 0,
     "wins": "",
-    "weekStatus": "pending"
+    "blog": null,
+    "video": null
   }
 ]

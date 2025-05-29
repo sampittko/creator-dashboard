@@ -6,32 +6,26 @@ export type WeekStatus =
   | "incomplete"
   | "skipped";
 
+export interface BlogEntry {
+  publishedAt: string;
+  url: string;
+}
+
+export interface VideoEntry {
+  publishedAt: string;
+  url: string;
+  takes: number;
+  kilometersRecorded: number;
+}
+
 export interface WeeklyEntry {
   weekId: string;
   topic: string;
-
-  content: {
-    blogPublished: boolean;
-    videoPublished: boolean;
-    videoTakes: number;
-    videoKilometersTraveled: number;
-    publishedAt?: {
-      blog?: string;
-      video?: string;
-    };
-    links?: {
-      blogUrl?: string;
-      videoUrl?: string;
-    };
-  };
-
-  time: {
-    minutesWorked: number;
-  };
-
-  wins?: string;
-
-  weekStatus: WeekStatus;
+  status: WeekStatus;
+  minutesWorked: number;
+  wins: string;
+  blog: BlogEntry | null;
+  video: VideoEntry | null;
 }
 
 export interface AggregatedStats {
