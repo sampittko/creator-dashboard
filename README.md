@@ -67,3 +67,7 @@ This project was inspired by a desire to build in public and stay accountable â€
 ## â˜• Support
 
 If you find this project valuable, [consider buying me a coffee](https://www.buymeacoffee.com/sampittko)!
+
+---
+
+**Part of the [free with tech](https://freewith.tech) ecosystem** - helping people build a healthier relationship with technology.
