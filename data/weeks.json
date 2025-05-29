@@ -307,25 +307,19 @@
   {
     "weekId": "2025-W22",
     "topic": "A Habit Tracker App Born From My Own Needs",
-    "content": {
-      "blogPublished": true,
-      "videoPublished": true,
-      "videoTakes": 6,
-      "videoKilometersTraveled": 72,
-      "publishedAt": {
-        "blog": "2025-05-30",
-        "video": "2025-05-30"
-      },
-      "links": {
-        "blogUrl": "https://fwt.wtf/track-reflect-repeat",
-        "videoUrl": "https://fwt.wtf/track-reflect-repeat-video"
-      }
-    },
-    "time": {
-      "minutesWorked": 0
-    },
+    "status": "perfect",
+    "minutesWorked": 0,
     "wins": "Coded MVP of 'fwt. axis' mobile app for my habit tracking framework. Recorded a video in rain. Open-sourced fwt.wtf link shortener on GitHub.",
-    "weekStatus": "perfect"
+    "blog": {
+      "publishedAt": "2025-05-30",
+      "url": "https://fwt.wtf/track-reflect-repeat"
+    },
+    "video": {
+      "publishedAt": "2025-05-30",
+      "url": "https://fwt.wtf/track-reflect-repeat-video",
+      "takes": 6,
+      "kilometersRecorded": 72
+    }
   },
   {
     "weekId": "2025-W23",
