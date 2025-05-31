@@ -75,7 +75,7 @@ export default function DashboardPage() {
         <span>
           View this <span className="font-bold">Creator Dashboard</span> on{" "}
           <a
-            href="https://github.com/sampittko/creator-dashboard"
+            href="https://fwt.wtf/creator-dashboard"
             target="_blank"
             className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] font-bold py-1 px-3 rounded shadow whitespace-nowrap"
           >
