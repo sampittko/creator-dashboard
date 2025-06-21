@@ -357,6 +357,23 @@
   },
   {
     "weekId": "2025-W25",
+    "topic": "How Ryder Carroll and Cal Newport Helped Me Create free with tech",
+    "status": "perfect",
+    "minutesWorked": 1294,
+    "wins": "Extensive vibe-coding sessions for fwt. axis app",
+    "blog": {
+      "publishedAt": "2025-06-20",
+      "url": "https://fwt.wtf/built-my-system"
+    },
+    "video": {
+      "publishedAt": "2025-06-20",
+      "url": "https://fwt.wtf/built-my-system-video",
+      "takes": 4,
+      "kilometersRecorded": 120
+    }
+  },
+  {
+    "weekId": "2025-W26",
     "topic": "",
     "status": "pending",
     "minutesWorked": 0,
