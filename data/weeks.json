@@ -374,8 +374,25 @@
   },
   {
     "weekId": "2025-W26",
+    "topic": "Tools for a Hybrid Mind",
+    "status": "perfect",
+    "minutesWorked": 2278,
+    "wins": "Niching down and presenting that focus in this week's video. axis app rewrite to standalone Apple Watch app and seamless iPhone integration.",
+    "blog": {
+      "publishedAt": "2025-06-27",
+      "url": "https://fwt.wtf/paper-and-pixel"
+    },
+    "video": {
+      "publishedAt": "2025-06-27",
+      "url": "https://fwt.wtf/paper-and-pixel-video",
+      "takes": 2,
+      "kilometersRecorded": 14
+    }
+  },
+  {
+    "weekId": "2025-W27",
     "topic": "",
-    "status": "pending",
+    "status": "",
     "minutesWorked": 0,
     "wins": "",
     "blog": null,
