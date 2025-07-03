@@ -401,7 +401,9 @@
     },
     "video": {
       "publishedAt": "2025-07-04",
-      "url": "https://fwt.wtf/track-twice-video"
+      "url": "https://fwt.wtf/track-twice-video",
+      "takes": 4,
+      "kilometersRecorded": 32
     }
   },
   {
