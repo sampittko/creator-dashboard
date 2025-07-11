@@ -411,7 +411,7 @@
     "topic": "joex and axis: Quiet Tech for a Paper",
     "status": "perfect",
     "minutesWorked": 0,
-    "wins": "Launched TestFlight for joex and axis apps.",
+    "wins": "Launched TestFlight for joex and axis apps. Iterated on the apps by fixing bugs and adding new features with improved user experience (1.0 -> 1.3). Still not approved by Apple.",
     "blog": {
       "publishedAt": "2025-07-11",
       "url": "https://fwt.wtf/wrist-to-page"
