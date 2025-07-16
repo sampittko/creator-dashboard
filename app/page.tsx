@@ -87,30 +87,12 @@ export default function DashboardPage() {
       <section className="mb-8 border rounded p-4">
         <h2 className="text-lg font-bold mb-2">📊 Aggregated Stats</h2>
         <ul className="text-sm space-y-1">
-          <li>📆 Total Project Weeks: {stats.totalProjectWeeks}</li>
+          <li>📆 Project Weeks: {stats.totalProjectWeeks}</li>
           <li>
-            🕒 Total Hours Worked: {stats.totalHoursWorked}h
+            🕒 Hours Spent: {stats.totalHoursWorked}h
             <span className="text-gray-500 dark:text-gray-400">
               {" "}
               (avg {stats.averages.hoursWorked}h/week)
-            </span>
-          </li>
-          <li>
-            🎬 Total Video Takes: {stats.totalVideoTakes}
-            <span className="text-gray-500 dark:text-gray-400">
-              {" "}
-              (avg {stats.averages.videoTakes}/week in {stats.videoWeeks} video
-              weeks)
-            </span>{" "}
-            <i>&ldquo;Bring value. Next action. Repeat.&rdquo;</i>
-          </li>
-          <li>
-            🚗 Total Travel Distance for Video Recording:{" "}
-            {stats.totalVideoKilometersTraveled}km
-            <span className="text-gray-500 dark:text-gray-400">
-              {" "}
-              (avg {stats.averages.videoKilometersTraveled}km/week in{" "}
-              {stats.videoWeeks} video weeks)
             </span>
           </li>
           <li>
@@ -121,11 +103,29 @@ export default function DashboardPage() {
             </span>
           </li>
           <li>
-            📹 Videos Published: {stats.totalContent.videoCount}
+            📹 Videos Created: {stats.totalContent.videoCount}
             <span className="text-gray-500 dark:text-gray-400">
               {" "}
               (avg {stats.averages.videos}/week in {stats.videoWeeks} video
               weeks)
+            </span>
+          </li>
+          <li>
+            🎬 Video Recording Attempts: {stats.totalVideoTakes}
+            <span className="text-gray-500 dark:text-gray-400">
+              {" "}
+              (avg {stats.averages.videoTakes}/week in {stats.videoWeeks} video
+              weeks)
+            </span>{" "}
+            <i>&ldquo;Bring value. Next action. Repeat.&rdquo;</i>
+          </li>
+          <li>
+            🚗 Travel Distance Covered:{" "}
+            {stats.totalVideoKilometersTraveled}km
+            <span className="text-gray-500 dark:text-gray-400">
+              {" "}
+              (avg {stats.averages.videoKilometersTraveled}km/week in{" "}
+              {stats.videoWeeks} video weeks)
             </span>
           </li>
           <li>🔥 Perfect Weeks: {stats.totalContent.perfectWeeks}</li>
