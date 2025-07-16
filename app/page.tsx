@@ -95,13 +95,13 @@ export default function DashboardPage() {
               (avg {stats.averages.hoursWorked}h/week)
             </span>
           </li>
-          <li>
+          {/* <li>
             📝 Blogs Published: {stats.totalContent.blogCount}
             <span className="text-gray-500 dark:text-gray-400">
               {" "}
               (avg {stats.averages.blogs}/week in {stats.blogWeeks} blog weeks)
             </span>
-          </li>
+          </li> */}
           <li>
             📹 Videos Created: {stats.totalContent.videoCount}
             <span className="text-gray-500 dark:text-gray-400">
