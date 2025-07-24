@@ -442,6 +442,20 @@
   },
   {
     "weekId": "2025-W30",
+    "topic": "3 Apple Watch Apps I Built to Support Analog Journaling",
+    "status": "perfect",
+    "minutesWorked": 0,
+    "wins": "",
+    "blog": null,
+    "video": {
+      "publishedAt": "2025-07-25",
+      "url": "https://fwt.wtf/paper-power-tools",
+      "takes": 4,
+      "kilometersRecorded": 42
+    }
+  },
+  {
+    "weekId": "2025-W31",
     "topic": "",
     "status": "pending",
     "minutesWorked": 0,
