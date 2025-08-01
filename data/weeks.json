@@ -456,6 +456,19 @@
   },
   {
     "weekId": "2025-W31",
+    "topic": "The Quiet Shift in My Digital Life",
+    "status": "perfect",
+    "minutesWorked": 0,
+    "wins": "",
+    "video": {
+      "publishedAt": "2025-08-01",
+      "url": "https://fwt.wtf/tech-on-my-terms",
+      "takes": 2,
+      "kilometersRecorded": 27
+    }
+  },
+  {
+    "weekId": "2025-W32",
     "topic": "",
     "status": "pending",
     "minutesWorked": 0,
