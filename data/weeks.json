@@ -456,6 +456,19 @@
   },
   {
     "weekId": "2025-W31",
+    "topic": "The Quiet Shift in My Digital Life",
+    "status": "perfect",
+    "minutesWorked": 1620,
+    "wins": "Started building My Digital Toolkit (an idea that keeps coming back). Iterated joex & axis in a way that I can focus on marketing and final optimizations for 1.0 App Store releases in august. Survived a week that was simply tough mentally.",
+    "video": {
+      "publishedAt": "2025-08-01",
+      "url": "https://fwt.wtf/tech-on-my-terms",
+      "takes": 2,
+      "kilometersRecorded": 27
+    }
+  },
+  {
+    "weekId": "2025-W32",
     "topic": "",
     "status": "pending",
     "minutesWorked": 0,
