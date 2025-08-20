@@ -203,16 +203,6 @@ export default function DashboardPage() {
           </div>
         ))}
       </div>
-
-      <footer className="text-center text-sm text-gray-500 dark:text-gray-400">
-        <a
-          href="https://www.buymeacoffee.com/sampittko"
-          target="_blank"
-          className="text-sm bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-1 px-3 rounded shadow whitespace-nowrap"
-        >
-          ☕ Buy Me a Coffee
-        </a>
-      </footer>
     </main>
   );
 }
