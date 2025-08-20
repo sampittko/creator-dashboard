@@ -9,13 +9,13 @@ export const metadata = {
     "A transparent look behind the scenes of the free with tech project. Follow weekly progress, content publishing, time invested, and resources spent on building a public brand from scratch.",
   openGraph: {
     type: "website",
-    url: "https://dash.fwt.wtf",
+    url: "https://journey.freewith.tech",
     title: "Creator Dashboard – free with tech",
     description:
       "A transparent look behind the scenes of the free with tech project. Follow weekly progress, content publishing, time invested, and resources spent on building a public brand from scratch.",
     images: [
       {
-        url: "https://dash.fwt.wtf/assets/og-image.png",
+        url: "https://journey.freewith.tech/assets/og-image.png",
         width: 1200,
         height: 630,
         alt: "Creator Dashboard – free with tech",
@@ -27,7 +27,7 @@ export const metadata = {
     title: "Creator Dashboard – free with tech",
     description:
       "A transparent look behind the scenes of the free with tech project. Follow weekly progress, content publishing, time invested, and resources spent on building a public brand from scratch.",
-    images: ["https://dash.fwt.wtf/assets/og-image.png"],
+    images: ["https://journey.freewith.tech/assets/og-image.png"],
   },
 };
 
