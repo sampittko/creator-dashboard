@@ -197,6 +197,7 @@ export default function DashboardPage() {
                     <>
                       {week.devLogVideo.urls.map((url, urlIndex) => (
                         <a
+                          key={urlIndex}
                           href={url}
                           target="_blank"
                           className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] font-bold py-1 px-3 rounded shadow whitespace-nowrap"
