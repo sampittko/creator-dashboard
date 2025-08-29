@@ -370,6 +370,9 @@
       "url": "https://fwt.wtf/built-my-system-video",
       "takes": 4,
       "kilometersRecorded": 120
+    },
+    "devLogVideo": {
+      "urls": ["https://fwt.wtf/devlog1"]
     }
   },
   {
@@ -387,6 +390,9 @@
       "url": "https://fwt.wtf/paper-and-pixel-video",
       "takes": 2,
       "kilometersRecorded": 14
+    },
+    "devLogVideo": {
+      "urls": ["https://fwt.wtf/devlog2"]
     }
   },
   {
@@ -404,6 +410,9 @@
       "url": "https://fwt.wtf/track-twice-video",
       "takes": 4,
       "kilometersRecorded": 32
+    },
+    "devLogVideo": {
+      "urls": ["https://fwt.wtf/devlog3", "https://fwt.wtf/devlog4"]
     }
   },
   {
@@ -421,6 +430,9 @@
       "url": "https://fwt.wtf/wrist-to-page-video",
       "takes": 1,
       "kilometersRecorded": 170
+    },
+    "devLogVideo": {
+      "urls": ["https://fwt.wtf/devlog5"]
     }
   },
   {
@@ -438,6 +450,9 @@
       "url": "https://fwt.wtf/so-i-did-this-video",
       "takes": 6,
       "kilometersRecorded": 30
+    },
+    "devLogVideo": {
+      "urls": ["https://fwt.wtf/devlog6"]
     }
   },
   {
@@ -452,6 +467,9 @@
       "url": "https://fwt.wtf/paper-power-tools",
       "takes": 4,
       "kilometersRecorded": 42
+    },
+    "devLogVideo": {
+      "urls": ["https://fwt.wtf/devlog7"]
     }
   },
   {
@@ -465,6 +483,9 @@
       "url": "https://fwt.wtf/tech-on-my-terms",
       "takes": 2,
       "kilometersRecorded": 27
+    },
+    "devLogVideo": {
+      "urls": ["https://fwt.wtf/devlog8"]
     }
   },
   {
@@ -479,6 +500,9 @@
       "url": "https://fwt.wtf/digital-slave",
       "takes": 2,
       "kilometersRecorded": 16
+    },
+    "devLogVideo": {
+      "urls": ["https://fwt.wtf/devlog9"]
     }
   },
   {
@@ -493,6 +517,9 @@
       "url": "https://fwt.wtf/beyond-reset",
       "takes": 1,
       "kilometersRecorded": 5
+    },
+    "devLogVideo": {
+      "urls": ["https://fwt.wtf/devlog10"]
     }
   },
   {
@@ -507,6 +534,9 @@
       "url": "https://fwt.wtf/quiet-progress",
       "takes": 1,
       "kilometersRecorded": 5
+    },
+    "devLogVideo": {
+      "urls": ["https://fwt.wtf/devlog11"]
     }
   },
   {
