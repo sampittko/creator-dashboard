@@ -192,7 +192,12 @@
       "kilometersRecorded": 27
     },
     "devLogVideo": null,
-    "otherLinks": [{ "url": "https://fwt.wtf/tatryit", "label": "Meetup (SK)"}]
+    "otherLinks": [
+      {
+        "url": "https://fwt.wtf/tatryit",
+        "label": "Meetup (SK)"
+      }
+    ]
   },
   {
     "weekId": "2025-W14",
@@ -249,7 +254,12 @@
       "kilometersRecorded": 11
     },
     "devLogVideo": null,
-    "otherLinks": [{ "url": "https://fwt.wtf/hlasypopradu", "label": "Podcast (SK)"}]
+    "otherLinks": [
+      {
+        "url": "https://fwt.wtf/hlasypopradu",
+        "label": "Podcast (SK)"
+      }
+    ]
   },
   {
     "weekId": "2025-W17",
@@ -420,7 +430,9 @@
       "kilometersRecorded": 120
     },
     "devLogVideo": {
-      "urls": ["https://fwt.wtf/devlog1"]
+      "urls": [
+        "https://fwt.wtf/devlog1"
+      ]
     },
     "otherLinks": null
   },
@@ -441,7 +453,9 @@
       "kilometersRecorded": 14
     },
     "devLogVideo": {
-      "urls": ["https://fwt.wtf/devlog2"]
+      "urls": [
+        "https://fwt.wtf/devlog2"
+      ]
     },
     "otherLinks": null
   },
@@ -462,7 +476,10 @@
       "kilometersRecorded": 32
     },
     "devLogVideo": {
-      "urls": ["https://fwt.wtf/devlog3", "https://fwt.wtf/devlog4"]
+      "urls": [
+        "https://fwt.wtf/devlog3",
+        "https://fwt.wtf/devlog4"
+      ]
     },
     "otherLinks": null
   },
@@ -483,7 +500,9 @@
       "kilometersRecorded": 170
     },
     "devLogVideo": {
-      "urls": ["https://fwt.wtf/devlog5"]
+      "urls": [
+        "https://fwt.wtf/devlog5"
+      ]
     },
     "otherLinks": null
   },
@@ -504,7 +523,9 @@
       "kilometersRecorded": 30
     },
     "devLogVideo": {
-      "urls": ["https://fwt.wtf/devlog6"]
+      "urls": [
+        "https://fwt.wtf/devlog6"
+      ]
     },
     "otherLinks": null
   },
@@ -522,7 +543,9 @@
       "kilometersRecorded": 42
     },
     "devLogVideo": {
-      "urls": ["https://fwt.wtf/devlog7"]
+      "urls": [
+        "https://fwt.wtf/devlog7"
+      ]
     },
     "otherLinks": null
   },
@@ -539,7 +562,9 @@
       "kilometersRecorded": 27
     },
     "devLogVideo": {
-      "urls": ["https://fwt.wtf/devlog8"]
+      "urls": [
+        "https://fwt.wtf/devlog8"
+      ]
     },
     "otherLinks": null
   },
@@ -557,7 +582,9 @@
       "kilometersRecorded": 16
     },
     "devLogVideo": {
-      "urls": ["https://fwt.wtf/devlog9"]
+      "urls": [
+        "https://fwt.wtf/devlog9"
+      ]
     },
     "otherLinks": null
   },
@@ -575,7 +602,9 @@
       "kilometersRecorded": 5
     },
     "devLogVideo": {
-      "urls": ["https://fwt.wtf/devlog10"]
+      "urls": [
+        "https://fwt.wtf/devlog10"
+      ]
     },
     "otherLinks": null
   },
@@ -593,9 +622,32 @@
       "kilometersRecorded": 5
     },
     "devLogVideo": {
-      "urls": ["https://fwt.wtf/devlog11"]
+      "urls": [
+        "https://fwt.wtf/devlog11"
+      ]
     },
-    "otherLinks": null
+    "otherLinks": [
+      {
+        "url": "https://fwt.wtf/short1",
+        "label": "Short #1"
+      },
+      {
+        "url": "https://fwt.wtf/short2",
+        "label": "Short #2"
+      },
+      {
+        "url": "https://fwt.wtf/short3",
+        "label": "Short #3"
+      },
+      {
+        "url": "https://fwt.wtf/short4",
+        "label": "Short #4"
+      },
+      {
+        "url": "https://fwt.wtf/short5",
+        "label": "Short #5"
+      }
+    ]
   },
   {
     "weekId": "2025-W35",
