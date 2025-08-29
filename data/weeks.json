@@ -6,7 +6,9 @@
     "minutesWorked": 0,
     "wins": "",
     "blog": null,
-    "video": null
+    "video": null,
+    "devLogVideo": null,
+    "otherLinks": null
   },
   {
     "weekId": "2025-W02",
@@ -15,7 +17,9 @@
     "minutesWorked": 0,
     "wins": "",
     "blog": null,
-    "video": null
+    "video": null,
+    "devLogVideo": null,
+    "otherLinks": null
   },
   {
     "weekId": "2025-W03",
@@ -24,7 +28,9 @@
     "minutesWorked": 0,
     "wins": "",
     "blog": null,
-    "video": null
+    "video": null,
+    "devLogVideo": null,
+    "otherLinks": null
   },
   {
     "weekId": "2025-W04",
@@ -33,7 +39,9 @@
     "minutesWorked": 0,
     "wins": "",
     "blog": null,
-    "video": null
+    "video": null,
+    "devLogVideo": null,
+    "otherLinks": null
   },
   {
     "weekId": "2025-W05",
@@ -45,7 +53,9 @@
       "publishedAt": "2025-01-31",
       "url": "https://fwt.wtf/kickoff"
     },
-    "video": null
+    "video": null,
+    "devLogVideo": null,
+    "otherLinks": null
   },
   {
     "weekId": "2025-W06",
@@ -57,7 +67,9 @@
       "publishedAt": "2025-02-07",
       "url": "https://fwt.wtf/self-awareness"
     },
-    "video": null
+    "video": null,
+    "devLogVideo": null,
+    "otherLinks": null
   },
   {
     "weekId": "2025-W07",
@@ -69,7 +81,9 @@
       "publishedAt": "2025-02-14",
       "url": "https://fwt.wtf/digital-minimalism"
     },
-    "video": null
+    "video": null,
+    "devLogVideo": null,
+    "otherLinks": null
   },
   {
     "weekId": "2025-W08",
@@ -81,7 +95,9 @@
       "publishedAt": "2025-02-21",
       "url": "https://fwt.wtf/tech-independence"
     },
-    "video": null
+    "video": null,
+    "devLogVideo": null,
+    "otherLinks": null
   },
   {
     "weekId": "2025-W09",
@@ -98,7 +114,9 @@
       "url": "https://fwt.wtf/my-story-video",
       "takes": 9,
       "kilometersRecorded": 28
-    }
+    },
+    "devLogVideo": null,
+    "otherLinks": null
   },
   {
     "weekId": "2025-W10",
@@ -115,7 +133,9 @@
       "url": "https://fwt.wtf/first-step-video",
       "takes": 4,
       "kilometersRecorded": 14
-    }
+    },
+    "devLogVideo": null,
+    "otherLinks": null
   },
   {
     "weekId": "2025-W11",
@@ -132,7 +152,9 @@
       "url": "https://fwt.wtf/second-step-video",
       "takes": 1,
       "kilometersRecorded": 14
-    }
+    },
+    "devLogVideo": null,
+    "otherLinks": null
   },
   {
     "weekId": "2025-W12",
@@ -149,7 +171,9 @@
       "url": "https://fwt.wtf/final-step-video",
       "takes": 2,
       "kilometersRecorded": 14
-    }
+    },
+    "devLogVideo": null,
+    "otherLinks": null
   },
   {
     "weekId": "2025-W13",
@@ -166,7 +190,9 @@
       "url": "https://fwt.wtf/delete-your-chats-video",
       "takes": 1,
       "kilometersRecorded": 27
-    }
+    },
+    "devLogVideo": null,
+    "otherLinks": [{ "url": "https://fwt.wtf/tatryit", "label": "Meetup (SK)"}]
   },
   {
     "weekId": "2025-W14",
@@ -183,7 +209,9 @@
       "url": "https://fwt.wtf/outsmart-the-feed-video",
       "takes": 3,
       "kilometersRecorded": 40
-    }
+    },
+    "devLogVideo": null,
+    "otherLinks": null
   },
   {
     "weekId": "2025-W15",
@@ -200,7 +228,9 @@
       "url": "https://fwt.wtf/low-data-living-video",
       "takes": 6,
       "kilometersRecorded": 22
-    }
+    },
+    "devLogVideo": null,
+    "otherLinks": null
   },
   {
     "weekId": "2025-W16",
@@ -217,7 +247,9 @@
       "url": "https://fwt.wtf/choose-your-digital-path-video",
       "takes": 12,
       "kilometersRecorded": 11
-    }
+    },
+    "devLogVideo": null,
+    "otherLinks": [{ "url": "https://fwt.wtf/hlasypopradu", "label": "Podcast (SK)"}]
   },
   {
     "weekId": "2025-W17",
@@ -234,7 +266,9 @@
       "url": "https://fwt.wtf/break-the-default-video",
       "takes": 5,
       "kilometersRecorded": 42
-    }
+    },
+    "devLogVideo": null,
+    "otherLinks": null
   },
   {
     "weekId": "2025-W18",
@@ -251,7 +285,9 @@
       "url": "https://fwt.wtf/slow-your-scroll-video",
       "takes": 4,
       "kilometersRecorded": 124
-    }
+    },
+    "devLogVideo": null,
+    "otherLinks": null
   },
   {
     "weekId": "2025-W19",
@@ -268,7 +304,9 @@
       "url": "https://fwt.wtf/cut-the-spam-video",
       "takes": 10,
       "kilometersRecorded": 32
-    }
+    },
+    "devLogVideo": null,
+    "otherLinks": null
   },
   {
     "weekId": "2025-W20",
@@ -285,7 +323,9 @@
       "url": "https://fwt.wtf/engineers-regret-video",
       "takes": 12,
       "kilometersRecorded": 62
-    }
+    },
+    "devLogVideo": null,
+    "otherLinks": null
   },
   {
     "weekId": "2025-W21",
@@ -302,7 +342,9 @@
       "url": "https://fwt.wtf/the-analog-edge-video",
       "takes": 3,
       "kilometersRecorded": 42
-    }
+    },
+    "devLogVideo": null,
+    "otherLinks": null
   },
   {
     "weekId": "2025-W22",
@@ -319,7 +361,9 @@
       "url": "https://fwt.wtf/track-reflect-repeat-video",
       "takes": 6,
       "kilometersRecorded": 72
-    }
+    },
+    "devLogVideo": null,
+    "otherLinks": null
   },
   {
     "weekId": "2025-W23",
@@ -336,7 +380,9 @@
       "url": "https://fwt.wtf/offload-not-obsess-video",
       "takes": 2,
       "kilometersRecorded": 40
-    }
+    },
+    "devLogVideo": null,
+    "otherLinks": null
   },
   {
     "weekId": "2025-W24",
@@ -353,7 +399,9 @@
       "url": "https://fwt.wtf/free-with-tech-video",
       "takes": 2,
       "kilometersRecorded": 14
-    }
+    },
+    "devLogVideo": null,
+    "otherLinks": null
   },
   {
     "weekId": "2025-W25",
@@ -373,7 +421,8 @@
     },
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog1"]
-    }
+    },
+    "otherLinks": null
   },
   {
     "weekId": "2025-W26",
@@ -393,7 +442,8 @@
     },
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog2"]
-    }
+    },
+    "otherLinks": null
   },
   {
     "weekId": "2025-W27",
@@ -413,7 +463,8 @@
     },
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog3", "https://fwt.wtf/devlog4"]
-    }
+    },
+    "otherLinks": null
   },
   {
     "weekId": "2025-W28",
@@ -433,7 +484,8 @@
     },
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog5"]
-    }
+    },
+    "otherLinks": null
   },
   {
     "weekId": "2025-W29",
@@ -453,7 +505,8 @@
     },
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog6"]
-    }
+    },
+    "otherLinks": null
   },
   {
     "weekId": "2025-W30",
@@ -470,7 +523,8 @@
     },
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog7"]
-    }
+    },
+    "otherLinks": null
   },
   {
     "weekId": "2025-W31",
@@ -486,7 +540,8 @@
     },
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog8"]
-    }
+    },
+    "otherLinks": null
   },
   {
     "weekId": "2025-W32",
@@ -503,7 +558,8 @@
     },
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog9"]
-    }
+    },
+    "otherLinks": null
   },
   {
     "weekId": "2025-W33",
@@ -520,7 +576,8 @@
     },
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog10"]
-    }
+    },
+    "otherLinks": null
   },
   {
     "weekId": "2025-W34",
@@ -537,7 +594,8 @@
     },
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog11"]
-    }
+    },
+    "otherLinks": null
   },
   {
     "weekId": "2025-W35",
@@ -563,6 +621,8 @@
     "minutesWorked": 0,
     "wins": "",
     "blog": null,
-    "video": null
+    "video": null,
+    "devLogVideo": null,
+    "otherLinks": null
   }
 ]

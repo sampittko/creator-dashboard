@@ -208,6 +208,20 @@ export default function DashboardPage() {
                       ))}
                     </>
                   )}
+                  {week.otherLinks && (
+                    <>
+                      {week.otherLinks.map(({ url, label }, urlIndex) => (
+                        <a
+                          key={urlIndex}
+                          href={url}
+                          target="_blank"
+                          className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] font-bold py-1 px-3 rounded shadow whitespace-nowrap"
+                        >
+                          {label}
+                        </a>
+                      ))}
+                    </>
+                  )}
                 </div>
 
                 <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 whitespace-pre-wrap">
