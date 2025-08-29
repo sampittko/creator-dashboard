@@ -18,6 +18,10 @@ export interface VideoEntry {
   kilometersRecorded: number;
 }
 
+export interface DevLogVideoEntry {
+  url: string;
+}
+
 export interface WeeklyEntry {
   weekId: string;
   topic: string;
@@ -26,6 +30,7 @@ export interface WeeklyEntry {
   wins: string;
   blog: BlogEntry | null;
   video: VideoEntry | null;
+  devLogVideo: DevLogVideoEntry | null;
 }
 
 export interface AggregatedStats {
