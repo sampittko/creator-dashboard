@@ -626,7 +626,28 @@
         "https://fwt.wtf/devlog11"
       ]
     },
-    "otherLinks": null
+    "otherLinks": [
+      {
+        "url": "https://fwt.wtf/short1",
+        "label": "Short #1"
+      },
+      {
+        "url": "https://fwt.wtf/short2",
+        "label": "Short #2"
+      },
+      {
+        "url": "https://fwt.wtf/short3",
+        "label": "Short #3"
+      },
+      {
+        "url": "https://fwt.wtf/short4",
+        "label": "Short #4"
+      },
+      {
+        "url": "https://fwt.wtf/short5",
+        "label": "Short #5"
+      }
+    ]
   },
   {
     "weekId": "2025-W35",
