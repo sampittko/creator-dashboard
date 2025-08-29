@@ -653,7 +653,7 @@
     "weekId": "2025-W35",
     "topic": "What I Discovered on My Tech Reset Journey",
     "status": "perfect",
-    "minutesWorked": 1353,
+    "minutesWorked": 1364,
     "wins": "Last week's realization was just an illusion and I've managed to go through App Review process successfully for both fwt. joex and fwt. axis apps. Releases are scheduled for the 1st of September which means that everything is going according to the plans! Recorded app launch videos for Product Hunt together with 27th video for the channel.",
     "blog": null,
     "video": {
@@ -663,9 +663,20 @@
       "kilometersRecorded": 28
     },
     "devLogVideo": {
-      "urls": ["https://fwt.wtf/devlog12"]
+      "urls": [
+        "https://fwt.wtf/devlog12"
+      ]
     },
-    "otherLinks": [{"url": "https://fwt.wtf/axis-launch-video", "label": "axis Product Hunt"}, {"url": "https://fwt.wtf/joex-launch-video", "label": "joex Product Hunt"}]
+    "otherLinks": [
+      {
+        "url": "https://fwt.wtf/axis-launch-video",
+        "label": "axis Product Hunt"
+      },
+      {
+        "url": "https://fwt.wtf/joex-launch-video",
+        "label": "joex Product Hunt"
+      }
+    ]
   },
   {
     "weekId": "2025-W36",
