@@ -166,7 +166,8 @@
       "url": "https://fwt.wtf/delete-your-chats-video",
       "takes": 1,
       "kilometersRecorded": 27
-    }
+    },
+    "otherLinks": [{ "url": "https://fwt.wtf/tatryit", "label": "Meetup (SK)"}]
   },
   {
     "weekId": "2025-W14",
@@ -217,7 +218,8 @@
       "url": "https://fwt.wtf/choose-your-digital-path-video",
       "takes": 12,
       "kilometersRecorded": 11
-    }
+    },
+    "otherLinks": [{ "url": "https://fwt.wtf/hlasypopradu", "label": "Podcast (SK)"}]
   },
   {
     "weekId": "2025-W17",
