@@ -19,7 +19,7 @@ export interface VideoEntry {
 }
 
 export interface DevLogVideoEntry {
-  url: string;
+  urls: string[];
 }
 
 export interface WeeklyEntry {

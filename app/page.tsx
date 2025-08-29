@@ -194,13 +194,17 @@ export default function DashboardPage() {
                     </a>
                   )}
                   {week.devLogVideo && (
-                    <a
-                      href={week.devLogVideo.url}
-                      target="_blank"
-                      className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] font-bold py-1 px-3 rounded shadow whitespace-nowrap"
-                    >
-                      Dev Log Video
-                    </a>
+                    <>
+                      {week.devLogVideo.urls.map((url, urlIndex) => (
+                        <a
+                          href={url}
+                          target="_blank"
+                          className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] font-bold py-1 px-3 rounded shadow whitespace-nowrap"
+                        >
+                          Dev Log Video #{urlIndex + 1}
+                        </a>
+                      ))}
+                    </>
                   )}
                 </div>
 
