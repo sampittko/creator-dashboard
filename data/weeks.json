@@ -613,7 +613,7 @@
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog12"]
     },
-    "otherLinks": null
+    "otherLinks": [{"url": "https://fwt.wtf/axis-launch-video", "label": "axis Product Hunt"}, {"url": "https://fwt.wtf/joex-launch-video", "label": "joex Product Hunt"}]
   },
   {
     "weekId": "2025-W36",
