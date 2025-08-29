@@ -25,7 +25,7 @@ export interface DevLogVideoEntry {
 export type OtherLink = {
   url: string;
   label: string;
-}[]
+}
 
 export interface WeeklyEntry {
   weekId: string;
@@ -36,7 +36,7 @@ export interface WeeklyEntry {
   blog: BlogEntry | null;
   video: VideoEntry | null;
   devLogVideo: DevLogVideoEntry | null;
-  otherLinks: OtherLink | null;
+  otherLinks: OtherLink[] | null;
 }
 
 export interface AggregatedStats {
