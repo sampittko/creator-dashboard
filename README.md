@@ -1,14 +1,14 @@
-# [free with tech](https://fwt.wtf) - Creator Dashboard
+# Creator Dashboard [#freewithtech](https://fwt.wtf)
 
 A transparent, open-source dashboard to track the weekly progress of building a content brand from scratch. This project documents content creation, time investment, and resources spent — all in the open.
 
 ## ✨ Why this project?
 
-[**free with tech**](https://fwt.wtf) is about showing the real journey behind building something online. The dashboard shows week-by-week:
+Creator Dashboard [**#freewithtech**](https://fwt.wtf) is about showing the real journey behind building something online. The dashboard shows week-by-week:
 
 - Topics covered
 - Hours worked
-- Blog and video publishing activity
+- Content publishing activity
 - Creator streaks and progress metrics
 
 It’s part experiment, part accountability, part resource for other creators.
@@ -70,4 +70,4 @@ If you find this project valuable, [consider buying me a coffee](https://www.buy
 
 ---
 
-**Part of the [free with tech](https://freewith.tech) ecosystem** - helping people build a healthier relationship with technology.
+**Part of the [#freewithtech](https://freewith.tech) ecosystem** - helping people build a healthier relationship with technology.

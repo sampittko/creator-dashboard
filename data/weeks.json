@@ -101,7 +101,7 @@
   },
   {
     "weekId": "2025-W09",
-    "topic": "My Journey to Becoming Free With Tech",
+    "topic": "My Journey to Becoming #freewithtech",
     "status": "perfect",
     "minutesWorked": 1599,
     "wins": "1st video published",
@@ -396,7 +396,7 @@
   },
   {
     "weekId": "2025-W24",
-    "topic": "free with tech: What It Really Means",
+    "topic": "#freewithtech: What It Really Means",
     "status": "perfect",
     "minutesWorked": 804,
     "wins": "Rewrote fwt. axis app from React Native to Swift",
@@ -415,7 +415,7 @@
   },
   {
     "weekId": "2025-W25",
-    "topic": "How Ryder Carroll and Cal Newport Helped Me Create free with tech",
+    "topic": "How Ryder Carroll and Cal Newport Helped Me Create #freewithtech",
     "status": "perfect",
     "minutesWorked": 1294,
     "wins": "Extensive vibe-coding sessions for fwt. axis app",
@@ -508,7 +508,7 @@
   },
   {
     "weekId": "2025-W29",
-    "topic": "How free with tech Evolved After 25 Weeks",
+    "topic": "How #freewithtech Evolved After 25 Weeks",
     "status": "perfect",
     "minutesWorked": 888,
     "wins": "I've decided to stop blogging and focus on video content and apps development. I've iterated axis app from v1.1 to v1.4 by fixing bugs and adding new features with improved user experience based on my own needs. I've also iterated joex from v1.1 to v1.2.",
@@ -573,7 +573,7 @@
     "topic": "Digital Slavery is Real and How I Broke Free",
     "status": "perfect",
     "minutesWorked": 1252,
-    "wins": "free with tech official landing page is live after a 2-day sprint. Last fixes and improvements implemented for axis and joex Apple Watch apps.",
+    "wins": "#freewithtech official landing page is live after a 2-day sprint. Last fixes and improvements implemented for axis and joex Apple Watch apps.",
     "blog": null,
     "video": {
       "publishedAt": "2025-08-08",

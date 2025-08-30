@@ -4,29 +4,29 @@ import { getAggregatedStats } from "@/lib/stats";
 import { YearGrid } from "./components/year-grid";
 
 export const metadata = {
-  title: "Creator Dashboard – free with tech",
+  title: "Creator Dashboard #freewithtech",
   description:
-    "A transparent look behind the scenes of the free with tech project. Follow weekly progress, content publishing, time invested, and resources spent on building a public brand from scratch.",
+    "A transparent look behind the scenes of the #freewithtech project. Follow weekly progress, content publishing, time invested, and resources spent on building a public brand from scratch.",
   openGraph: {
     type: "website",
     url: "https://journey.freewith.tech",
-    title: "Creator Dashboard – free with tech",
+    title: "Creator Dashboard #freewithtech",
     description:
-      "A transparent look behind the scenes of the free with tech project. Follow weekly progress, content publishing, time invested, and resources spent on building a public brand from scratch.",
+      "A transparent look behind the scenes of the #freewithtech project. Follow weekly progress, content publishing, time invested, and resources spent on building a public brand from scratch.",
     images: [
       {
         url: "https://journey.freewith.tech/assets/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Creator Dashboard – free with tech",
+        alt: "Creator Dashboard #freewithtech",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Creator Dashboard – free with tech",
+    title: "Creator Dashboard #freewithtech",
     description:
-      "A transparent look behind the scenes of the free with tech project. Follow weekly progress, content publishing, time invested, and resources spent on building a public brand from scratch.",
+      "A transparent look behind the scenes of the #freewithtech project. Follow weekly progress, content publishing, time invested, and resources spent on building a public brand from scratch.",
     images: ["https://journey.freewith.tech/assets/og-image.png"],
   },
 };
