@@ -680,6 +680,35 @@
   },
   {
     "weekId": "2025-W36",
+    "topic": "How Gaming and Coding Shaped My Digital Journey",
+    "status": "perfect",
+    "minutesWorked": 1201,
+    "wins": "Product Hunt launches of fwt. axis & fwt. joex where fwt. axis got featured in PH Daily newsletter, ending up #8 out of 275 app launches in total on the 1st of September.",
+    "blog": null,
+    "video": {
+      "publishedAt": "2025-09-05",
+      "url": "https://fwt.wtf/years-inside-screens",
+      "takes": 3,
+      "kilometersRecorded": 5
+    },
+    "devLogVideo": null,
+    "otherLinks": [
+      {
+        "url": "https://fwt.wtf/short6",
+        "label": "Short #6"
+      },
+      {
+        "url": "https://fwt.wtf/short7",
+        "label": "Short #7"
+      },
+      {
+        "url": "https://fwt.wtf/short8",
+        "label": "Short #8"
+      }
+    ]
+  },
+  {
+    "weekId": "2025-W37",
     "topic": "",
     "status": "pending",
     "minutesWorked": 0,
