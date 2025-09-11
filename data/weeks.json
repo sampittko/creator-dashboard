@@ -709,6 +709,22 @@
   },
   {
     "weekId": "2025-W37",
+    "topic": "The Missing Piece in the Bullet Journal Method for Me",
+    "status": "perfect",
+    "minutesWorked": 0,
+    "wins": "Chilled down after 8 months of work. This month is all about reflection and planning for the 4th phase of my #freewithtech journey.",
+    "blog": null,
+    "video": {
+      "publishedAt": "2025-09-12",
+      "url": "https://fwt.wtf/analog-is-not-enough",
+      "takes": 1,
+      "kilometersRecorded": 23
+    },
+    "devLogVideo": null,
+    "otherLinks": null
+  },
+  {
+    "weekId": "2025-W38",
     "topic": "",
     "status": "pending",
     "minutesWorked": 0,
