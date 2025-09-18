@@ -725,6 +725,22 @@
   },
   {
     "weekId": "2025-W38",
+    "topic": "How I Avoid Both Surveillance and Self-Hosting Hell",
+    "status": "perfect",
+    "minutesWorked": 0,
+    "wins": "30 perfect weeks in a row is a testament to my commitment since January 2025.",
+    "blog": null,
+    "video": {
+      "publishedAt": "2025-09-19",
+      "url": "https://fwt.wtf/privacy-balance",
+      "takes": 1,
+      "kilometersRecorded": 62
+    },
+    "devLogVideo": null,
+    "otherLinks": null
+  },
+  {
+    "weekId": "2025-W39",
     "topic": "",
     "status": "pending",
     "minutesWorked": 0,
