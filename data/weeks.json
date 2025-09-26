@@ -741,6 +741,22 @@
   },
   {
     "weekId": "2025-W39",
+    "topic": "What I Learned About Relationships After Deleting Social Media",
+    "status": "perfect",
+    "minutesWorked": 160,
+    "wins": "",
+    "blog": null,
+    "video": {
+      "publishedAt": "2025-09-26",
+      "url": "https://fwt.wtf/shattered-connections",
+      "takes": 4,
+      "kilometersRecorded": 0
+    },
+    "devLogVideo": null,
+    "otherLinks": null
+  },
+  {
+    "weekId": "2025-W40",
     "topic": "",
     "status": "pending",
     "minutesWorked": 0,
