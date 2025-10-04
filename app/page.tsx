@@ -145,7 +145,8 @@ export default function DashboardPage() {
             <div className="text-sm text-gray-500 dark:text-gray-400">
               {week.weekId}
             </div>
-            <div className="font-bold">{week.topic || "—"}</div>
+            
+            {week.status !== "skipped" ? <div className="font-bold">{week.topic || "—"}</div> : null}
 
             {week.status === "pending" ? (
               <div className="mt-2 text-sm text-[#333] bg-[#CEBAF4] rounded p-2">
@@ -157,22 +158,22 @@ export default function DashboardPage() {
                   <span className="font-medium">Status:</span> {week.status}
                 </div>
 
-                <div className="text-sm mt-1">
+                {week.status !== "skipped" ? <div className="text-sm mt-1">
                   <span className="font-medium">Time:</span>{" "}
                   {Math.round(week.minutesWorked / 60)}h
-                </div>
+                </div> : null}
 
-                <div className="text-sm mt-1">
+                {week.status !== "skipped" ? <div className="text-sm mt-1">
                   <span className="font-medium">Video Takes:</span>{" "}
                   {week.video?.takes || 0}
-                </div>
+                </div> : null}
 
-                <div className="text-sm mt-1">
+                {week.status !== "skipped" ? <div className="text-sm mt-1">
                   <span className="font-medium">
                     Travel Distance for Video Recording:
                   </span>{" "}
                   {week.video?.kilometersRecorded || 0}km
-                </div>
+                </div> : ""}
 
                 <div className="text-sm mt-2 space-x-1">
                   {week.video && (
@@ -224,9 +225,9 @@ export default function DashboardPage() {
                   )}
                 </div>
 
-                <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 whitespace-pre-wrap">
+                {week.status !== "skipped" ? <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 whitespace-pre-wrap">
                   Weekly win(s): {week.wins || "None documented"}
-                </div>
+                </div> : null}
               </>
             )}
           </div>
