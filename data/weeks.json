@@ -758,6 +758,17 @@
   {
     "weekId": "2025-W40",
     "topic": "",
+    "status": "skipped",
+    "minutesWorked": 0,
+    "wins": "",
+    "blog": null,
+    "video": null,
+    "devLogVideo": null,
+    "otherLinks": null
+  },
+  {
+    "weekId": "2025-W41",
+    "topic": "",
     "status": "pending",
     "minutesWorked": 0,
     "wins": "",
