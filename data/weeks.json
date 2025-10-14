@@ -784,6 +784,22 @@
   },
   {
     "weekId": "2025-W42",
+    "topic": "Why I Think Dumbphones Miss the Point",
+    "status": "perfect",
+    "minutesWorked": 0,
+    "wins": "",
+    "blog": null,
+    "video": {
+      "publishedAt": "2025-10-17",
+      "url": "https://fwt.wtf/no-more-dumbphones",
+      "takes": 2,
+      "kilometersRecorded": 34
+    },
+    "devLogVideo": null,
+    "otherLinks": null
+  },
+  {
+    "weekId": "2025-W43",
     "topic": "",
     "status": "pending",
     "minutesWorked": 0,
