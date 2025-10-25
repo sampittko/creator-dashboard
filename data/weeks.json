@@ -800,6 +800,22 @@
   },
   {
     "weekId": "2025-W43",
+    "topic": "Digital That Supports Analog",
+    "status": "perfect",
+    "minutesWorked": 1453,
+    "wins": "Launched Journal Companions directory as a concept for implementing digital-analog bridge in your life. I also made 2 bug fixes and 1 new feature for free with tech apps that are included in the directory. Lovely autumn weather invited me to record 2 videos in 1 week. This means that I already know what is coming for next week!",
+    "blog": null,
+    "video": {
+      "publishedAt": "2025-10-24",
+      "url": "https://fwt.wtf/journal-companions",
+      "takes": 5,
+      "kilometersRecorded": 27
+    },
+    "devLogVideo": null,
+    "otherLinks": null
+  },
+  {
+    "weekId": "2025-W44",
     "topic": "",
     "status": "pending",
     "minutesWorked": 0,
