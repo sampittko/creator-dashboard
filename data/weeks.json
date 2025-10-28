@@ -816,6 +816,22 @@
   },
   {
     "weekId": "2025-W44",
+    "topic": "Apps Built to Stay Small",
+    "status": "perfect",
+    "minutesWorked": 0,
+    "wins": "Shipped fwt. joex v1.2.0 with 2 new features.",
+    "blog": null,
+    "video": {
+      "publishedAt": "2025-10-31",
+      "url": "https://fwt.wtf/respectful-tech",
+      "takes": 1,
+      "kilometersRecorded": 40
+    },
+    "devLogVideo": null,
+    "otherLinks": null
+  },
+  {
+    "weekId": "2025-W45",
     "topic": "",
     "status": "pending",
     "minutesWorked": 0,
