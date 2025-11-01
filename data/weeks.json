@@ -816,6 +816,22 @@
   },
   {
     "weekId": "2025-W44",
+    "topic": "Apps Built to Stay Small",
+    "status": "perfect",
+    "minutesWorked": 442,
+    "wins": "Shipped fwt. joex v1.2.0 with 2 new features. I've received the 1st payout directly from Apple as an indie hacker since the launch of my two apps on the 1st of September. When purpose meets consistent action, time takes care of the rest.",
+    "blog": null,
+    "video": {
+      "publishedAt": "2025-10-31",
+      "url": "https://fwt.wtf/respectful-tech",
+      "takes": 1,
+      "kilometersRecorded": 40
+    },
+    "devLogVideo": null,
+    "otherLinks": null
+  },
+  {
+    "weekId": "2025-W45",
     "topic": "",
     "status": "pending",
     "minutesWorked": 0,
