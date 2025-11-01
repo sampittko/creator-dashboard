@@ -1,14 +1,31 @@
-'use client';
-
-import { useEffect, useMemo, useState } from "react";
 import data from "@/data/weeks.json";
 import { WeeklyEntry, WeekStatus } from "@/types";
-import { statusToEmoji } from "@/lib/visuals";
 import { getISOWeek, getISOWeekYear, getISOWeeksInYear } from "date-fns";
+import { YearGridClient } from "./year-grid.client";
 
-const deriveProjectStartWeek = (weeks: WeeklyEntry[]): string => {
+type DerivedWeekStatus = WeekStatus | "pending" | "future" | "not_started";
+
+export type YearGridWeek = {
+  weekId: string;
+  status: DerivedWeekStatus;
+  topic?: string;
+};
+
+export type YearGridYear = {
+  year: number;
+  weeks: YearGridWeek[];
+};
+
+const getCurrentWeekId = () => {
+  const now = new Date();
+  return `${getISOWeekYear(now)}-W${String(getISOWeek(now)).padStart(2, "0")}`;
+};
+
+const getYearFromWeekId = (weekId: string) => Number(weekId.slice(0, 4));
+
+const deriveProjectStartWeek = (weeks: WeeklyEntry[], fallbackWeekId: string) => {
   const firstActiveWeek = weeks.find((week) => week.status !== "not_started");
-  return firstActiveWeek?.weekId ?? getCurrentWeekId();
+  return firstActiveWeek?.weekId ?? fallbackWeekId;
 };
 
 function generateAllWeekIds(year: number): string[] {
@@ -19,21 +36,12 @@ function generateAllWeekIds(year: number): string[] {
   );
 }
 
-function getCurrentWeekId(): string {
-  const now = new Date();
-  return `${getISOWeekYear(now)}-W${String(getISOWeek(now)).padStart(2, "0")}`;
-}
-
-function getYearFromWeekId(weekId: string): number {
-  return Number(weekId.slice(0, 4));
-}
-
 function simpleWeekStatus(
   weekId: string,
   currentWeekId: string,
   existingStatus: WeekStatus | undefined,
   projectStartWeek: string
-): WeekStatus | "pending" | "future" | "not_started" {
+): DerivedWeekStatus {
   if (existingStatus) return existingStatus;
   if (weekId > currentWeekId) return "future";
   if (weekId === currentWeekId) return "pending";
@@ -44,41 +52,20 @@ function simpleWeekStatus(
 export function YearGrid() {
   const weeksData = data as WeeklyEntry[];
   const currentWeekId = getCurrentWeekId();
-  const projectStartWeek = useMemo(
-    () => deriveProjectStartWeek(weeksData),
-    [weeksData]
-  );
-  const weeksMap = useMemo(
-    () => new Map(weeksData.map((w) => [w.weekId, w])),
-    [weeksData]
-  );
+  const projectStartWeek = deriveProjectStartWeek(weeksData, currentWeekId);
+  const weeksMap = new Map(weeksData.map((w) => [w.weekId, w]));
 
-  const availableYears = useMemo(() => {
-    const years = new Set<number>();
-    weeksData.forEach((week) => years.add(getYearFromWeekId(week.weekId)));
-    years.add(getYearFromWeekId(currentWeekId));
-    return Array.from(years).sort((a, b) => a - b);
-  }, [weeksData, currentWeekId]);
+  const yearsSet = new Set<number>();
+  weeksData.forEach((week) => yearsSet.add(getYearFromWeekId(week.weekId)));
+  yearsSet.add(getYearFromWeekId(currentWeekId));
 
-  const defaultYear = useMemo(() => {
-    return availableYears[availableYears.length - 1];
-  }, [availableYears]);
+  const availableYears = Array.from(yearsSet).sort((a, b) => a - b);
+  if (availableYears.length === 0) {
+    availableYears.push(getYearFromWeekId(currentWeekId));
+  }
 
-  const [selectedYear, setSelectedYear] = useState(defaultYear);
-
-  useEffect(() => {
-    setSelectedYear((year) =>
-      availableYears.includes(year) ? year : defaultYear
-    );
-  }, [availableYears, defaultYear]);
-
-  const allWeeks = useMemo(
-    () => generateAllWeekIds(selectedYear),
-    [selectedYear]
-  );
-
-  const mergedWeeks = useMemo(() => {
-    return allWeeks.map((weekId) => {
+  const years: YearGridYear[] = availableYears.map((year) => {
+    const weeks = generateAllWeekIds(year).map((weekId) => {
       const existing = weeksMap.get(weekId);
       const status = simpleWeekStatus(
         weekId,
@@ -89,73 +76,16 @@ export function YearGrid() {
 
       return {
         weekId,
-        topic: existing?.topic || "",
         status,
-        minutesWorked: existing?.minutesWorked || 0,
-        wins: existing?.wins || "",
-        blog: existing?.blog || null,
-        video: existing?.video || null,
+        topic: existing?.topic || undefined,
       };
     });
-  }, [allWeeks, weeksMap, currentWeekId, projectStartWeek]);
 
-  const selectedYearIndex = availableYears.indexOf(selectedYear);
-  const hasPrevious = selectedYearIndex > 0;
-  const hasNext = selectedYearIndex < availableYears.length - 1;
+    return { year, weeks };
+  });
 
-  return (
-    <section className="mb-8 border rounded p-4">
-      <div className="flex items-center justify-between mb-2">
-        <h2 className="text-lg font-semibold">📅 Weekly Overview</h2>
-        <div className="flex items-center gap-2">
-          {availableYears.length > 1 && (
-            <>
-              <button
-                type="button"
-                onClick={() =>
-                  hasPrevious &&
-                  setSelectedYear(availableYears[selectedYearIndex - 1])
-                }
-                className="text-sm border rounded px-2 py-1 disabled:opacity-50 disabled:cursor-not-allowed"
-                disabled={!hasPrevious}
-                aria-label="Show previous year"
-              >
-                ←
-              </button>
-              <button
-                type="button"
-                onClick={() =>
-                  hasNext &&
-                  setSelectedYear(availableYears[selectedYearIndex + 1])
-                }
-                className="text-sm border rounded px-2 py-1 disabled:opacity-50 disabled:cursor-not-allowed"
-                disabled={!hasNext}
-                aria-label="Show next year"
-              >
-                →
-              </button>
-            </>
-          )}
-          <span className="text-sm font-medium">{selectedYear}</span>
-        </div>
-      </div>
+  const defaultYear =
+    years[years.length - 1]?.year ?? getYearFromWeekId(currentWeekId);
 
-      <div className="grid grid-cols-13 gap-1 text-sm">
-        {mergedWeeks.map((week) => (
-          <div
-            key={week.weekId}
-            title={`${week.weekId}${week.topic ? " — " + week.topic : ""}`}
-            className={`w-6 h-6 flex items-center justify-center border rounded cursor-help ${week.status === "not_started" ? "text-gray-400" : ""
-              }`}
-          >
-            {statusToEmoji(week.status)}
-          </div>
-        ))}
-      </div>
-      <div className="text-xs text-gray-500 dark:text-gray-400 mt-2">
-        ✅ Perfect &nbsp; ⚠️ Incomplete &nbsp; ❌ Skipped &nbsp; 🕒 Pending
-        &nbsp; ◻️ Future &nbsp; ▫️ Not started
-      </div>
-    </section>
-  );
+  return <YearGridClient years={years} defaultYear={defaultYear} />;
 }
