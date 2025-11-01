@@ -39,32 +39,28 @@ export function YearGridClient({ years, defaultYear }: YearGridClientProps) {
       <div className="flex items-center justify-between mb-2">
         <h2 className="text-lg font-semibold">📅 Weekly Overview</h2>
         <div className="flex items-center gap-2">
-          {years.length > 1 && (
-            <>
-              <button
-                type="button"
-                onClick={() =>
-                  hasPrevious && setSelectedYear(years[safeIndex - 1].year)
-                }
-                className="text-sm border rounded px-2 py-1 disabled:opacity-50 disabled:cursor-not-allowed"
-                disabled={!hasPrevious}
-                aria-label="Show previous year"
-              >
-                ←
-              </button>
-              <button
-                type="button"
-                onClick={() =>
-                  hasNext && setSelectedYear(years[safeIndex + 1].year)
-                }
-                className="text-sm border rounded px-2 py-1 disabled:opacity-50 disabled:cursor-not-allowed"
-                disabled={!hasNext}
-                aria-label="Show next year"
-              >
-                →
-              </button>
-            </>
-          )}
+          <button
+            type="button"
+            onClick={() =>
+              hasPrevious && setSelectedYear(years[safeIndex - 1].year)
+            }
+            className="text-sm border rounded px-2 py-1 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+            disabled={!hasPrevious}
+            aria-label="Show previous year"
+          >
+            ←
+          </button>
+          <button
+            type="button"
+            onClick={() =>
+              hasNext && setSelectedYear(years[safeIndex + 1].year)
+            }
+            className="text-sm border rounded px-2 py-1 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+            disabled={!hasNext}
+            aria-label="Show next year"
+          >
+            →
+          </button>
           <span className="text-sm font-medium">{selected.year}</span>
         </div>
       </div>
