@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import data from "@/data/weeks.json";
 import { WeeklyEntry } from "@/types";
 import { getAggregatedStats } from "@/lib/stats";
@@ -32,8 +34,20 @@ export const metadata = {
   },
 };
 
-export default function DashboardPage() {
-  const weeks = [...(data as WeeklyEntry[])].reverse();
+type DashboardPageProps = {
+  searchParams?: {
+    sort?: string | string[];
+  };
+};
+
+export default function DashboardPage({ searchParams }: DashboardPageProps) {
+  const rawWeeks = data as WeeklyEntry[];
+  const sortQuery = Array.isArray(searchParams?.sort)
+    ? searchParams?.sort[0]
+    : searchParams?.sort;
+  const sortOrder = sortQuery === "oldest" ? "oldest" : "newest";
+  const weeks =
+    sortOrder === "newest" ? [...rawWeeks].reverse() : [...rawWeeks];
   const stats = getAggregatedStats();
 
   return (
@@ -139,6 +153,51 @@ export default function DashboardPage() {
       </section>
 
       <YearGrid />
+
+      <div className="flex justify-end mb-4">
+        <div className="flex items-center gap-2 text-sm">
+          <span
+            id="sort-order-label"
+            className="text-gray-600 dark:text-gray-300"
+          >
+            Sort:
+          </span>
+          <div
+            role="group"
+            aria-labelledby="sort-order-label"
+            className="flex items-center gap-2"
+          >
+            <Link
+              href="/"
+              role="button"
+              aria-current={sortOrder === "newest" ? "page" : undefined}
+              aria-pressed={sortOrder === "newest"}
+              aria-disabled={sortOrder === "newest"}
+              tabIndex={sortOrder === "newest" ? 0 : undefined}
+              className={`rounded border px-3 py-1 transition-colors ${sortOrder === "newest"
+                  ? "border-[#333] bg-[#CEBAF4] text-[#333] dark:border-[#CEBAF4] dark:text-[#f4f4f4] cursor-default pointer-events-none opacity-80"
+                  : "border-transparent bg-transparent text-[#333] dark:text-[#f4f4f4]"
+                }`}
+            >
+              Newest → Oldest
+            </Link>
+            <Link
+              href="/?sort=oldest"
+              role="button"
+              aria-current={sortOrder === "oldest" ? "page" : undefined}
+              aria-pressed={sortOrder === "oldest"}
+              aria-disabled={sortOrder === "oldest"}
+              tabIndex={sortOrder === "oldest" ? 0 : undefined}
+              className={`rounded border px-3 py-1 transition-colors ${sortOrder === "oldest"
+                  ? "border-[#333] bg-[#CEBAF4] text-[#333] dark:border-[#CEBAF4] dark:text-[#f4f4f4] cursor-default pointer-events-none opacity-80"
+                  : "border-transparent bg-transparent text-[#333] dark:text-[#f4f4f4]"
+                }`}
+            >
+              Oldest → Newest
+            </Link>
+          </div>
+        </div>
+      </div>
 
       <div className="grid gap-4 mb-4">
         {weeks.map((week) => (
