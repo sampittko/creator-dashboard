@@ -75,16 +75,28 @@ export function getAggregatedStats() {
   }
 
   let currentStreak = 0;
-  let longestStreak = 0;
   for (const week of reversedWeeks) {
     if (week.status === "not_started") continue;
     if (week.status === "pending") continue;
 
     if (week.status === "perfect") {
       currentStreak++;
-      longestStreak = Math.max(longestStreak, currentStreak);
     } else {
       break;
+    }
+  }
+
+  let longestStreak = 0;
+  let runningStreak = 0;
+  for (const week of weeks) {
+    if (week.status === "not_started") continue;
+    if (week.status === "pending") continue;
+
+    if (week.status === "perfect") {
+      runningStreak++;
+      longestStreak = Math.max(longestStreak, runningStreak);
+    } else {
+      runningStreak = 0;
     }
   }
 
