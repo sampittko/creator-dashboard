@@ -1,33 +1,72 @@
 import originalWeeks from "@/data/weeks.json";
+import type { WeekStatus, WeeklyEntry } from "@/types";
+
+const INACTIVE_WEEK_STATUSES: WeekStatus[] = ["not_started", "pending"];
+
+const isActiveWeek = (week: WeeklyEntry) =>
+  !INACTIVE_WEEK_STATUSES.includes(week.status);
+
+const countActiveWeeksFromFirstMatch = (
+  weeks: WeeklyEntry[],
+  predicate: (week: WeeklyEntry) => boolean
+) => {
+  const firstIndex = weeks.findIndex(predicate);
+  if (firstIndex === -1) return 0;
+
+  let count = 0;
+  for (let index = firstIndex; index < weeks.length; index++) {
+    if (isActiveWeek(weeks[index])) count++;
+  }
+
+  return count;
+};
+
+const calculatePerfectStreaks = (weeks: WeeklyEntry[]) => {
+  let longest = 0;
+  let running = 0;
+
+  for (const week of weeks) {
+    if (!isActiveWeek(week)) continue;
+
+    if (week.status === "perfect") {
+      running++;
+      longest = Math.max(longest, running);
+    } else {
+      running = 0;
+    }
+  }
+
+  let current = 0;
+  for (let index = weeks.length - 1; index >= 0; index--) {
+    const week = weeks[index];
+    if (!isActiveWeek(week)) continue;
+
+    if (week.status === "perfect") {
+      current++;
+    } else {
+      break;
+    }
+  }
+
+  return { current, longest };
+};
+
+const average = (total: number, divisor: number) =>
+  divisor > 0 ? Math.round(total / divisor) : 0;
 
 export function getAggregatedStats() {
-  const weeks = [...originalWeeks];
-  const reversedWeeks = [...originalWeeks].reverse();
+  const weeks = [...(originalWeeks as WeeklyEntry[])];
 
-  const totalProjectWeeks = weeks.filter(
-    (w) => w.status !== "not_started" && w.status !== "pending"
-  ).length;
-  const activeWeeks = totalProjectWeeks;
-
-  const firstBlogIndex = weeks.findIndex((w) => w.blog !== null);
-  const blogWeeks =
-    firstBlogIndex === -1
-      ? 0
-      : weeks
-          .slice(firstBlogIndex)
-          .filter(
-            (w) => w.status !== "not_started" && w.status !== "pending"
-          ).length;
-
-  const firstVideoIndex = weeks.findIndex((w) => w.video !== null);
-  const videoWeeks =
-    firstVideoIndex === -1
-      ? 0
-      : weeks
-          .slice(firstVideoIndex)
-          .filter(
-            (w) => w.status !== "not_started" && w.status !== "pending"
-          ).length;
+  const blogWeeks = countActiveWeeksFromFirstMatch(
+    weeks,
+    (week) => week.blog !== null
+  );
+  const videoWeeks = countActiveWeeksFromFirstMatch(
+    weeks,
+    (week) => week.video !== null
+  );
+  const { current: currentStreak, longest: longestStreak } =
+    calculatePerfectStreaks(weeks);
 
   const stats = {
     totalMinutesWorked: 0,
@@ -39,11 +78,11 @@ export function getAggregatedStats() {
       perfectWeeks: 0,
     },
     streaks: {
-      current: 0,
-      longest: 0,
+      current: currentStreak,
+      longest: longestStreak,
     },
     totalHoursWorked: 0,
-    totalProjectWeeks,
+    totalProjectWeeks: 0,
     blogWeeks,
     videoWeeks,
     averages: {
@@ -56,65 +95,37 @@ export function getAggregatedStats() {
   };
 
   for (const week of weeks) {
-    if (week.status === "not_started" || week.status === "pending")
-      continue;
+    if (!isActiveWeek(week)) continue;
 
+    stats.totalProjectWeeks++;
     stats.totalMinutesWorked += week.minutesWorked;
-    
+
     if (week.video) {
       stats.totalVideoTakes += week.video.takes;
       stats.totalVideoKilometersTraveled += week.video.kilometersRecorded;
+      stats.totalContent.videoCount++;
     }
 
     if (week.blog) stats.totalContent.blogCount++;
-    if (week.video) stats.totalContent.videoCount++;
 
-    if (week.status === "perfect") {
-      stats.totalContent.perfectWeeks++;
-    }
+    if (week.status === "perfect") stats.totalContent.perfectWeeks++;
   }
 
-  let currentStreak = 0;
-  for (const week of reversedWeeks) {
-    if (week.status === "not_started") continue;
-    if (week.status === "pending") continue;
-
-    if (week.status === "perfect") {
-      currentStreak++;
-    } else {
-      break;
-    }
-  }
-
-  let longestStreak = 0;
-  let runningStreak = 0;
-  for (const week of weeks) {
-    if (week.status === "not_started") continue;
-    if (week.status === "pending") continue;
-
-    if (week.status === "perfect") {
-      runningStreak++;
-      longestStreak = Math.max(longestStreak, runningStreak);
-    } else {
-      runningStreak = 0;
-    }
-  }
-
-  stats.streaks.current = currentStreak;
-  stats.streaks.longest = longestStreak;
   stats.totalHoursWorked = Math.round(stats.totalMinutesWorked / 60);
-
-  const average = (total: number, weeks: number) =>
-    weeks > 0 ? Math.round(total / weeks) : 0;
-
-  stats.averages.hoursWorked = average(stats.totalHoursWorked, activeWeeks);
-  stats.averages.videoTakes = average(stats.totalVideoTakes, videoWeeks);
+  stats.averages.hoursWorked = average(
+    stats.totalHoursWorked,
+    stats.totalProjectWeeks
+  );
+  stats.averages.videoTakes = average(stats.totalVideoTakes, stats.videoWeeks);
   stats.averages.videoKilometersTraveled = average(
     stats.totalVideoKilometersTraveled,
-    videoWeeks
+    stats.videoWeeks
   );
-  stats.averages.blogs = average(stats.totalContent.blogCount, blogWeeks);
-  stats.averages.videos = average(stats.totalContent.videoCount, videoWeeks);
+  stats.averages.blogs = average(stats.totalContent.blogCount, stats.blogWeeks);
+  stats.averages.videos = average(
+    stats.totalContent.videoCount,
+    stats.videoWeeks
+  );
 
   return stats;
 }
