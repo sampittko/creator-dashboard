@@ -2,6 +2,7 @@ import data from "@/data/weeks.json";
 import { WeeklyEntry } from "@/types";
 import { getAggregatedStats } from "@/lib/stats";
 import { YearGrid } from "./components/year-grid";
+import { ScrollToTop } from "./components/scroll-to-top";
 
 export const metadata = {
   title: "Creator Dashboard #freewithtech",
@@ -36,7 +37,7 @@ export default function DashboardPage() {
   const stats = getAggregatedStats();
 
   return (
-    <main className="p-4">
+    <main id="top" className="p-4">
       <div className="flex flex-col items-center gap-1 mb-6">
         <a
           href="https://fwt.wtf"
@@ -237,6 +238,8 @@ export default function DashboardPage() {
           </div>
         ))}
       </div>
+
+      <ScrollToTop />
     </main>
   );
 }
