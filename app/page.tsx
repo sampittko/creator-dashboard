@@ -261,7 +261,7 @@ export default async function DashboardPage({
                     <a
                       href={week.video.url}
                       target="_blank"
-                      className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] font-bold py-1 px-3 rounded shadow whitespace-nowrap"
+                      className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] py-1 px-3 rounded shadow whitespace-nowrap"
                     >
                       Video
                     </a>
@@ -270,7 +270,7 @@ export default async function DashboardPage({
                     <a
                       href={week.blog.url}
                       target="_blank"
-                      className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] font-bold py-1 px-3 rounded shadow whitespace-nowrap"
+                      className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] py-1 px-3 rounded shadow whitespace-nowrap"
                     >
                       Blog
                     </a>
@@ -282,7 +282,7 @@ export default async function DashboardPage({
                           key={urlIndex}
                           href={url}
                           target="_blank"
-                          className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] font-bold py-1 px-3 rounded shadow whitespace-nowrap"
+                          className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] py-1 px-3 rounded shadow whitespace-nowrap"
                         >
                           Dev Log
                           {urls.length > 1 ? ` #${urlIndex + 1}` : ""}
@@ -297,7 +297,7 @@ export default async function DashboardPage({
                           key={urlIndex}
                           href={url}
                           target="_blank"
-                          className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] font-bold py-1 px-3 rounded shadow whitespace-nowrap"
+                          className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] py-1 px-3 rounded shadow whitespace-nowrap"
                         >
                           {label}
                         </a>
