@@ -246,7 +246,7 @@ export default async function DashboardPage({
                   {week.video?.kilometersRecorded || 0}km
                 </div> : ""}
 
-                <div className="text-sm mt-2 space-x-1">
+                <div className="mt-2 flex flex-wrap items-center gap-2 text-sm">
                   {week.video && (
                     <a
                       href={week.video.url}
