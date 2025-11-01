@@ -157,7 +157,7 @@ export default async function DashboardPage({
 
       <YearGrid />
 
-      <div className="flex justify-end mb-4">
+      <div className="flex w-full justify-center md:justify-end mb-4">
         <div className="flex items-center gap-2 text-sm">
           <span
             id="sort-order-label"
