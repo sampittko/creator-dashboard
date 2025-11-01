@@ -174,7 +174,7 @@ export default async function DashboardPage({
               <span
                 aria-current="page"
                 aria-disabled="true"
-                className="rounded border px-3 py-1 transition-colors border-[#333] bg-[#CEBAF4] text-[#333] dark:border-[#CEBAF4] dark:text-[#f4f4f4] cursor-default opacity-80"
+                className="rounded border px-3 py-1 transition-colors border-[#333] bg-[#CEBAF4] text-[#333] cursor-default"
               >
                 Newest → Oldest
               </span>
@@ -190,7 +190,7 @@ export default async function DashboardPage({
               <span
                 aria-current="page"
                 aria-disabled="true"
-                className="rounded border px-3 py-1 transition-colors border-[#333] bg-[#CEBAF4] text-[#333] dark:border-[#CEBAF4] dark:text-[#f4f4f4] cursor-default opacity-80"
+                className="rounded border px-3 py-1 transition-colors border-[#333] bg-[#CEBAF4] text-[#333] cursor-default"
               >
                 Oldest → Newest
               </span>
