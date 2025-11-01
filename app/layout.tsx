@@ -13,9 +13,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth motion-reduce:scroll-auto">
       <body
-        className={`${spaceGrotesk.className} antialiased`}
+        className={`${spaceGrotesk.className} antialiased bg-[#F4F4F4] text-[#333] transition-colors duration-300 dark:bg-[#333] dark:text-[#F4F4F4]`}
       >
         {children}
         <Analytics />

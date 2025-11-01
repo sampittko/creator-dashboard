@@ -1,71 +1,21 @@
 @import "tailwindcss";
 
-:root {
-  --background: #F4F4F4;
-  --foreground: #333;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-}
+  @keyframes scroll-target-fade {
+    from {
+      background-color: rgba(206, 186, 244, 0.2);
+      box-shadow: 0 0 0 3px rgba(206, 186, 244, 0.8);
+    }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #333;
-    --foreground: #F4F4F4;
+    to {
+      background-color: transparent;
+      box-shadow: none;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.scroll-target {
-  transition: box-shadow 0.2s ease, background-color 0.2s ease;
-}
-
-.scroll-target:target {
-  background-color: rgba(206, 186, 244, 0.2);
-  box-shadow: 0 0 0 3px rgba(206, 186, 244, 0.8);
-  animation: scroll-target-fade 5s ease-out forwards;
-}
-
-@keyframes scroll-target-fade {
-  0% {
-    background-color: rgba(206, 186, 244, 0.2);
-    box-shadow: 0 0 0 3px rgba(206, 186, 244, 0.8);
-  }
-
-  100% {
-    background-color: transparent;
-    box-shadow: none;
-  }
-}
-
-.scroll-to-top {
-  bottom: 1.5rem;
-  transform: translateY(180%);
-  opacity: 0;
-  pointer-events: none;
-  transition:
-    transform 0.85s cubic-bezier(0.16, 1, 0.3, 1),
-    opacity 0.85s ease;
-}
-
-.scroll-to-top.scroll-to-top--visible {
-  transform: translateY(0);
-  opacity: 1;
-  pointer-events: auto;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
+@variant target {
+  &:target {
+    @slot;
   }
 }

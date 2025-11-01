@@ -145,7 +145,7 @@ export default function DashboardPage() {
           <div
             key={week.weekId}
             id={week.weekId}
-            className="scroll-target border rounded p-4 scroll-mt-24"
+            className="border rounded p-4 scroll-mt-24 transition-shadow transition-colors duration-200 target:bg-[rgba(206,186,244,0.2)] target:shadow-[0_0_0_3px_rgba(206,186,244,0.8)] target:animate-[scroll-target-fade_5s_ease-out_forwards]"
           >
             <div className="text-sm text-gray-500 dark:text-gray-400">
               {week.weekId}

@@ -93,8 +93,10 @@ export function ScrollToTop() {
       href="#top"
       aria-label="Scroll to top"
       onClick={handleClick}
-      className={`scroll-to-top fixed right-6 z-50 inline-flex items-center gap-2 rounded-full bg-[#CEBAF4] px-4 py-2 text-sm font-semibold text-[#333] shadow-lg transition-colors hover:bg-[#bda3ef] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CEBAF4] ${
-        isActive ? "scroll-to-top--visible" : ""
+      className={`fixed right-6 bottom-6 z-50 inline-flex items-center gap-2 rounded-full bg-[#CEBAF4] px-4 py-2 text-sm font-semibold text-[#333] shadow-lg transition-all duration-[850ms] ease-[cubic-bezier(0.16,1,0.3,1)] hover:bg-[#bda3ef] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CEBAF4] ${
+        isActive
+          ? "translate-y-0 opacity-100 pointer-events-auto"
+          : "translate-y-[180%] opacity-0 pointer-events-none"
       }`}
     >
       Back to top
