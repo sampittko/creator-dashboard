@@ -104,7 +104,7 @@ export default async function DashboardPage({
           <a
             href="https://fwt.wtf/creator-dashboard"
             target="_blank"
-            className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] font-bold py-1 px-3 rounded shadow whitespace-nowrap"
+            className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] py-1 px-3 rounded shadow whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CEBAF4]"
           >
             GitHub
           </a>
@@ -190,7 +190,7 @@ export default async function DashboardPage({
             ) : (
               <Link
                 href="/"
-                className="rounded border px-3 py-1 transition-colors border-transparent bg-transparent text-[#333] dark:text-[#f4f4f4]"
+                className="rounded border px-3 py-1 transition-colors border-transparent bg-transparent text-[#333] dark:text-[#f4f4f4] focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-1 focus-visible:outline-[#CEBAF4]"
               >
                 Newest → Oldest
               </Link>
@@ -206,7 +206,7 @@ export default async function DashboardPage({
             ) : (
               <Link
                 href="/?sort=oldest"
-                className="rounded border px-3 py-1 transition-colors border-transparent bg-transparent text-[#333] dark:text-[#f4f4f4]"
+                className="rounded border px-3 py-1 transition-colors border-transparent bg-transparent text-[#333] dark:text-[#f4f4f4] focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-1 focus-visible:outline-[#CEBAF4]"
               >
                 Oldest → Newest
               </Link>
@@ -261,7 +261,7 @@ export default async function DashboardPage({
                     <a
                       href={week.video.url}
                       target="_blank"
-                      className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] py-1 px-3 rounded shadow whitespace-nowrap"
+                      className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] py-1 px-3 rounded shadow whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CEBAF4]"
                     >
                       Video
                     </a>
@@ -270,7 +270,7 @@ export default async function DashboardPage({
                     <a
                       href={week.blog.url}
                       target="_blank"
-                      className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] py-1 px-3 rounded shadow whitespace-nowrap"
+                      className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] py-1 px-3 rounded shadow whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CEBAF4]"
                     >
                       Blog
                     </a>
@@ -282,7 +282,7 @@ export default async function DashboardPage({
                           key={urlIndex}
                           href={url}
                           target="_blank"
-                          className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] py-1 px-3 rounded shadow whitespace-nowrap"
+                          className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] py-1 px-3 rounded shadow whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CEBAF4]"
                         >
                           Dev Log
                           {urls.length > 1 ? ` #${urlIndex + 1}` : ""}
@@ -297,7 +297,7 @@ export default async function DashboardPage({
                           key={urlIndex}
                           href={url}
                           target="_blank"
-                          className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] py-1 px-3 rounded shadow whitespace-nowrap"
+                          className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] py-1 px-3 rounded shadow whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CEBAF4]"
                         >
                           {label}
                         </a>

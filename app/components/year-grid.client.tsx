@@ -82,7 +82,7 @@ export function YearGridClient({ years, defaultYear }: YearGridClientProps) {
                 href={`#${week.weekId}`}
                 title={baseTitle}
                 aria-label={baseTitle}
-                className={`${baseClass} cursor-pointer hover:border-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-500`}
+                className={`${baseClass} cursor-pointer hover:border-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-gray-500`}
               >
                 {emoji}
               </a>
