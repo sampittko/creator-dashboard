@@ -70,17 +70,39 @@ export function YearGridClient({ years, defaultYear }: YearGridClientProps) {
       </div>
 
       <div className="grid grid-cols-13 gap-1 text-sm">
-        {selected.weeks.map((week) => (
-          <div
-            key={week.weekId}
-            title={`${week.weekId}${week.topic ? " — " + week.topic : ""}`}
-            className={`w-6 h-6 flex items-center justify-center border rounded cursor-help ${
-              week.status === "not_started" ? "text-gray-400" : ""
-            }`}
-          >
-            {statusToEmoji(week.status)}
-          </div>
-        ))}
+        {selected.weeks.map((week) => {
+          const hasTopic =
+            typeof week.topic === "string" && week.topic.trim().length > 0;
+          const baseTitle = `${week.weekId}${week.topic ? " — " + week.topic : ""
+            }`;
+          const baseClass = `w-6 h-6 flex items-center justify-center border rounded ${week.status === "not_started" ? "text-gray-400" : ""
+            }`;
+          const emoji = statusToEmoji(week.status);
+
+          if (hasTopic) {
+            return (
+              <a
+                key={week.weekId}
+                href={`#${week.weekId}`}
+                title={baseTitle}
+                aria-label={baseTitle}
+                className={`${baseClass} cursor-pointer hover:border-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-500`}
+              >
+                {emoji}
+              </a>
+            );
+          }
+
+          return (
+            <div
+              key={week.weekId}
+              title={baseTitle}
+              className={`${baseClass} cursor-help`}
+            >
+              {emoji}
+            </div>
+          );
+        })}
       </div>
       <div className="text-xs text-gray-500 dark:text-gray-400 mt-2">
         ✅ Perfect &nbsp; ⚠️ Incomplete &nbsp; ❌ Skipped &nbsp; 🕒 Pending

@@ -141,11 +141,15 @@ export default function DashboardPage() {
 
       <div className="grid gap-4 mb-4">
         {weeks.map((week) => (
-          <div key={week.weekId} className="border rounded p-4">
+          <div
+            key={week.weekId}
+            id={week.weekId}
+            className="scroll-target border rounded p-4 scroll-mt-24"
+          >
             <div className="text-sm text-gray-500 dark:text-gray-400">
               {week.weekId}
             </div>
-            
+
             {week.status !== "skipped" ? <div className="font-bold">{week.topic || "—"}</div> : null}
 
             {week.status === "pending" ? (
