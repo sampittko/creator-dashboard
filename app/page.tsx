@@ -35,16 +35,19 @@ export const metadata = {
 };
 
 type DashboardPageProps = {
-  searchParams?: {
+  searchParams?: Promise<{
     sort?: string | string[];
-  };
+  }>;
 };
 
-export default function DashboardPage({ searchParams }: DashboardPageProps) {
+export default async function DashboardPage({
+  searchParams,
+}: DashboardPageProps) {
   const rawWeeks = data as WeeklyEntry[];
-  const sortQuery = Array.isArray(searchParams?.sort)
-    ? searchParams?.sort[0]
-    : searchParams?.sort;
+  const resolvedSearchParams = (await searchParams) ?? {};
+  const sortQuery = Array.isArray(resolvedSearchParams.sort)
+    ? resolvedSearchParams.sort[0]
+    : resolvedSearchParams.sort;
   const sortOrder = sortQuery === "oldest" ? "oldest" : "newest";
   const weeks =
     sortOrder === "newest" ? [...rawWeeks].reverse() : [...rawWeeks];
@@ -167,34 +170,38 @@ export default function DashboardPage({ searchParams }: DashboardPageProps) {
             aria-labelledby="sort-order-label"
             className="flex items-center gap-2"
           >
-            <Link
-              href="/"
-              role="button"
-              aria-current={sortOrder === "newest" ? "page" : undefined}
-              aria-pressed={sortOrder === "newest"}
-              aria-disabled={sortOrder === "newest"}
-              tabIndex={sortOrder === "newest" ? 0 : undefined}
-              className={`rounded border px-3 py-1 transition-colors ${sortOrder === "newest"
-                  ? "border-[#333] bg-[#CEBAF4] text-[#333] dark:border-[#CEBAF4] dark:text-[#f4f4f4] cursor-default pointer-events-none opacity-80"
-                  : "border-transparent bg-transparent text-[#333] dark:text-[#f4f4f4]"
-                }`}
-            >
-              Newest → Oldest
-            </Link>
-            <Link
-              href="/?sort=oldest"
-              role="button"
-              aria-current={sortOrder === "oldest" ? "page" : undefined}
-              aria-pressed={sortOrder === "oldest"}
-              aria-disabled={sortOrder === "oldest"}
-              tabIndex={sortOrder === "oldest" ? 0 : undefined}
-              className={`rounded border px-3 py-1 transition-colors ${sortOrder === "oldest"
-                  ? "border-[#333] bg-[#CEBAF4] text-[#333] dark:border-[#CEBAF4] dark:text-[#f4f4f4] cursor-default pointer-events-none opacity-80"
-                  : "border-transparent bg-transparent text-[#333] dark:text-[#f4f4f4]"
-                }`}
-            >
-              Oldest → Newest
-            </Link>
+            {sortOrder === "newest" ? (
+              <span
+                aria-current="page"
+                aria-disabled="true"
+                className="rounded border px-3 py-1 transition-colors border-[#333] bg-[#CEBAF4] text-[#333] dark:border-[#CEBAF4] dark:text-[#f4f4f4] cursor-default opacity-80"
+              >
+                Newest → Oldest
+              </span>
+            ) : (
+              <Link
+                href="/"
+                className="rounded border px-3 py-1 transition-colors border-transparent bg-transparent text-[#333] dark:text-[#f4f4f4]"
+              >
+                Newest → Oldest
+              </Link>
+            )}
+            {sortOrder === "oldest" ? (
+              <span
+                aria-current="page"
+                aria-disabled="true"
+                className="rounded border px-3 py-1 transition-colors border-[#333] bg-[#CEBAF4] text-[#333] dark:border-[#CEBAF4] dark:text-[#f4f4f4] cursor-default opacity-80"
+              >
+                Oldest → Newest
+              </span>
+            ) : (
+              <Link
+                href="/?sort=oldest"
+                className="rounded border px-3 py-1 transition-colors border-transparent bg-transparent text-[#333] dark:text-[#f4f4f4]"
+              >
+                Oldest → Newest
+              </Link>
+            )}
           </div>
         </div>
       </div>
