@@ -40,6 +40,15 @@ type DashboardPageProps = {
   }>;
 };
 
+const STATUS_LABELS: Record<WeeklyEntry["status"], string> = {
+  not_started: "Not Started ⚪️",
+  future: "Future ⚪️",
+  pending: "Pending 🟠",
+  perfect: "Perfect 🟢",
+  incomplete: "Incomplete 🔴",
+  skipped: "Skipped 🔴",
+};
+
 export default async function DashboardPage({
   searchParams,
 }: DashboardPageProps) {
@@ -226,7 +235,8 @@ export default async function DashboardPage({
             ) : (
               <>
                 <div className="text-sm mt-1">
-                  <span className="font-medium">Status:</span> {week.status}
+                  <span className="font-medium">Status:</span>{" "}
+                  {STATUS_LABELS[week.status]}
                 </div>
 
                 {week.status !== "skipped" ? <div className="text-sm mt-1">
