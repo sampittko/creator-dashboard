@@ -18,7 +18,7 @@ export const metadata = {
       "A transparent look behind the scenes of the #freewithtech project. Follow weekly progress, content publishing, time invested, and resources spent on building a public brand from scratch.",
     images: [
       {
-        url: "https://journey.freewith.tech/assets/og-image.png",
+        url: "https://journey.freewith.tech/assets/og.jpg",
         width: 1200,
         height: 630,
         alt: "Creator Dashboard #freewithtech",
@@ -30,7 +30,7 @@ export const metadata = {
     title: "Creator Dashboard #freewithtech",
     description:
       "A transparent look behind the scenes of the #freewithtech project. Follow weekly progress, content publishing, time invested, and resources spent on building a public brand from scratch.",
-    images: ["https://journey.freewith.tech/assets/og-image.png"],
+    images: ["https://journey.freewith.tech/assets/og.jpg"],
   },
 };
 
