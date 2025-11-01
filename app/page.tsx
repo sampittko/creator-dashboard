@@ -41,11 +41,11 @@ type DashboardPageProps = {
 };
 
 const STATUS_LABELS: Record<WeeklyEntry["status"], string> = {
-  not_started: "Not Started ⚪️",
-  future: "Future ⚪️",
-  pending: "Pending 🟠",
+  not_started: "Not Started",
+  future: "Future",
+  pending: "Pending",
   perfect: "Perfect 🟢",
-  incomplete: "Incomplete 🔴",
+  incomplete: "Incomplete 🟠",
   skipped: "Skipped 🔴",
 };
 
