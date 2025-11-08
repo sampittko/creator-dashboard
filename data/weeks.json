@@ -832,6 +832,22 @@
   },
   {
     "weekId": "2025-W45",
+    "topic": "Replacing the iPhone Default",
+    "status": "perfect",
+    "minutesWorked": 597,
+    "wins": "Shipped bug fixes for fwt. joex and fwt. axis, making both apps responsive with a couple of other minor improvements to the overal app usability.",
+    "blog": null,
+    "video": {
+      "publishedAt": "2025-11-07",
+      "url": "https://fwt.wtf/wrist-first",
+      "takes": 1,
+      "kilometersRecorded": 22
+    },
+    "devLogVideo": null,
+    "otherLinks": null
+  },
+  {
+    "weekId": "2025-W46",
     "topic": "",
     "status": "pending",
     "minutesWorked": 0,
