@@ -832,14 +832,14 @@
   },
   {
     "weekId": "2025-W45",
-    "topic": "Replacing the iPhone Default",
+    "topic": "I’m Testing a Smartwatch-First Lifestyle",
     "status": "perfect",
     "minutesWorked": 597,
     "wins": "Shipped bug fixes for fwt. joex and fwt. axis, making both apps responsive with a couple of other minor improvements to the overal app usability.",
     "blog": null,
     "video": {
       "publishedAt": "2025-11-07",
-      "url": "https://fwt.wtf/wrist-first",
+      "url": "https://fwt.wtf/phone-stays-home",
       "takes": 1,
       "kilometersRecorded": 22
     },
