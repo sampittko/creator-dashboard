@@ -864,6 +864,22 @@
   },
   {
     "weekId": "2025-W47",
+    "topic": "Why I Tripled My Phone Bill to Use My Watch",
+    "status": "perfect",
+    "minutesWorked": 0,
+    "wins": "",
+    "blog": null,
+    "video": {
+      "publishedAt": "2025-11-20",
+      "url": "https://fwt.wtf/did-i-really-need-this",
+      "takes": 1,
+      "kilometersRecorded": 14
+    },
+    "devLogVideo": null,
+    "otherLinks": null
+  },
+  {
+    "weekId": "2025-W48",
     "topic": "",
     "status": "pending",
     "minutesWorked": 0,
