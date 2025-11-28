@@ -881,6 +881,17 @@
   {
     "weekId": "2025-W48",
     "topic": "",
+    "status": "skipped",
+    "minutesWorked": 23,
+    "wins": "Focused on my new side project that allows anyone to chat with me 24/7 + personal website refresh. I am also realigning as my content is receiving less than 10 views per week.",
+    "blog": null,
+    "video": null,
+    "devLogVideo": null,
+    "otherLinks": null
+  },
+  {
+    "weekId": "2025-W49",
+    "topic": "",
     "status": "pending",
     "minutesWorked": 0,
     "wins": "",
