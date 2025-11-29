@@ -306,7 +306,7 @@ export default async function DashboardPage({
                   )}
                 </div>
 
-                {week.status !== "skipped" ? <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 whitespace-pre-wrap">
+                {week.wins ? <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 whitespace-pre-wrap">
                   Weekly win(s): {week.wins || "None documented"}
                 </div> : null}
               </>
