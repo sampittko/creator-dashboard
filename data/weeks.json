@@ -888,5 +888,38 @@
     "video": null,
     "devLogVideo": null,
     "otherLinks": null
+  },
+  {
+    "weekId": "2025-W49",
+    "topic": "",
+    "status": "skipped",
+    "minutesWorked": 474,
+    "wins": "Reflected on 38 videos in 40 weeks. Significant app stability and performance improvements for fwt. axis released.",
+    "blog": null,
+    "video": null,
+    "devLogVideo": null,
+    "otherLinks": null
+  },
+  {
+    "weekId": "2025-W50",
+    "topic": "",
+    "status": "skipped",
+    "minutesWorked": 79,
+    "wins": "I attended Green I/O conference in Paris where I reflected on my past projects in Climate Tech space. On a worshop for NGOs there, I presented #freewithtech and how I've personally discovered digital freedom on my own journey.",
+    "blog": null,
+    "video": null,
+    "devLogVideo": null,
+    "otherLinks": null
+  },
+  {
+    "weekId": "2025-W51",
+    "topic": "",
+    "status": "pending",
+    "minutesWorked": 0,
+    "wins": "",
+    "blog": null,
+    "video": null,
+    "devLogVideo": null,
+    "otherLinks": null
   }
 ]
