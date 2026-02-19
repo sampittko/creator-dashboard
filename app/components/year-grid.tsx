@@ -2,7 +2,7 @@ import data from "@/data/weeks.json";
 import { WeeklyEntry, WeekStatus } from "@/types";
 import { getISOWeek, getISOWeekYear, getISOWeeksInYear } from "date-fns";
 import { statusToEmoji } from "@/lib/visuals";
-import { compareWeekIds } from "@/lib/weeks";
+import { compareWeekIds, weeksBetween } from "@/lib/weeks";
 
 type DerivedWeekStatus = WeekStatus | "pending" | "future" | "not_started";
 
@@ -37,18 +37,44 @@ function generateAllWeekIds(year: number): string[] {
   );
 }
 
+function normalizePendingStatus(
+  weekId: string,
+  currentWeekId: string,
+  projectStartWeek: string,
+  hasPendingHold: boolean,
+  isExplicitPending: boolean
+): DerivedWeekStatus {
+  const compareToCurrent = compareWeekIds(weekId, currentWeekId);
+  if (compareToCurrent > 0) return "future";
+  if (compareToCurrent === 0) {
+    if (hasPendingHold && !isExplicitPending) return "future";
+    return "pending";
+  }
+  if (isExplicitPending && weeksBetween(weekId, currentWeekId) <= 1) {
+    return "pending";
+  }
+  if (compareWeekIds(weekId, projectStartWeek) < 0) return "not_started";
+  return "skipped";
+}
+
 function simpleWeekStatus(
   weekId: string,
   currentWeekId: string,
   existingStatus: WeekStatus | undefined,
-  projectStartWeek: string
+  projectStartWeek: string,
+  hasPendingHold: boolean,
+  isExplicitPending: boolean
 ): DerivedWeekStatus {
-  if (existingStatus) return existingStatus;
-  const compareToCurrent = compareWeekIds(weekId, currentWeekId);
-  if (compareToCurrent > 0) return "future";
-  if (compareToCurrent === 0) return "pending";
-  if (compareWeekIds(weekId, projectStartWeek) < 0) return "not_started";
-  return "skipped";
+  if (existingStatus && existingStatus !== "pending") {
+    return existingStatus;
+  }
+  return normalizePendingStatus(
+    weekId,
+    currentWeekId,
+    projectStartWeek,
+    hasPendingHold,
+    isExplicitPending
+  );
 }
 
 export function YearGrid() {
@@ -56,6 +82,12 @@ export function YearGrid() {
   const currentWeekId = getCurrentWeekId();
   const projectStartWeek = deriveProjectStartWeek(weeksData, currentWeekId);
   const weeksMap = new Map(weeksData.map((w) => [w.weekId, w]));
+  const pendingHoldActive = weeksData.some(
+    (week) =>
+      week.status === "pending" &&
+      compareWeekIds(week.weekId, currentWeekId) < 0 &&
+      weeksBetween(week.weekId, currentWeekId) <= 1
+  );
 
   const yearsSet = new Set<number>();
   weeksData.forEach((week) => yearsSet.add(getYearFromWeekId(week.weekId)));
@@ -73,7 +105,9 @@ export function YearGrid() {
         weekId,
         currentWeekId,
         existing?.status,
-        projectStartWeek
+        projectStartWeek,
+        pendingHoldActive,
+        existing?.status === "pending"
       );
 
       return {

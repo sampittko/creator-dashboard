@@ -6,6 +6,7 @@ export type WeekParts = {
 };
 
 const WEEK_SEPARATOR = "-W";
+const MS_PER_WEEK = 7 * 24 * 60 * 60 * 1000;
 
 export function parseWeekId(weekId: string): WeekParts {
   const [yearPart, weekPart] = weekId.split(WEEK_SEPARATOR);
@@ -28,6 +29,26 @@ export function compareWeekIds(firstWeekId: string, secondWeekId: string): numbe
   }
 
   return first.year - second.year;
+}
+
+const getIsoWeekStartDate = (weekId: string): Date | null => {
+  const { year, week } = parseWeekId(weekId);
+  if (year === 0 || week === 0) return null;
+
+  const fourthOfJanuary = new Date(Date.UTC(year, 0, 4));
+  const dayOfWeek = fourthOfJanuary.getUTCDay() || 7;
+  const isoWeekStart = new Date(fourthOfJanuary);
+  isoWeekStart.setUTCDate(fourthOfJanuary.getUTCDate() - dayOfWeek + 1 + (week - 1) * 7);
+
+  return isoWeekStart;
+};
+
+export function weeksBetween(startWeekId: string, endWeekId: string): number {
+  const start = getIsoWeekStartDate(startWeekId);
+  const end = getIsoWeekStartDate(endWeekId);
+  if (!start || !end) return 0;
+
+  return Math.round((end.getTime() - start.getTime()) / MS_PER_WEEK);
 }
 
 export function sortWeeks<T extends Pick<WeeklyEntry, "weekId">>(weeks: T[]): T[] {
