@@ -352,30 +352,35 @@ function buildYearGrid(weeksData) {
     availableYears.push(getYearFromWeekId(currentWeekId));
   }
 
-  return availableYears.map((year) => {
-    const weeks = generateAllWeekIds(year).map((weekId) => {
-      const existing = weeksMap.get(weekId);
-      const normalizedStatus = simpleWeekStatus(
-        weekId,
-        currentWeekId,
-        existing?.status,
-        projectStartWeek,
-        pendingHoldActive,
-        existing?.status === 'pending'
-      );
+  return availableYears
+    .map((year) => {
+      const weeks = generateAllWeekIds(year)
+        .map((weekId) => {
+          const existing = weeksMap.get(weekId);
+          const normalizedStatus = simpleWeekStatus(
+            weekId,
+            currentWeekId,
+            existing?.status,
+            projectStartWeek,
+            pendingHoldActive,
+            existing?.status === 'pending'
+          );
 
-      const topics = getWeekTopics(existing);
-      const topic = topics.length > 0 ? topics.join(' • ') : '';
+          const topics = getWeekTopics(existing);
+          const topic = topics.length > 0 ? topics.join(' • ') : '';
 
-      return {
-        weekId,
-        status: normalizedStatus,
-        topic: topic.length > 0 ? topic : undefined,
-      };
-    });
+          return {
+            weekId,
+            status: normalizedStatus,
+            topic: topic.length > 0 ? topic : undefined,
+          };
+        })
+        .filter((week) => week.status !== 'future');
 
-    return { year, weeks };
-  });
+      if (weeks.length === 0) return null;
+      return { year, weeks };
+    })
+    .filter(Boolean);
 }
 
 function renderYearGridSection(years) {
@@ -383,7 +388,7 @@ function renderYearGridSection(years) {
   lines.push('## 📅 Weekly Overview');
   lines.push('');
   lines.push(
-    'Legend: ✅ Perfect | ⚠️ Incomplete | ❌ Skipped | 🕒 Pending | ◻️ Future | ▫️ Not started'
+    'Legend: ✅ Perfect | ⚠️ Incomplete | ❌ Skipped | 🕒 Pending | ▫️ Not started'
   );
   lines.push('');
 
