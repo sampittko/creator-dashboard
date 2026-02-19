@@ -27,14 +27,18 @@ export type OtherLink = {
   label: string;
 }
 
+export interface WeeklyContentEntry {
+  topic: string;
+  blog: BlogEntry | null;
+  videos: VideoEntry[];
+}
+
 export interface WeeklyEntry {
   weekId: string;
-  topic: string;
   status: WeekStatus;
   minutesWorked: number;
   wins: string;
-  blog: BlogEntry | null;
-  videos: VideoEntry[];
+  contents: WeeklyContentEntry[];
   devLogVideo: DevLogVideoEntry | null;
   otherLinks: OtherLink[] | null;
 }

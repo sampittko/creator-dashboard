@@ -1,198 +1,217 @@
 [
   {
     "weekId": "2025-W01",
-    "topic": "",
     "status": "not_started",
     "minutesWorked": 0,
     "wins": "",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": []
+    "contents": []
   },
   {
     "weekId": "2025-W02",
-    "topic": "",
     "status": "not_started",
     "minutesWorked": 0,
     "wins": "",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": []
+    "contents": []
   },
   {
     "weekId": "2025-W03",
-    "topic": "",
     "status": "not_started",
     "minutesWorked": 0,
     "wins": "",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": []
+    "contents": []
   },
   {
     "weekId": "2025-W04",
-    "topic": "",
     "status": "not_started",
     "minutesWorked": 0,
     "wins": "",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": []
+    "contents": []
   },
   {
     "weekId": "2025-W05",
-    "topic": "Freedom with Technology: Reclaiming Your Focus in a World Designed to Distract",
     "status": "incomplete",
     "minutesWorked": 487,
     "wins": "1st blog post published",
-    "blog": {
-      "publishedAt": "2025-01-31",
-      "url": "https://fwt.wtf/kickoff"
-    },
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": []
+    "contents": [
+      {
+        "topic": "Freedom with Technology: Reclaiming Your Focus in a World Designed to Distract",
+        "blog": {
+          "publishedAt": "2025-01-31",
+          "url": "https://fwt.wtf/kickoff"
+        },
+        "videos": []
+      }
+    ]
   },
   {
     "weekId": "2025-W06",
-    "topic": "1. Self-Awareness: The Foundation of Intentional Tech Use",
     "status": "incomplete",
     "minutesWorked": 815,
     "wins": "",
-    "blog": {
-      "publishedAt": "2025-02-07",
-      "url": "https://fwt.wtf/self-awareness"
-    },
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": []
+    "contents": [
+      {
+        "topic": "1. Self-Awareness: The Foundation of Intentional Tech Use",
+        "blog": {
+          "publishedAt": "2025-02-07",
+          "url": "https://fwt.wtf/self-awareness"
+        },
+        "videos": []
+      }
+    ]
   },
   {
     "weekId": "2025-W07",
-    "topic": "2. Digital Minimalism: Owning Your Attention",
     "status": "incomplete",
     "minutesWorked": 635,
     "wins": "",
-    "blog": {
-      "publishedAt": "2025-02-14",
-      "url": "https://fwt.wtf/digital-minimalism"
-    },
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": []
+    "contents": [
+      {
+        "topic": "2. Digital Minimalism: Owning Your Attention",
+        "blog": {
+          "publishedAt": "2025-02-14",
+          "url": "https://fwt.wtf/digital-minimalism"
+        },
+        "videos": []
+      }
+    ]
   },
   {
     "weekId": "2025-W08",
-    "topic": "3. Tech Independence: The Final Step to True Digital Freedom",
     "status": "incomplete",
     "minutesWorked": 1297,
     "wins": "",
-    "blog": {
-      "publishedAt": "2025-02-21",
-      "url": "https://fwt.wtf/tech-independence"
-    },
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": []
+    "contents": [
+      {
+        "topic": "3. Tech Independence: The Final Step to True Digital Freedom",
+        "blog": {
+          "publishedAt": "2025-02-21",
+          "url": "https://fwt.wtf/tech-independence"
+        },
+        "videos": []
+      }
+    ]
   },
   {
     "weekId": "2025-W09",
-    "topic": "My Journey to Becoming #freewithtech",
     "status": "perfect",
     "minutesWorked": 1599,
     "wins": "1st video published",
-    "blog": {
-      "publishedAt": "2025-02-27",
-      "url": "https://fwt.wtf/my-story"
-    },
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-02-28",
-        "url": "https://fwt.wtf/my-story-video",
-        "takes": 9,
-        "kilometersRecorded": 28
+        "topic": "My Journey to Becoming #freewithtech",
+        "blog": {
+          "publishedAt": "2025-02-27",
+          "url": "https://fwt.wtf/my-story"
+        },
+        "videos": [
+          {
+            "publishedAt": "2025-02-28",
+            "url": "https://fwt.wtf/my-story-video",
+            "takes": 9,
+            "kilometersRecorded": 28
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W10",
-    "topic": "From Lost in Tech to Found in Focus",
     "status": "perfect",
     "minutesWorked": 1356,
     "wins": "",
-    "blog": {
-      "publishedAt": "2025-03-06",
-      "url": "https://fwt.wtf/first-step"
-    },
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-03-07",
-        "url": "https://fwt.wtf/first-step-video",
-        "takes": 4,
-        "kilometersRecorded": 14
+        "topic": "From Lost in Tech to Found in Focus",
+        "blog": {
+          "publishedAt": "2025-03-06",
+          "url": "https://fwt.wtf/first-step"
+        },
+        "videos": [
+          {
+            "publishedAt": "2025-03-07",
+            "url": "https://fwt.wtf/first-step-video",
+            "takes": 4,
+            "kilometersRecorded": 14
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W11",
-    "topic": "Drawing Boundaries to Define Your Digital Life",
     "status": "perfect",
     "minutesWorked": 1413,
     "wins": "",
-    "blog": {
-      "publishedAt": "2025-03-13",
-      "url": "https://fwt.wtf/second-step"
-    },
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-03-14",
-        "url": "https://fwt.wtf/second-step-video",
-        "takes": 1,
-        "kilometersRecorded": 14
+        "topic": "Drawing Boundaries to Define Your Digital Life",
+        "blog": {
+          "publishedAt": "2025-03-13",
+          "url": "https://fwt.wtf/second-step"
+        },
+        "videos": [
+          {
+            "publishedAt": "2025-03-14",
+            "url": "https://fwt.wtf/second-step-video",
+            "takes": 1,
+            "kilometersRecorded": 14
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W12",
-    "topic": "Guarding Digital Footprint for a Life in Control",
     "status": "perfect",
     "minutesWorked": 1122,
     "wins": "",
-    "blog": {
-      "publishedAt": "2025-03-20",
-      "url": "https://fwt.wtf/final-step"
-    },
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-03-21",
-        "url": "https://fwt.wtf/final-step-video",
-        "takes": 2,
-        "kilometersRecorded": 14
+        "topic": "Guarding Digital Footprint for a Life in Control",
+        "blog": {
+          "publishedAt": "2025-03-20",
+          "url": "https://fwt.wtf/final-step"
+        },
+        "videos": [
+          {
+            "publishedAt": "2025-03-21",
+            "url": "https://fwt.wtf/final-step-video",
+            "takes": 2,
+            "kilometersRecorded": 14
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W13",
-    "topic": "A Street-Level Mindset for Digital Communication",
     "status": "perfect",
     "minutesWorked": 2143,
     "wins": "presented My path to digital freedom at Tatry IT meetup",
-    "blog": {
-      "publishedAt": "2025-03-27",
-      "url": "https://fwt.wtf/delete-your-chats"
-    },
     "devLogVideo": null,
     "otherLinks": [
       {
@@ -200,67 +219,79 @@
         "label": "Meetup (SK)"
       }
     ],
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-03-28",
-        "url": "https://fwt.wtf/delete-your-chats-video",
-        "takes": 1,
-        "kilometersRecorded": 27
+        "topic": "A Street-Level Mindset for Digital Communication",
+        "blog": {
+          "publishedAt": "2025-03-27",
+          "url": "https://fwt.wtf/delete-your-chats"
+        },
+        "videos": [
+          {
+            "publishedAt": "2025-03-28",
+            "url": "https://fwt.wtf/delete-your-chats-video",
+            "takes": 1,
+            "kilometersRecorded": 27
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W14",
-    "topic": "Beat Social Media Addiction With a Two Phase Method",
     "status": "perfect",
     "minutesWorked": 1440,
     "wins": "",
-    "blog": {
-      "publishedAt": "2025-04-03",
-      "url": "https://fwt.wtf/outsmart-the-feed"
-    },
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-04-04",
-        "url": "https://fwt.wtf/outsmart-the-feed-video",
-        "takes": 3,
-        "kilometersRecorded": 40
+        "topic": "Beat Social Media Addiction With a Two Phase Method",
+        "blog": {
+          "publishedAt": "2025-04-03",
+          "url": "https://fwt.wtf/outsmart-the-feed"
+        },
+        "videos": [
+          {
+            "publishedAt": "2025-04-04",
+            "url": "https://fwt.wtf/outsmart-the-feed-video",
+            "takes": 3,
+            "kilometersRecorded": 40
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W15",
-    "topic": "I Chose the Lowest Tier Mobile Plan and I'm Keeping It",
     "status": "perfect",
     "minutesWorked": 1256,
     "wins": "",
-    "blog": {
-      "publishedAt": "2025-04-10",
-      "url": "https://fwt.wtf/low-data-living"
-    },
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-04-11",
-        "url": "https://fwt.wtf/low-data-living-video",
-        "takes": 6,
-        "kilometersRecorded": 22
+        "topic": "I Chose the Lowest Tier Mobile Plan and I'm Keeping It",
+        "blog": {
+          "publishedAt": "2025-04-10",
+          "url": "https://fwt.wtf/low-data-living"
+        },
+        "videos": [
+          {
+            "publishedAt": "2025-04-11",
+            "url": "https://fwt.wtf/low-data-living-video",
+            "takes": 6,
+            "kilometersRecorded": 22
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W16",
-    "topic": "Reclaim Your Digital Footprint and Own Your Online Life",
     "status": "perfect",
     "minutesWorked": 1304,
     "wins": "My path to digital freedom episode recorded on Video Podcast Poprad",
-    "blog": {
-      "publishedAt": "2025-04-17",
-      "url": "https://fwt.wtf/choose-your-digital-path"
-    },
     "devLogVideo": null,
     "otherLinks": [
       {
@@ -268,321 +299,385 @@
         "label": "Podcast (SK)"
       }
     ],
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-04-18",
-        "url": "https://fwt.wtf/choose-your-digital-path-video",
-        "takes": 12,
-        "kilometersRecorded": 11
+        "topic": "Reclaim Your Digital Footprint and Own Your Online Life",
+        "blog": {
+          "publishedAt": "2025-04-17",
+          "url": "https://fwt.wtf/choose-your-digital-path"
+        },
+        "videos": [
+          {
+            "publishedAt": "2025-04-18",
+            "url": "https://fwt.wtf/choose-your-digital-path-video",
+            "takes": 12,
+            "kilometersRecorded": 11
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W17",
-    "topic": "Digital Freedom Starts with Breaking the Default App Trap",
     "status": "perfect",
     "minutesWorked": 973,
     "wins": "",
-    "blog": {
-      "publishedAt": "2025-04-24",
-      "url": "https://fwt.wtf/break-the-default"
-    },
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-04-25",
-        "url": "https://fwt.wtf/break-the-default-video",
-        "takes": 5,
-        "kilometersRecorded": 42
+        "topic": "Digital Freedom Starts with Breaking the Default App Trap",
+        "blog": {
+          "publishedAt": "2025-04-24",
+          "url": "https://fwt.wtf/break-the-default"
+        },
+        "videos": [
+          {
+            "publishedAt": "2025-04-25",
+            "url": "https://fwt.wtf/break-the-default-video",
+            "takes": 5,
+            "kilometersRecorded": 42
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W18",
-    "topic": "Intentional Friction When Using Addictive Apps",
     "status": "perfect",
     "minutesWorked": 1580,
     "wins": "10 perfect weeks in a row; professional visual identity project finished",
-    "blog": {
-      "publishedAt": "2025-05-01",
-      "url": "https://fwt.wtf/slow-your-scroll"
-    },
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-05-02",
-        "url": "https://fwt.wtf/slow-your-scroll-video",
-        "takes": 4,
-        "kilometersRecorded": 124
+        "topic": "Intentional Friction When Using Addictive Apps",
+        "blog": {
+          "publishedAt": "2025-05-01",
+          "url": "https://fwt.wtf/slow-your-scroll"
+        },
+        "videos": [
+          {
+            "publishedAt": "2025-05-02",
+            "url": "https://fwt.wtf/slow-your-scroll-video",
+            "takes": 4,
+            "kilometersRecorded": 124
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W19",
-    "topic": "Living in the Moment Starts with Your Notification Settings",
     "status": "perfect",
     "minutesWorked": 1548,
     "wins": "11 perfect weeks in a row; thorough analysis within online courses landscape",
-    "blog": {
-      "publishedAt": "2025-05-08",
-      "url": "https://fwt.wtf/cut-the-spam"
-    },
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-05-09",
-        "url": "https://fwt.wtf/cut-the-spam-video",
-        "takes": 10,
-        "kilometersRecorded": 32
+        "topic": "Living in the Moment Starts with Your Notification Settings",
+        "blog": {
+          "publishedAt": "2025-05-08",
+          "url": "https://fwt.wtf/cut-the-spam"
+        },
+        "videos": [
+          {
+            "publishedAt": "2025-05-09",
+            "url": "https://fwt.wtf/cut-the-spam-video",
+            "takes": 10,
+            "kilometersRecorded": 32
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W20",
-    "topic": "I'm a Software Engineer and I Was Addicted to Tech",
     "status": "perfect",
     "minutesWorked": 1287,
     "wins": "Bought 500 branded stickers",
-    "blog": {
-      "publishedAt": "2025-05-15",
-      "url": "https://fwt.wtf/engineers-regret"
-    },
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-05-16",
-        "url": "https://fwt.wtf/engineers-regret-video",
-        "takes": 12,
-        "kilometersRecorded": 62
+        "topic": "I'm a Software Engineer and I Was Addicted to Tech",
+        "blog": {
+          "publishedAt": "2025-05-15",
+          "url": "https://fwt.wtf/engineers-regret"
+        },
+        "videos": [
+          {
+            "publishedAt": "2025-05-16",
+            "url": "https://fwt.wtf/engineers-regret-video",
+            "takes": 12,
+            "kilometersRecorded": 62
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W21",
-    "topic": "Why I Still Use a Journal in a Digital World",
     "status": "perfect",
     "minutesWorked": 1256,
     "wins": "Against all odds, I got the 13th video done and recorded—celebrating this small win",
-    "blog": {
-      "publishedAt": "2025-05-23",
-      "url": "https://fwt.wtf/the-analog-edge"
-    },
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-05-23",
-        "url": "https://fwt.wtf/the-analog-edge-video",
-        "takes": 3,
-        "kilometersRecorded": 42
+        "topic": "Why I Still Use a Journal in a Digital World",
+        "blog": {
+          "publishedAt": "2025-05-23",
+          "url": "https://fwt.wtf/the-analog-edge"
+        },
+        "videos": [
+          {
+            "publishedAt": "2025-05-23",
+            "url": "https://fwt.wtf/the-analog-edge-video",
+            "takes": 3,
+            "kilometersRecorded": 42
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W22",
-    "topic": "A Habit Tracker App Born From My Own Needs",
     "status": "perfect",
     "minutesWorked": 1588,
     "wins": "Coded MVP of 'fwt. axis' mobile app for my habit tracking framework. Recorded a video in rain. Open-sourced fwt.wtf link shortener on GitHub.",
-    "blog": {
-      "publishedAt": "2025-05-30",
-      "url": "https://fwt.wtf/track-reflect-repeat"
-    },
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-05-30",
-        "url": "https://fwt.wtf/track-reflect-repeat-video",
-        "takes": 6,
-        "kilometersRecorded": 72
+        "topic": "A Habit Tracker App Born From My Own Needs",
+        "blog": {
+          "publishedAt": "2025-05-30",
+          "url": "https://fwt.wtf/track-reflect-repeat"
+        },
+        "videos": [
+          {
+            "publishedAt": "2025-05-30",
+            "url": "https://fwt.wtf/track-reflect-repeat-video",
+            "takes": 6,
+            "kilometersRecorded": 72
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W23",
-    "topic": "Why I Brought Back the Watch",
     "status": "perfect",
     "minutesWorked": 905,
     "wins": "I've adjusted to a pace that's more sustainable for the brand's long-term growth. I'll continue producing content & tools, but I'm also planning to find a job soon to ensure financial stability. I also invested some time into automations via n8n for my content workflows.",
-    "blog": {
-      "publishedAt": "2025-06-06",
-      "url": "https://fwt.wtf/offload-not-obsess"
-    },
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-06-06",
-        "url": "https://fwt.wtf/offload-not-obsess-video",
-        "takes": 2,
-        "kilometersRecorded": 40
+        "topic": "Why I Brought Back the Watch",
+        "blog": {
+          "publishedAt": "2025-06-06",
+          "url": "https://fwt.wtf/offload-not-obsess"
+        },
+        "videos": [
+          {
+            "publishedAt": "2025-06-06",
+            "url": "https://fwt.wtf/offload-not-obsess-video",
+            "takes": 2,
+            "kilometersRecorded": 40
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W24",
-    "topic": "#freewithtech: What It Really Means",
     "status": "perfect",
     "minutesWorked": 804,
     "wins": "Rewrote fwt. axis app from React Native to Swift",
-    "blog": {
-      "publishedAt": "2025-06-13",
-      "url": "https://fwt.wtf/free-with-tech"
-    },
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-06-13",
-        "url": "https://fwt.wtf/free-with-tech-video",
-        "takes": 2,
-        "kilometersRecorded": 14
+        "topic": "#freewithtech: What It Really Means",
+        "blog": {
+          "publishedAt": "2025-06-13",
+          "url": "https://fwt.wtf/free-with-tech"
+        },
+        "videos": [
+          {
+            "publishedAt": "2025-06-13",
+            "url": "https://fwt.wtf/free-with-tech-video",
+            "takes": 2,
+            "kilometersRecorded": 14
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W25",
-    "topic": "How Ryder Carroll and Cal Newport Helped Me Create #freewithtech",
     "status": "perfect",
     "minutesWorked": 1294,
     "wins": "Extensive vibe-coding sessions for fwt. axis app",
-    "blog": {
-      "publishedAt": "2025-06-20",
-      "url": "https://fwt.wtf/built-my-system"
-    },
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog1"]
     },
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-06-20",
-        "url": "https://fwt.wtf/built-my-system-video",
-        "takes": 4,
-        "kilometersRecorded": 120
+        "topic": "How Ryder Carroll and Cal Newport Helped Me Create #freewithtech",
+        "blog": {
+          "publishedAt": "2025-06-20",
+          "url": "https://fwt.wtf/built-my-system"
+        },
+        "videos": [
+          {
+            "publishedAt": "2025-06-20",
+            "url": "https://fwt.wtf/built-my-system-video",
+            "takes": 4,
+            "kilometersRecorded": 120
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W26",
-    "topic": "Tools for a Hybrid Mind",
     "status": "perfect",
     "minutesWorked": 2278,
     "wins": "Niching down and presenting that focus in this week's video. axis app rewrite to standalone Apple Watch app and seamless iPhone integration.",
-    "blog": {
-      "publishedAt": "2025-06-27",
-      "url": "https://fwt.wtf/paper-and-pixel"
-    },
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog2"]
     },
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-06-27",
-        "url": "https://fwt.wtf/paper-and-pixel-video",
-        "takes": 2,
-        "kilometersRecorded": 14
+        "topic": "Tools for a Hybrid Mind",
+        "blog": {
+          "publishedAt": "2025-06-27",
+          "url": "https://fwt.wtf/paper-and-pixel"
+        },
+        "videos": [
+          {
+            "publishedAt": "2025-06-27",
+            "url": "https://fwt.wtf/paper-and-pixel-video",
+            "takes": 2,
+            "kilometersRecorded": 14
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W27",
-    "topic": "The Power of Dual Habit Tracking",
     "status": "perfect",
     "minutesWorked": 1175,
     "wins": "axis app is in a testing phase together with joex that I managed to rewrite over a single day from legacy iOS version that I made in 2024 to Apple Watch app. Also created marketing websites for the products that are not yet public.",
-    "blog": {
-      "publishedAt": "2025-07-04",
-      "url": "https://fwt.wtf/track-twice"
-    },
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog3", "https://fwt.wtf/devlog4"]
     },
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-07-04",
-        "url": "https://fwt.wtf/track-twice-video",
-        "takes": 4,
-        "kilometersRecorded": 32
+        "topic": "The Power of Dual Habit Tracking",
+        "blog": {
+          "publishedAt": "2025-07-04",
+          "url": "https://fwt.wtf/track-twice"
+        },
+        "videos": [
+          {
+            "publishedAt": "2025-07-04",
+            "url": "https://fwt.wtf/track-twice-video",
+            "takes": 4,
+            "kilometersRecorded": 32
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W28",
-    "topic": "joex and axis: Quiet Tech for a Paper",
     "status": "perfect",
     "minutesWorked": 752,
     "wins": "Launched TestFlight for joex and axis apps. Iterated on the apps by fixing bugs and adding new features with improved user experience (1.0 -> 1.3). Still not approved by Apple.",
-    "blog": {
-      "publishedAt": "2025-07-11",
-      "url": "https://fwt.wtf/wrist-to-page"
-    },
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog5"]
     },
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-07-11",
-        "url": "https://fwt.wtf/wrist-to-page-video",
-        "takes": 1,
-        "kilometersRecorded": 170
+        "topic": "joex and axis: Quiet Tech for a Paper",
+        "blog": {
+          "publishedAt": "2025-07-11",
+          "url": "https://fwt.wtf/wrist-to-page"
+        },
+        "videos": [
+          {
+            "publishedAt": "2025-07-11",
+            "url": "https://fwt.wtf/wrist-to-page-video",
+            "takes": 1,
+            "kilometersRecorded": 170
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W29",
-    "topic": "How #freewithtech Evolved After 25 Weeks",
     "status": "perfect",
     "minutesWorked": 888,
     "wins": "I've decided to stop blogging and focus on video content and apps development. I've iterated axis app from v1.1 to v1.4 by fixing bugs and adding new features with improved user experience based on my own needs. I've also iterated joex from v1.1 to v1.2.",
-    "blog": {
-      "publishedAt": "2025-07-18",
-      "url": "https://fwt.wtf/so-i-did-this"
-    },
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog6"]
     },
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-07-18",
-        "url": "https://fwt.wtf/so-i-did-this-video",
-        "takes": 6,
-        "kilometersRecorded": 30
+        "topic": "How #freewithtech Evolved After 25 Weeks",
+        "blog": {
+          "publishedAt": "2025-07-18",
+          "url": "https://fwt.wtf/so-i-did-this"
+        },
+        "videos": [
+          {
+            "publishedAt": "2025-07-18",
+            "url": "https://fwt.wtf/so-i-did-this-video",
+            "takes": 6,
+            "kilometersRecorded": 30
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W30",
-    "topic": "3 Apple Watch Apps I Built to Support Analog Journaling",
     "status": "perfect",
     "minutesWorked": 956,
     "wins": "Mood Reader (now moxi) is a new simple app I made that I use as part of my reflections in analog journaling. It is now testable on TestFlight. Made a demo video of all 3 apps for this week.",
-    "blog": null,
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog7"]
     },
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-07-25",
-        "url": "https://fwt.wtf/paper-power-tools",
-        "takes": 4,
-        "kilometersRecorded": 42
+        "topic": "3 Apple Watch Apps I Built to Support Analog Journaling",
+        "blog": null,
+        "videos": [
+          {
+            "publishedAt": "2025-07-25",
+            "url": "https://fwt.wtf/paper-power-tools",
+            "takes": 4,
+            "kilometersRecorded": 42
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W31",
-    "topic": "The Quiet Shift in My Digital Life",
     "status": "perfect",
     "minutesWorked": 1620,
     "wins": "Started building My Digital Toolkit (an idea that keeps coming back). Iterated joex & axis in a way that I can focus on marketing and final optimizations for 1.0 App Store releases in august. Survived a week that was simply tough mentally.",
@@ -590,62 +685,74 @@
       "urls": ["https://fwt.wtf/devlog8"]
     },
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-08-01",
-        "url": "https://fwt.wtf/tech-on-my-terms",
-        "takes": 2,
-        "kilometersRecorded": 27
+        "topic": "The Quiet Shift in My Digital Life",
+        "blog": null,
+        "videos": [
+          {
+            "publishedAt": "2025-08-01",
+            "url": "https://fwt.wtf/tech-on-my-terms",
+            "takes": 2,
+            "kilometersRecorded": 27
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W32",
-    "topic": "Digital Slavery is Real and How I Broke Free",
     "status": "perfect",
     "minutesWorked": 1252,
     "wins": "#freewithtech official landing page is live after a 2-day sprint. Last fixes and improvements implemented for axis and joex Apple Watch apps.",
-    "blog": null,
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog9"]
     },
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-08-08",
-        "url": "https://fwt.wtf/digital-slave",
-        "takes": 2,
-        "kilometersRecorded": 16
+        "topic": "Digital Slavery is Real and How I Broke Free",
+        "blog": null,
+        "videos": [
+          {
+            "publishedAt": "2025-08-08",
+            "url": "https://fwt.wtf/digital-slave",
+            "takes": 2,
+            "kilometersRecorded": 16
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W33",
-    "topic": "The Misunderstood Path to Digital Freedom",
     "status": "perfect",
     "minutesWorked": 1634,
     "wins": "I've submitted fwt. axis and fwt. joex Apple Watch apps to Apple Review after creating their landing pages on the official site URL. I've revived My Digital Toolkit project and set a goal to build a MVP by the end of August.",
-    "blog": null,
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog10"]
     },
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-08-15",
-        "url": "https://fwt.wtf/beyond-reset",
-        "takes": 1,
-        "kilometersRecorded": 5
+        "topic": "The Misunderstood Path to Digital Freedom",
+        "blog": null,
+        "videos": [
+          {
+            "publishedAt": "2025-08-15",
+            "url": "https://fwt.wtf/beyond-reset",
+            "takes": 1,
+            "kilometersRecorded": 5
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W34",
-    "topic": "Digital Footprint Optimization Without the Overwhelm",
     "status": "perfect",
     "minutesWorked": 988,
     "wins": "Experimented with YouTube shorts for the first time and documented fwt. axis and joex app usage in my daily life this way. Failed hard by realizing that Apple Watch standalone apps cannot be released without iOS counterparts on the App Store. Gotta continue building my way forward, but harder.",
-    "blog": null,
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog11"]
     },
@@ -671,22 +778,26 @@
         "label": "Short #5"
       }
     ],
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-08-22",
-        "url": "https://fwt.wtf/quiet-progress",
-        "takes": 1,
-        "kilometersRecorded": 5
+        "topic": "Digital Footprint Optimization Without the Overwhelm",
+        "blog": null,
+        "videos": [
+          {
+            "publishedAt": "2025-08-22",
+            "url": "https://fwt.wtf/quiet-progress",
+            "takes": 1,
+            "kilometersRecorded": 5
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W35",
-    "topic": "What I Discovered on My Tech Reset Journey",
     "status": "perfect",
     "minutesWorked": 1364,
     "wins": "Last week's realization was just an illusion and I've managed to go through App Review process successfully for both fwt. joex and fwt. axis apps. Releases are scheduled for the 1st of September which means that everything is going according to the plans! Recorded app launch videos for Product Hunt together with 27th video for the channel.",
-    "blog": null,
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog12"]
     },
@@ -700,22 +811,26 @@
         "label": "joex Product Hunt"
       }
     ],
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-08-29",
-        "url": "https://fwt.wtf/digital-wellness-values",
-        "takes": 2,
-        "kilometersRecorded": 28
+        "topic": "What I Discovered on My Tech Reset Journey",
+        "blog": null,
+        "videos": [
+          {
+            "publishedAt": "2025-08-29",
+            "url": "https://fwt.wtf/digital-wellness-values",
+            "takes": 2,
+            "kilometersRecorded": 28
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W36",
-    "topic": "How Gaming and Coding Shaped My Digital Journey",
     "status": "perfect",
     "minutesWorked": 1201,
     "wins": "Product Hunt launches of fwt. axis & fwt. joex where fwt. axis got featured in PH Daily newsletter, ending up #8 out of 275 app launches in total on the 1st of September.",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": [
       {
@@ -731,336 +846,356 @@
         "label": "Short #8"
       }
     ],
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-09-05",
-        "url": "https://fwt.wtf/years-inside-screens",
-        "takes": 3,
-        "kilometersRecorded": 5
+        "topic": "How Gaming and Coding Shaped My Digital Journey",
+        "blog": null,
+        "videos": [
+          {
+            "publishedAt": "2025-09-05",
+            "url": "https://fwt.wtf/years-inside-screens",
+            "takes": 3,
+            "kilometersRecorded": 5
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W37",
-    "topic": "The Missing Piece in the Bullet Journal Method for Me",
     "status": "perfect",
     "minutesWorked": 302,
     "wins": "Chilled down after 8 months of work. This month is all about reflection and planning for the 4th phase of my #freewithtech journey.",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-09-12",
-        "url": "https://fwt.wtf/analog-is-not-enough",
-        "takes": 1,
-        "kilometersRecorded": 23
+        "topic": "The Missing Piece in the Bullet Journal Method for Me",
+        "blog": null,
+        "videos": [
+          {
+            "publishedAt": "2025-09-12",
+            "url": "https://fwt.wtf/analog-is-not-enough",
+            "takes": 1,
+            "kilometersRecorded": 23
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W38",
-    "topic": "How I Avoid Both Surveillance and Self-Hosting Hell",
     "status": "perfect",
     "minutesWorked": 324,
     "wins": "30 perfect weeks in a row is a testament to my commitment since January 2025.",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-09-19",
-        "url": "https://fwt.wtf/privacy-balance",
-        "takes": 1,
-        "kilometersRecorded": 62
+        "topic": "How I Avoid Both Surveillance and Self-Hosting Hell",
+        "blog": null,
+        "videos": [
+          {
+            "publishedAt": "2025-09-19",
+            "url": "https://fwt.wtf/privacy-balance",
+            "takes": 1,
+            "kilometersRecorded": 62
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W39",
-    "topic": "What I Learned About Relationships After Deleting Social Media",
     "status": "perfect",
     "minutesWorked": 160,
     "wins": "",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-09-26",
-        "url": "https://fwt.wtf/shattered-connections",
-        "takes": 4,
-        "kilometersRecorded": 0
+        "topic": "What I Learned About Relationships After Deleting Social Media",
+        "blog": null,
+        "videos": [
+          {
+            "publishedAt": "2025-09-26",
+            "url": "https://fwt.wtf/shattered-connections",
+            "takes": 4,
+            "kilometersRecorded": 0
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W40",
-    "topic": "",
     "status": "skipped",
     "minutesWorked": 0,
     "wins": "",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": []
+    "contents": []
   },
   {
     "weekId": "2025-W41",
-    "topic": "Things I Don’t Tell AI",
     "status": "perfect",
     "minutesWorked": 408,
     "wins": "Bounced back with another video after skipping a week due to health issues.",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-10-10",
-        "url": "https://fwt.wtf/ai-is-not-a-friend",
-        "takes": 2,
-        "kilometersRecorded": 22
+        "topic": "Things I Don’t Tell AI",
+        "blog": null,
+        "videos": [
+          {
+            "publishedAt": "2025-10-10",
+            "url": "https://fwt.wtf/ai-is-not-a-friend",
+            "takes": 2,
+            "kilometersRecorded": 22
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W42",
-    "topic": "Why I Think Dumbphones Miss the Point",
     "status": "perfect",
     "minutesWorked": 483,
     "wins": "I've been elaborating on Journal Companions as a concept. Stay tuned to learn more next week.",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-10-17",
-        "url": "https://fwt.wtf/no-more-dumbphones",
-        "takes": 2,
-        "kilometersRecorded": 34
+        "topic": "Why I Think Dumbphones Miss the Point",
+        "blog": null,
+        "videos": [
+          {
+            "publishedAt": "2025-10-17",
+            "url": "https://fwt.wtf/no-more-dumbphones",
+            "takes": 2,
+            "kilometersRecorded": 34
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W43",
-    "topic": "Digital That Supports Analog",
     "status": "perfect",
     "minutesWorked": 1453,
     "wins": "Launched Journal Companions directory as a concept for implementing digital-analog bridge in your life. I also made 2 bug fixes and 1 new feature for free with tech apps that are included in the directory. Lovely autumn weather invited me to record 2 videos in 1 week. This means that I already know what is coming for next week!",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-10-24",
-        "url": "https://fwt.wtf/journal-companions",
-        "takes": 5,
-        "kilometersRecorded": 27
+        "topic": "Digital That Supports Analog",
+        "blog": null,
+        "videos": [
+          {
+            "publishedAt": "2025-10-24",
+            "url": "https://fwt.wtf/journal-companions",
+            "takes": 5,
+            "kilometersRecorded": 27
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W44",
-    "topic": "Apps Built to Stay Small",
     "status": "perfect",
     "minutesWorked": 442,
     "wins": "Shipped fwt. joex v1.2.0 with 2 new features. I've received the 1st payout directly from Apple as an indie hacker since the launch of my two apps on the 1st of September. When purpose meets consistent action, time takes care of the rest.",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-10-31",
-        "url": "https://fwt.wtf/respectful-tech",
-        "takes": 1,
-        "kilometersRecorded": 40
+        "topic": "Apps Built to Stay Small",
+        "blog": null,
+        "videos": [
+          {
+            "publishedAt": "2025-10-31",
+            "url": "https://fwt.wtf/respectful-tech",
+            "takes": 1,
+            "kilometersRecorded": 40
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W45",
-    "topic": "Can My Watch Replace My iPhone?",
     "status": "perfect",
     "minutesWorked": 644,
     "wins": "Shipped bug fixes for fwt. joex and fwt. axis, making both apps responsive with a couple of other minor improvements to the overal app usability.",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-11-07",
-        "url": "https://fwt.wtf/phone-stays-home",
-        "takes": 1,
-        "kilometersRecorded": 22
+        "topic": "Can My Watch Replace My iPhone?",
+        "blog": null,
+        "videos": [
+          {
+            "publishedAt": "2025-11-07",
+            "url": "https://fwt.wtf/phone-stays-home",
+            "takes": 1,
+            "kilometersRecorded": 22
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W46",
-    "topic": "Your Phone Is Too Capable (And It’s Hurting Your Focus)",
     "status": "perfect",
     "minutesWorked": 910,
     "wins": "Bringing even more stable experience to the users of fwt. axis app by fixing a couple of major bugs that caused crashes.",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-11-14",
-        "url": "https://fwt.wtf/deferred-complexity",
-        "takes": 3,
-        "kilometersRecorded": 80
+        "topic": "Your Phone Is Too Capable (And It’s Hurting Your Focus)",
+        "blog": null,
+        "videos": [
+          {
+            "publishedAt": "2025-11-14",
+            "url": "https://fwt.wtf/deferred-complexity",
+            "takes": 3,
+            "kilometersRecorded": 80
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W47",
-    "topic": "Why I Tripled My Phone Bill to Use My Watch",
     "status": "perfect",
     "minutesWorked": 496,
     "wins": "Further bug fixes and improvements for my fwt. axis & fwt. joex Journal Companion Apps (JCAs)",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": [
+    "contents": [
       {
-        "publishedAt": "2025-11-21",
-        "url": "https://fwt.wtf/did-i-really-need-this",
-        "takes": 1,
-        "kilometersRecorded": 14
+        "topic": "Why I Tripled My Phone Bill to Use My Watch",
+        "blog": null,
+        "videos": [
+          {
+            "publishedAt": "2025-11-21",
+            "url": "https://fwt.wtf/did-i-really-need-this",
+            "takes": 1,
+            "kilometersRecorded": 14
+          }
+        ]
       }
     ]
   },
   {
     "weekId": "2025-W48",
-    "topic": "",
     "status": "skipped",
     "minutesWorked": 23,
     "wins": "Focused on my new side project that allows anyone to chat with me 24/7 + personal website refresh. I am also realigning as my content is receiving less than 10 views per week.",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": []
+    "contents": []
   },
   {
     "weekId": "2025-W49",
-    "topic": "",
     "status": "skipped",
     "minutesWorked": 474,
     "wins": "Reflected on 38 videos in 40 weeks. Significant app stability and performance improvements for fwt. axis released.",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": []
+    "contents": []
   },
   {
     "weekId": "2025-W50",
-    "topic": "",
     "status": "skipped",
     "minutesWorked": 79,
     "wins": "I attended Green I/O conference in Paris where I reflected on my past projects in Climate Tech space. On a worshop for NGOs there, I presented #freewithtech and how I've personally discovered digital freedom on my own journey.",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": []
+    "contents": []
   },
   {
     "weekId": "2025-W51",
-    "topic": "",
     "status": "skipped",
     "minutesWorked": 150,
     "wins": "",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": []
+    "contents": []
   },
   {
     "weekId": "2025-W52",
-    "topic": "",
     "status": "skipped",
     "minutesWorked": 0,
     "wins": "",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": []
+    "contents": []
   },
   {
     "weekId": "2026-W01",
-    "topic": "",
     "status": "skipped",
     "minutesWorked": 40,
     "wins": "",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": []
+    "contents": []
   },
   {
     "weekId": "2026-W02",
-    "topic": "",
     "status": "skipped",
     "minutesWorked": 0,
     "wins": "",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": []
+    "contents": []
   },
   {
     "weekId": "2026-W03",
-    "topic": "",
     "status": "skipped",
     "minutesWorked": 0,
     "wins": "",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": []
+    "contents": []
   },
   {
     "weekId": "2026-W04",
-    "topic": "",
     "status": "skipped",
     "minutesWorked": 18,
     "wins": "",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": []
+    "contents": []
   },
   {
     "weekId": "2026-W05",
-    "topic": "",
     "status": "skipped",
     "minutesWorked": 458,
     "wins": "",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": []
+    "contents": []
   },
   {
     "weekId": "2026-W06",
-    "topic": "",
     "status": "skipped",
     "minutesWorked": 589,
     "wins": "",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": []
+    "contents": []
   },
   {
     "weekId": "2026-W07",
-    "topic": "",
     "status": "pending",
     "minutesWorked": 0,
     "wins": "",
-    "blog": null,
     "devLogVideo": null,
     "otherLinks": null,
-    "videos": []
+    "contents": []
   }
 ]

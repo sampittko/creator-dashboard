@@ -7,6 +7,17 @@ const INACTIVE_WEEK_STATUSES: WeekStatus[] = ["not_started", "pending", "future"
 const isActiveWeek = (week: WeeklyEntry) =>
   !INACTIVE_WEEK_STATUSES.includes(week.status);
 
+const getWeekContents = (week: WeeklyEntry) =>
+  Array.isArray(week.contents) ? week.contents : [];
+
+const weekHasBlog = (week: WeeklyEntry) =>
+  getWeekContents(week).some((content) => content.blog !== null);
+
+const weekHasVideo = (week: WeeklyEntry) =>
+  getWeekContents(week).some(
+    (content) => Array.isArray(content.videos) && content.videos.length > 0
+  );
+
 const countActiveWeeksFromFirstMatch = (
   weeks: WeeklyEntry[],
   predicate: (week: WeeklyEntry) => boolean
@@ -60,11 +71,11 @@ export function getAggregatedStats() {
 
   const blogWeeks = countActiveWeeksFromFirstMatch(
     weeks,
-    (week) => week.blog !== null
+    weekHasBlog
   );
   const videoWeeks = countActiveWeeksFromFirstMatch(
     weeks,
-    (week) => week.videos.length > 0
+    weekHasVideo
   );
   const { current: currentStreak, longest: longestStreak } =
     calculatePerfectStreaks(weeks);
@@ -101,15 +112,23 @@ export function getAggregatedStats() {
     stats.totalProjectWeeks++;
     stats.totalMinutesWorked += week.minutesWorked;
 
-    if (week.videos.length > 0) {
-      for (const video of week.videos) {
+    const contents = getWeekContents(week);
+    const weekVideos = contents.flatMap((content) =>
+      Array.isArray(content.videos) ? content.videos : []
+    );
+    const weekBlogs = contents.filter((content) => content.blog !== null);
+
+    if (weekVideos.length > 0) {
+      for (const video of weekVideos) {
         stats.totalVideoTakes += video.takes;
         stats.totalVideoKilometersTraveled += video.kilometersRecorded;
       }
-      stats.totalContent.videoCount += week.videos.length;
+      stats.totalContent.videoCount += weekVideos.length;
     }
 
-    if (week.blog) stats.totalContent.blogCount++;
+    if (weekBlogs.length > 0) {
+      stats.totalContent.blogCount += weekBlogs.length;
+    }
 
     if (week.status === "perfect") stats.totalContent.perfectWeeks++;
   }

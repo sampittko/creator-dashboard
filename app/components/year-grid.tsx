@@ -29,6 +29,13 @@ const deriveProjectStartWeek = (weeks: WeeklyEntry[], fallbackWeekId: string) =>
   return firstActiveWeek?.weekId ?? fallbackWeekId;
 };
 
+const getWeekTopics = (week?: WeeklyEntry) => {
+  if (!week) return [];
+  return week.contents
+    .map((content) => content.topic?.trim())
+    .filter((topic): topic is string => Boolean(topic && topic.length > 0));
+};
+
 function generateAllWeekIds(year: number): string[] {
   const weekCount = getISOWeeksInYear(new Date(year, 0, 4));
   return Array.from(
@@ -110,10 +117,12 @@ export function YearGrid() {
         existing?.status === "pending"
       );
 
+      const topics = getWeekTopics(existing);
+
       return {
         weekId,
         status,
-        topic: existing?.topic || undefined,
+        topic: topics.length > 0 ? topics.join(" • ") : undefined,
       };
     });
 

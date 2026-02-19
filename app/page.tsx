@@ -49,6 +49,23 @@ const STATUS_LABELS: Record<WeeklyEntry["status"], string> = {
   skipped: "Skipped 🔴",
 };
 
+const getWeekTopics = (week: WeeklyEntry) =>
+  week.contents
+    .map((content) => content.topic?.trim())
+    .filter((topic): topic is string => Boolean(topic && topic.length > 0));
+
+const getWeekVideos = (week: WeeklyEntry) =>
+  week.contents.flatMap((content) =>
+    Array.isArray(content.videos)
+      ? content.videos.map((video) => ({ ...video, topic: content.topic }))
+      : []
+  );
+
+const getWeekBlogs = (week: WeeklyEntry) =>
+  week.contents.flatMap((content) =>
+    content.blog ? [{ topic: content.topic, blog: content.blog }] : []
+  );
+
 export default async function DashboardPage({
   searchParams,
 }: DashboardPageProps) {
@@ -217,11 +234,14 @@ export default async function DashboardPage({
 
       <div className="grid gap-4 mb-4">
         {weeks.map((week) => {
-          const totalVideoTakes = week.videos.reduce(
+          const topics = getWeekTopics(week);
+          const videos = getWeekVideos(week);
+          const blogs = getWeekBlogs(week);
+          const totalVideoTakes = videos.reduce(
             (total, video) => total + video.takes,
             0
           );
-          const totalVideoKilometers = week.videos.reduce(
+          const totalVideoKilometers = videos.reduce(
             (total, video) => total + video.kilometersRecorded,
             0
           );
@@ -237,7 +257,15 @@ export default async function DashboardPage({
               </div>
 
               {week.status !== "skipped" ? (
-                <div className="font-bold">{week.topic || "—"}</div>
+                topics.length > 0 ? (
+                  <div className="font-bold flex flex-col gap-1">
+                    {topics.map((topic, index) => (
+                      <span key={`${week.weekId}-topic-${index}`}>{topic}</span>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="font-bold">—</div>
+                )
               ) : null}
 
               {week.status === "pending" ? (
@@ -277,26 +305,36 @@ export default async function DashboardPage({
                   )}
 
                   <div className="mt-2 flex flex-wrap items-center gap-2 text-sm">
-                    {week.videos.map((video, index) => (
+                    {videos.map((video, index) => (
                       <a
-                        key={video.url}
+                        key={`${video.url}-${index}`}
                         href={video.url}
+                        title={
+                          video.topic?.trim()
+                            ? `Video — ${video.topic}`
+                            : "Video"
+                        }
                         target="_blank"
                         className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] py-1 px-3 rounded shadow whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CEBAF4]"
                       >
                         Video
-                        {week.videos.length > 1 ? ` #${index + 1}` : ""}
+                        {videos.length > 1 ? ` #${index + 1}` : ""}
                       </a>
                     ))}
-                    {week.blog && (
+                    {blogs.map(({ blog, topic }, index) => (
                       <a
-                        href={week.blog.url}
+                        key={`${blog.url}-${index}`}
+                        href={blog.url}
+                        title={
+                          topic?.trim() ? `Blog — ${topic}` : "Blog"
+                        }
                         target="_blank"
                         className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] py-1 px-3 rounded shadow whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CEBAF4]"
                       >
                         Blog
+                        {blogs.length > 1 ? ` #${index + 1}` : ""}
                       </a>
-                    )}
+                    ))}
                     {week.devLogVideo && (
                       <>
                         {week.devLogVideo.urls.map((url, urlIndex, urls) => (

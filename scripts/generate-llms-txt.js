@@ -19,6 +19,31 @@ const STATUS_LABELS = {
 
 const INACTIVE_WEEK_STATUSES = new Set(['not_started', 'pending', 'future']);
 
+const getWeekContents = (week) =>
+  week && Array.isArray(week.contents) ? week.contents : [];
+
+const getWeekTopics = (week) =>
+  getWeekContents(week)
+    .map((content) =>
+      typeof content.topic === 'string' ? content.topic.trim() : ''
+    )
+    .filter((topic) => topic.length > 0);
+
+const getWeekVideos = (week) =>
+  getWeekContents(week).flatMap((content) =>
+    Array.isArray(content.videos)
+      ? content.videos.map((video) => ({ ...video, topic: content.topic }))
+      : []
+  );
+
+const getWeekBlogs = (week) =>
+  getWeekContents(week).flatMap((content) =>
+    content.blog ? [{ topic: content.topic, blog: content.blog }] : []
+  );
+
+const weekHasBlog = (week) => getWeekBlogs(week).length > 0;
+const weekHasVideo = (week) => getWeekVideos(week).length > 0;
+
 const MS_PER_DAY = 24 * 60 * 60 * 1000;
 const MS_PER_WEEK = 7 * MS_PER_DAY;
 
@@ -147,14 +172,8 @@ function average(total, divisor) {
 function getAggregatedStats(weeks) {
   const sortedWeeks = sortWeeks(weeks);
 
-  const blogWeeks = countActiveWeeksFromFirstMatch(
-    sortedWeeks,
-    (week) => week.blog !== null
-  );
-  const videoWeeks = countActiveWeeksFromFirstMatch(
-    sortedWeeks,
-    (week) => week.videos.length > 0
-  );
+  const blogWeeks = countActiveWeeksFromFirstMatch(sortedWeeks, weekHasBlog);
+  const videoWeeks = countActiveWeeksFromFirstMatch(sortedWeeks, weekHasVideo);
   const { current: currentStreak, longest: longestStreak } =
     calculatePerfectStreaks(sortedWeeks);
 
@@ -190,15 +209,20 @@ function getAggregatedStats(weeks) {
     stats.totalProjectWeeks++;
     stats.totalMinutesWorked += week.minutesWorked;
 
-    if (week.videos.length > 0) {
-      for (const video of week.videos) {
+    const weekVideos = getWeekVideos(week);
+    const weekBlogs = getWeekBlogs(week);
+
+    if (weekVideos.length > 0) {
+      for (const video of weekVideos) {
         stats.totalVideoTakes += video.takes;
         stats.totalVideoKilometersTraveled += video.kilometersRecorded;
       }
-      stats.totalContent.videoCount += week.videos.length;
+      stats.totalContent.videoCount += weekVideos.length;
     }
 
-    if (week.blog) stats.totalContent.blogCount++;
+    if (weekBlogs.length > 0) {
+      stats.totalContent.blogCount += weekBlogs.length;
+    }
     if (week.status === 'perfect') stats.totalContent.perfectWeeks++;
   }
 
@@ -340,10 +364,8 @@ function buildYearGrid(weeksData) {
         existing?.status === 'pending'
       );
 
-      const topic =
-        existing && typeof existing.topic === 'string'
-          ? existing.topic.trim()
-          : '';
+      const topics = getWeekTopics(existing);
+      const topic = topics.length > 0 ? topics.join(' • ') : '';
 
       return {
         weekId,
@@ -400,15 +422,24 @@ function renderAggregatedStats(stats) {
 function formatLinkEntries(week) {
   const links = [];
 
-  week.videos.forEach((video, index) => {
+  const videos = getWeekVideos(week);
+  videos.forEach((video, index) => {
     const label =
-      week.videos.length > 1 ? `Video #${index + 1}` : 'Video';
-    links.push({ label, url: video.url });
+      videos.length > 1 ? `Video #${index + 1}` : 'Video';
+    const topicSuffix =
+      video.topic && video.topic.trim().length > 0
+        ? ` — ${video.topic}`
+        : '';
+    links.push({ label: `${label}${topicSuffix}`, url: video.url });
   });
 
-  if (week.blog) {
-    links.push({ label: 'Blog', url: week.blog.url });
-  }
+  const blogs = getWeekBlogs(week);
+  blogs.forEach(({ blog, topic }, index) => {
+    const label = blogs.length > 1 ? `Blog #${index + 1}` : 'Blog';
+    const topicSuffix =
+      topic && topic.trim().length > 0 ? ` — ${topic}` : '';
+    links.push({ label: `${label}${topicSuffix}`, url: blog.url });
+  });
 
   if (week.devLogVideo) {
     week.devLogVideo.urls.forEach((url, index, urls) => {
@@ -427,11 +458,13 @@ function formatLinkEntries(week) {
 }
 
 function renderWeekEntry(week) {
-  const totalVideoTakes = week.videos.reduce(
+  const topics = getWeekTopics(week);
+  const videos = getWeekVideos(week);
+  const totalVideoTakes = videos.reduce(
     (total, video) => total + video.takes,
     0
   );
-  const totalVideoKilometers = week.videos.reduce(
+  const totalVideoKilometers = videos.reduce(
     (total, video) => total + video.kilometersRecorded,
     0
   );
@@ -439,9 +472,8 @@ function renderWeekEntry(week) {
   const lines = [];
   let heading = `### ${week.weekId}`;
   if (week.status !== 'skipped') {
-    const trimmedTopic =
-      week.topic && week.topic.trim().length > 0 ? week.topic.trim() : '—';
-    heading += ` ${trimmedTopic}`;
+    const topicsSummary = topics.length > 0 ? topics.join(' • ') : '—';
+    heading += ` ${topicsSummary}`;
   }
   lines.push(heading);
   lines.push(
