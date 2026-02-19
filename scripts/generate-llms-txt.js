@@ -368,7 +368,7 @@ function renderYearGridSection(years) {
   years.forEach((year) => {
     lines.push(`### ${year.year} — ${year.weeks.length} weeks`);
     year.weeks.forEach((week) => {
-      const topicSuffix = week.topic ? ` — ${week.topic}` : '';
+      const topicSuffix = week.topic ? ` ${week.topic}` : '';
       lines.push(
         `- ${week.weekId}: ${statusToEmoji(week.status)} ${
           STATUS_LABELS[week.status] ?? week.status
@@ -441,7 +441,7 @@ function renderWeekEntry(week) {
   if (week.status !== 'skipped') {
     const trimmedTopic =
       week.topic && week.topic.trim().length > 0 ? week.topic.trim() : '—';
-    heading += ` — ${trimmedTopic}`;
+    heading += ` ${trimmedTopic}`;
   }
   lines.push(heading);
   lines.push(
