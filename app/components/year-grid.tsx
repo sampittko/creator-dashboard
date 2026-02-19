@@ -1,7 +1,8 @@
 import data from "@/data/weeks.json";
 import { WeeklyEntry, WeekStatus } from "@/types";
 import { getISOWeek, getISOWeekYear, getISOWeeksInYear } from "date-fns";
-import { YearGridClient } from "./year-grid.client";
+import { statusToEmoji } from "@/lib/visuals";
+import { compareWeekIds } from "@/lib/weeks";
 
 type DerivedWeekStatus = WeekStatus | "pending" | "future" | "not_started";
 
@@ -43,9 +44,10 @@ function simpleWeekStatus(
   projectStartWeek: string
 ): DerivedWeekStatus {
   if (existingStatus) return existingStatus;
-  if (weekId > currentWeekId) return "future";
-  if (weekId === currentWeekId) return "pending";
-  if (weekId < projectStartWeek) return "not_started";
+  const compareToCurrent = compareWeekIds(weekId, currentWeekId);
+  if (compareToCurrent > 0) return "future";
+  if (compareToCurrent === 0) return "pending";
+  if (compareWeekIds(weekId, projectStartWeek) < 0) return "not_started";
   return "skipped";
 }
 
@@ -84,8 +86,71 @@ export function YearGrid() {
     return { year, weeks };
   });
 
-  const defaultYear =
-    years[years.length - 1]?.year ?? getYearFromWeekId(currentWeekId);
+  if (years.length === 0) {
+    return null;
+  }
 
-  return <YearGridClient years={years} defaultYear={defaultYear} />;
+  const weekLegend =
+    "✅ Perfect  ⚠️ Incomplete  ❌ Skipped  🕒 Pending  ◻️ Future  ▫️ Not started";
+
+  return (
+    <section className="mb-8 border rounded p-4">
+      <h2 className="text-lg font-semibold mb-2">📅 Weekly Overview</h2>
+
+      <div className="flex flex-col gap-4">
+        {years.map((year) => (
+          <div key={year.year} id={`year-${year.year}`}>
+            <div className="mb-1 flex items-center justify-between text-sm font-medium text-gray-600 dark:text-gray-300">
+              <span>{year.year}</span>
+              <span>{year.weeks.length} weeks</span>
+            </div>
+            <div className="grid grid-cols-13 gap-1 text-sm">
+              {year.weeks.map((week) => {
+                const hasTopic =
+                  typeof week.topic === "string" && week.topic.trim().length > 0;
+                const baseTitle = `${week.weekId}${
+                  week.topic ? " — " + week.topic : ""
+                }`;
+                const baseClass = `w-6 h-6 flex items-center justify-center border rounded ${
+                  week.status === "not_started" ? "text-gray-400" : ""
+                }`;
+                const emoji = statusToEmoji(week.status);
+
+                if (hasTopic) {
+                  return (
+                    <a
+                      key={week.weekId}
+                      href={`#${week.weekId}`}
+                      title={baseTitle}
+                      aria-label={baseTitle}
+                      className={`${baseClass} cursor-pointer hover:border-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-gray-500`}
+                    >
+                      {emoji}
+                    </a>
+                  );
+                }
+
+                return (
+                  <div
+                    key={week.weekId}
+                    title={baseTitle}
+                    className={`${baseClass} cursor-help`}
+                  >
+                    {emoji}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="text-xs text-gray-500 dark:text-gray-400 mt-2">
+        {weekLegend.split("  ").map((label) => (
+          <span key={label} className="inline-block mr-2 last:mr-0">
+            {label}
+          </span>
+        ))}
+      </div>
+    </section>
+  );
 }

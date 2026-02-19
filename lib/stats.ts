@@ -1,7 +1,8 @@
 import originalWeeks from "@/data/weeks.json";
 import type { WeekStatus, WeeklyEntry } from "@/types";
+import { sortWeeks } from "@/lib/weeks";
 
-const INACTIVE_WEEK_STATUSES: WeekStatus[] = ["not_started", "pending"];
+const INACTIVE_WEEK_STATUSES: WeekStatus[] = ["not_started", "pending", "future"];
 
 const isActiveWeek = (week: WeeklyEntry) =>
   !INACTIVE_WEEK_STATUSES.includes(week.status);
@@ -55,7 +56,7 @@ const average = (total: number, divisor: number) =>
   divisor > 0 ? Math.round(total / divisor) : 0;
 
 export function getAggregatedStats() {
-  const weeks = [...(originalWeeks as WeeklyEntry[])];
+  const weeks = sortWeeks(originalWeeks as WeeklyEntry[]);
 
   const blogWeeks = countActiveWeeksFromFirstMatch(
     weeks,
