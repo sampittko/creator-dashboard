@@ -31,9 +31,7 @@ const getWeekTopics = (week) =>
 
 const getWeekVideos = (week) =>
   getWeekContents(week).flatMap((content) =>
-    Array.isArray(content.videos)
-      ? content.videos.map((video) => ({ ...video, topic: content.topic }))
-      : []
+    content.video ? [{ ...content.video, topic: content.topic }] : []
   );
 
 const getWeekBlogs = (week) =>

@@ -30,7 +30,7 @@ export type OtherLink = {
 export interface WeeklyContentEntry {
   topic: string;
   blog: BlogEntry | null;
-  videos: VideoEntry[];
+  video: VideoEntry | null;
 }
 
 export interface WeeklyEntry {

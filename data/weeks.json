@@ -49,7 +49,7 @@
           "publishedAt": "2025-01-31",
           "url": "https://fwt.wtf/kickoff"
         },
-        "videos": []
+        "video": null
       }
     ]
   },
@@ -67,7 +67,7 @@
           "publishedAt": "2025-02-07",
           "url": "https://fwt.wtf/self-awareness"
         },
-        "videos": []
+        "video": null
       }
     ]
   },
@@ -85,7 +85,7 @@
           "publishedAt": "2025-02-14",
           "url": "https://fwt.wtf/digital-minimalism"
         },
-        "videos": []
+        "video": null
       }
     ]
   },
@@ -103,7 +103,7 @@
           "publishedAt": "2025-02-21",
           "url": "https://fwt.wtf/tech-independence"
         },
-        "videos": []
+        "video": null
       }
     ]
   },
@@ -121,14 +121,12 @@
           "publishedAt": "2025-02-27",
           "url": "https://fwt.wtf/my-story"
         },
-        "videos": [
-          {
-            "publishedAt": "2025-02-28",
-            "url": "https://fwt.wtf/my-story-video",
-            "takes": 9,
-            "kilometersRecorded": 28
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-02-28",
+          "url": "https://fwt.wtf/my-story-video",
+          "takes": 9,
+          "kilometersRecorded": 28
+        }
       }
     ]
   },
@@ -146,14 +144,12 @@
           "publishedAt": "2025-03-06",
           "url": "https://fwt.wtf/first-step"
         },
-        "videos": [
-          {
-            "publishedAt": "2025-03-07",
-            "url": "https://fwt.wtf/first-step-video",
-            "takes": 4,
-            "kilometersRecorded": 14
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-03-07",
+          "url": "https://fwt.wtf/first-step-video",
+          "takes": 4,
+          "kilometersRecorded": 14
+        }
       }
     ]
   },
@@ -171,14 +167,12 @@
           "publishedAt": "2025-03-13",
           "url": "https://fwt.wtf/second-step"
         },
-        "videos": [
-          {
-            "publishedAt": "2025-03-14",
-            "url": "https://fwt.wtf/second-step-video",
-            "takes": 1,
-            "kilometersRecorded": 14
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-03-14",
+          "url": "https://fwt.wtf/second-step-video",
+          "takes": 1,
+          "kilometersRecorded": 14
+        }
       }
     ]
   },
@@ -196,14 +190,12 @@
           "publishedAt": "2025-03-20",
           "url": "https://fwt.wtf/final-step"
         },
-        "videos": [
-          {
-            "publishedAt": "2025-03-21",
-            "url": "https://fwt.wtf/final-step-video",
-            "takes": 2,
-            "kilometersRecorded": 14
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-03-21",
+          "url": "https://fwt.wtf/final-step-video",
+          "takes": 2,
+          "kilometersRecorded": 14
+        }
       }
     ]
   },
@@ -226,14 +218,12 @@
           "publishedAt": "2025-03-27",
           "url": "https://fwt.wtf/delete-your-chats"
         },
-        "videos": [
-          {
-            "publishedAt": "2025-03-28",
-            "url": "https://fwt.wtf/delete-your-chats-video",
-            "takes": 1,
-            "kilometersRecorded": 27
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-03-28",
+          "url": "https://fwt.wtf/delete-your-chats-video",
+          "takes": 1,
+          "kilometersRecorded": 27
+        }
       }
     ]
   },
@@ -251,14 +241,12 @@
           "publishedAt": "2025-04-03",
           "url": "https://fwt.wtf/outsmart-the-feed"
         },
-        "videos": [
-          {
-            "publishedAt": "2025-04-04",
-            "url": "https://fwt.wtf/outsmart-the-feed-video",
-            "takes": 3,
-            "kilometersRecorded": 40
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-04-04",
+          "url": "https://fwt.wtf/outsmart-the-feed-video",
+          "takes": 3,
+          "kilometersRecorded": 40
+        }
       }
     ]
   },
@@ -276,14 +264,12 @@
           "publishedAt": "2025-04-10",
           "url": "https://fwt.wtf/low-data-living"
         },
-        "videos": [
-          {
-            "publishedAt": "2025-04-11",
-            "url": "https://fwt.wtf/low-data-living-video",
-            "takes": 6,
-            "kilometersRecorded": 22
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-04-11",
+          "url": "https://fwt.wtf/low-data-living-video",
+          "takes": 6,
+          "kilometersRecorded": 22
+        }
       }
     ]
   },
@@ -306,14 +292,12 @@
           "publishedAt": "2025-04-17",
           "url": "https://fwt.wtf/choose-your-digital-path"
         },
-        "videos": [
-          {
-            "publishedAt": "2025-04-18",
-            "url": "https://fwt.wtf/choose-your-digital-path-video",
-            "takes": 12,
-            "kilometersRecorded": 11
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-04-18",
+          "url": "https://fwt.wtf/choose-your-digital-path-video",
+          "takes": 12,
+          "kilometersRecorded": 11
+        }
       }
     ]
   },
@@ -331,14 +315,12 @@
           "publishedAt": "2025-04-24",
           "url": "https://fwt.wtf/break-the-default"
         },
-        "videos": [
-          {
-            "publishedAt": "2025-04-25",
-            "url": "https://fwt.wtf/break-the-default-video",
-            "takes": 5,
-            "kilometersRecorded": 42
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-04-25",
+          "url": "https://fwt.wtf/break-the-default-video",
+          "takes": 5,
+          "kilometersRecorded": 42
+        }
       }
     ]
   },
@@ -356,14 +338,12 @@
           "publishedAt": "2025-05-01",
           "url": "https://fwt.wtf/slow-your-scroll"
         },
-        "videos": [
-          {
-            "publishedAt": "2025-05-02",
-            "url": "https://fwt.wtf/slow-your-scroll-video",
-            "takes": 4,
-            "kilometersRecorded": 124
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-05-02",
+          "url": "https://fwt.wtf/slow-your-scroll-video",
+          "takes": 4,
+          "kilometersRecorded": 124
+        }
       }
     ]
   },
@@ -381,14 +361,12 @@
           "publishedAt": "2025-05-08",
           "url": "https://fwt.wtf/cut-the-spam"
         },
-        "videos": [
-          {
-            "publishedAt": "2025-05-09",
-            "url": "https://fwt.wtf/cut-the-spam-video",
-            "takes": 10,
-            "kilometersRecorded": 32
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-05-09",
+          "url": "https://fwt.wtf/cut-the-spam-video",
+          "takes": 10,
+          "kilometersRecorded": 32
+        }
       }
     ]
   },
@@ -406,14 +384,12 @@
           "publishedAt": "2025-05-15",
           "url": "https://fwt.wtf/engineers-regret"
         },
-        "videos": [
-          {
-            "publishedAt": "2025-05-16",
-            "url": "https://fwt.wtf/engineers-regret-video",
-            "takes": 12,
-            "kilometersRecorded": 62
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-05-16",
+          "url": "https://fwt.wtf/engineers-regret-video",
+          "takes": 12,
+          "kilometersRecorded": 62
+        }
       }
     ]
   },
@@ -431,14 +407,12 @@
           "publishedAt": "2025-05-23",
           "url": "https://fwt.wtf/the-analog-edge"
         },
-        "videos": [
-          {
-            "publishedAt": "2025-05-23",
-            "url": "https://fwt.wtf/the-analog-edge-video",
-            "takes": 3,
-            "kilometersRecorded": 42
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-05-23",
+          "url": "https://fwt.wtf/the-analog-edge-video",
+          "takes": 3,
+          "kilometersRecorded": 42
+        }
       }
     ]
   },
@@ -456,14 +430,12 @@
           "publishedAt": "2025-05-30",
           "url": "https://fwt.wtf/track-reflect-repeat"
         },
-        "videos": [
-          {
-            "publishedAt": "2025-05-30",
-            "url": "https://fwt.wtf/track-reflect-repeat-video",
-            "takes": 6,
-            "kilometersRecorded": 72
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-05-30",
+          "url": "https://fwt.wtf/track-reflect-repeat-video",
+          "takes": 6,
+          "kilometersRecorded": 72
+        }
       }
     ]
   },
@@ -481,14 +453,12 @@
           "publishedAt": "2025-06-06",
           "url": "https://fwt.wtf/offload-not-obsess"
         },
-        "videos": [
-          {
-            "publishedAt": "2025-06-06",
-            "url": "https://fwt.wtf/offload-not-obsess-video",
-            "takes": 2,
-            "kilometersRecorded": 40
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-06-06",
+          "url": "https://fwt.wtf/offload-not-obsess-video",
+          "takes": 2,
+          "kilometersRecorded": 40
+        }
       }
     ]
   },
@@ -506,14 +476,12 @@
           "publishedAt": "2025-06-13",
           "url": "https://fwt.wtf/free-with-tech"
         },
-        "videos": [
-          {
-            "publishedAt": "2025-06-13",
-            "url": "https://fwt.wtf/free-with-tech-video",
-            "takes": 2,
-            "kilometersRecorded": 14
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-06-13",
+          "url": "https://fwt.wtf/free-with-tech-video",
+          "takes": 2,
+          "kilometersRecorded": 14
+        }
       }
     ]
   },
@@ -533,14 +501,12 @@
           "publishedAt": "2025-06-20",
           "url": "https://fwt.wtf/built-my-system"
         },
-        "videos": [
-          {
-            "publishedAt": "2025-06-20",
-            "url": "https://fwt.wtf/built-my-system-video",
-            "takes": 4,
-            "kilometersRecorded": 120
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-06-20",
+          "url": "https://fwt.wtf/built-my-system-video",
+          "takes": 4,
+          "kilometersRecorded": 120
+        }
       }
     ]
   },
@@ -560,14 +526,12 @@
           "publishedAt": "2025-06-27",
           "url": "https://fwt.wtf/paper-and-pixel"
         },
-        "videos": [
-          {
-            "publishedAt": "2025-06-27",
-            "url": "https://fwt.wtf/paper-and-pixel-video",
-            "takes": 2,
-            "kilometersRecorded": 14
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-06-27",
+          "url": "https://fwt.wtf/paper-and-pixel-video",
+          "takes": 2,
+          "kilometersRecorded": 14
+        }
       }
     ]
   },
@@ -587,14 +551,12 @@
           "publishedAt": "2025-07-04",
           "url": "https://fwt.wtf/track-twice"
         },
-        "videos": [
-          {
-            "publishedAt": "2025-07-04",
-            "url": "https://fwt.wtf/track-twice-video",
-            "takes": 4,
-            "kilometersRecorded": 32
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-07-04",
+          "url": "https://fwt.wtf/track-twice-video",
+          "takes": 4,
+          "kilometersRecorded": 32
+        }
       }
     ]
   },
@@ -614,14 +576,12 @@
           "publishedAt": "2025-07-11",
           "url": "https://fwt.wtf/wrist-to-page"
         },
-        "videos": [
-          {
-            "publishedAt": "2025-07-11",
-            "url": "https://fwt.wtf/wrist-to-page-video",
-            "takes": 1,
-            "kilometersRecorded": 170
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-07-11",
+          "url": "https://fwt.wtf/wrist-to-page-video",
+          "takes": 1,
+          "kilometersRecorded": 170
+        }
       }
     ]
   },
@@ -641,14 +601,12 @@
           "publishedAt": "2025-07-18",
           "url": "https://fwt.wtf/so-i-did-this"
         },
-        "videos": [
-          {
-            "publishedAt": "2025-07-18",
-            "url": "https://fwt.wtf/so-i-did-this-video",
-            "takes": 6,
-            "kilometersRecorded": 30
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-07-18",
+          "url": "https://fwt.wtf/so-i-did-this-video",
+          "takes": 6,
+          "kilometersRecorded": 30
+        }
       }
     ]
   },
@@ -665,14 +623,12 @@
       {
         "topic": "3 Apple Watch Apps I Built to Support Analog Journaling",
         "blog": null,
-        "videos": [
-          {
-            "publishedAt": "2025-07-25",
-            "url": "https://fwt.wtf/paper-power-tools",
-            "takes": 4,
-            "kilometersRecorded": 42
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-07-25",
+          "url": "https://fwt.wtf/paper-power-tools",
+          "takes": 4,
+          "kilometersRecorded": 42
+        }
       }
     ]
   },
@@ -689,14 +645,12 @@
       {
         "topic": "The Quiet Shift in My Digital Life",
         "blog": null,
-        "videos": [
-          {
-            "publishedAt": "2025-08-01",
-            "url": "https://fwt.wtf/tech-on-my-terms",
-            "takes": 2,
-            "kilometersRecorded": 27
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-08-01",
+          "url": "https://fwt.wtf/tech-on-my-terms",
+          "takes": 2,
+          "kilometersRecorded": 27
+        }
       }
     ]
   },
@@ -713,14 +667,12 @@
       {
         "topic": "Digital Slavery is Real and How I Broke Free",
         "blog": null,
-        "videos": [
-          {
-            "publishedAt": "2025-08-08",
-            "url": "https://fwt.wtf/digital-slave",
-            "takes": 2,
-            "kilometersRecorded": 16
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-08-08",
+          "url": "https://fwt.wtf/digital-slave",
+          "takes": 2,
+          "kilometersRecorded": 16
+        }
       }
     ]
   },
@@ -737,14 +689,12 @@
       {
         "topic": "The Misunderstood Path to Digital Freedom",
         "blog": null,
-        "videos": [
-          {
-            "publishedAt": "2025-08-15",
-            "url": "https://fwt.wtf/beyond-reset",
-            "takes": 1,
-            "kilometersRecorded": 5
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-08-15",
+          "url": "https://fwt.wtf/beyond-reset",
+          "takes": 1,
+          "kilometersRecorded": 5
+        }
       }
     ]
   },
@@ -782,14 +732,12 @@
       {
         "topic": "Digital Footprint Optimization Without the Overwhelm",
         "blog": null,
-        "videos": [
-          {
-            "publishedAt": "2025-08-22",
-            "url": "https://fwt.wtf/quiet-progress",
-            "takes": 1,
-            "kilometersRecorded": 5
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-08-22",
+          "url": "https://fwt.wtf/quiet-progress",
+          "takes": 1,
+          "kilometersRecorded": 5
+        }
       }
     ]
   },
@@ -815,14 +763,12 @@
       {
         "topic": "What I Discovered on My Tech Reset Journey",
         "blog": null,
-        "videos": [
-          {
-            "publishedAt": "2025-08-29",
-            "url": "https://fwt.wtf/digital-wellness-values",
-            "takes": 2,
-            "kilometersRecorded": 28
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-08-29",
+          "url": "https://fwt.wtf/digital-wellness-values",
+          "takes": 2,
+          "kilometersRecorded": 28
+        }
       }
     ]
   },
@@ -850,14 +796,12 @@
       {
         "topic": "How Gaming and Coding Shaped My Digital Journey",
         "blog": null,
-        "videos": [
-          {
-            "publishedAt": "2025-09-05",
-            "url": "https://fwt.wtf/years-inside-screens",
-            "takes": 3,
-            "kilometersRecorded": 5
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-09-05",
+          "url": "https://fwt.wtf/years-inside-screens",
+          "takes": 3,
+          "kilometersRecorded": 5
+        }
       }
     ]
   },
@@ -872,14 +816,12 @@
       {
         "topic": "The Missing Piece in the Bullet Journal Method for Me",
         "blog": null,
-        "videos": [
-          {
-            "publishedAt": "2025-09-12",
-            "url": "https://fwt.wtf/analog-is-not-enough",
-            "takes": 1,
-            "kilometersRecorded": 23
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-09-12",
+          "url": "https://fwt.wtf/analog-is-not-enough",
+          "takes": 1,
+          "kilometersRecorded": 23
+        }
       }
     ]
   },
@@ -894,14 +836,12 @@
       {
         "topic": "How I Avoid Both Surveillance and Self-Hosting Hell",
         "blog": null,
-        "videos": [
-          {
-            "publishedAt": "2025-09-19",
-            "url": "https://fwt.wtf/privacy-balance",
-            "takes": 1,
-            "kilometersRecorded": 62
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-09-19",
+          "url": "https://fwt.wtf/privacy-balance",
+          "takes": 1,
+          "kilometersRecorded": 62
+        }
       }
     ]
   },
@@ -916,14 +856,12 @@
       {
         "topic": "What I Learned About Relationships After Deleting Social Media",
         "blog": null,
-        "videos": [
-          {
-            "publishedAt": "2025-09-26",
-            "url": "https://fwt.wtf/shattered-connections",
-            "takes": 4,
-            "kilometersRecorded": 0
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-09-26",
+          "url": "https://fwt.wtf/shattered-connections",
+          "takes": 4,
+          "kilometersRecorded": 0
+        }
       }
     ]
   },
@@ -947,14 +885,12 @@
       {
         "topic": "Things I Don’t Tell AI",
         "blog": null,
-        "videos": [
-          {
-            "publishedAt": "2025-10-10",
-            "url": "https://fwt.wtf/ai-is-not-a-friend",
-            "takes": 2,
-            "kilometersRecorded": 22
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-10-10",
+          "url": "https://fwt.wtf/ai-is-not-a-friend",
+          "takes": 2,
+          "kilometersRecorded": 22
+        }
       }
     ]
   },
@@ -969,14 +905,12 @@
       {
         "topic": "Why I Think Dumbphones Miss the Point",
         "blog": null,
-        "videos": [
-          {
-            "publishedAt": "2025-10-17",
-            "url": "https://fwt.wtf/no-more-dumbphones",
-            "takes": 2,
-            "kilometersRecorded": 34
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-10-17",
+          "url": "https://fwt.wtf/no-more-dumbphones",
+          "takes": 2,
+          "kilometersRecorded": 34
+        }
       }
     ]
   },
@@ -991,14 +925,12 @@
       {
         "topic": "Digital That Supports Analog",
         "blog": null,
-        "videos": [
-          {
-            "publishedAt": "2025-10-24",
-            "url": "https://fwt.wtf/journal-companions",
-            "takes": 5,
-            "kilometersRecorded": 27
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-10-24",
+          "url": "https://fwt.wtf/journal-companions",
+          "takes": 5,
+          "kilometersRecorded": 27
+        }
       }
     ]
   },
@@ -1013,14 +945,12 @@
       {
         "topic": "Apps Built to Stay Small",
         "blog": null,
-        "videos": [
-          {
-            "publishedAt": "2025-10-31",
-            "url": "https://fwt.wtf/respectful-tech",
-            "takes": 1,
-            "kilometersRecorded": 40
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-10-31",
+          "url": "https://fwt.wtf/respectful-tech",
+          "takes": 1,
+          "kilometersRecorded": 40
+        }
       }
     ]
   },
@@ -1035,14 +965,12 @@
       {
         "topic": "Can My Watch Replace My iPhone?",
         "blog": null,
-        "videos": [
-          {
-            "publishedAt": "2025-11-07",
-            "url": "https://fwt.wtf/phone-stays-home",
-            "takes": 1,
-            "kilometersRecorded": 22
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-11-07",
+          "url": "https://fwt.wtf/phone-stays-home",
+          "takes": 1,
+          "kilometersRecorded": 22
+        }
       }
     ]
   },
@@ -1057,14 +985,12 @@
       {
         "topic": "Your Phone Is Too Capable (And It’s Hurting Your Focus)",
         "blog": null,
-        "videos": [
-          {
-            "publishedAt": "2025-11-14",
-            "url": "https://fwt.wtf/deferred-complexity",
-            "takes": 3,
-            "kilometersRecorded": 80
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-11-14",
+          "url": "https://fwt.wtf/deferred-complexity",
+          "takes": 3,
+          "kilometersRecorded": 80
+        }
       }
     ]
   },
@@ -1079,14 +1005,12 @@
       {
         "topic": "Why I Tripled My Phone Bill to Use My Watch",
         "blog": null,
-        "videos": [
-          {
-            "publishedAt": "2025-11-21",
-            "url": "https://fwt.wtf/did-i-really-need-this",
-            "takes": 1,
-            "kilometersRecorded": 14
-          }
-        ]
+        "video": {
+          "publishedAt": "2025-11-21",
+          "url": "https://fwt.wtf/did-i-really-need-this",
+          "takes": 1,
+          "kilometersRecorded": 14
+        }
       }
     ]
   },

@@ -14,9 +14,7 @@ const weekHasBlog = (week: WeeklyEntry) =>
   getWeekContents(week).some((content) => content.blog !== null);
 
 const weekHasVideo = (week: WeeklyEntry) =>
-  getWeekContents(week).some(
-    (content) => Array.isArray(content.videos) && content.videos.length > 0
-  );
+  getWeekContents(week).some((content) => content.video !== null);
 
 const countActiveWeeksFromFirstMatch = (
   weeks: WeeklyEntry[],
@@ -114,7 +112,7 @@ export function getAggregatedStats() {
 
     const contents = getWeekContents(week);
     const weekVideos = contents.flatMap((content) =>
-      Array.isArray(content.videos) ? content.videos : []
+      content.video ? [content.video] : []
     );
     const weekBlogs = contents.filter((content) => content.blog !== null);
 
