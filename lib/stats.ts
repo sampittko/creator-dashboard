@@ -63,7 +63,7 @@ export function getAggregatedStats() {
   );
   const videoWeeks = countActiveWeeksFromFirstMatch(
     weeks,
-    (week) => week.video !== null
+    (week) => week.videos.length > 0
   );
   const { current: currentStreak, longest: longestStreak } =
     calculatePerfectStreaks(weeks);
@@ -100,10 +100,12 @@ export function getAggregatedStats() {
     stats.totalProjectWeeks++;
     stats.totalMinutesWorked += week.minutesWorked;
 
-    if (week.video) {
-      stats.totalVideoTakes += week.video.takes;
-      stats.totalVideoKilometersTraveled += week.video.kilometersRecorded;
-      stats.totalContent.videoCount++;
+    if (week.videos.length > 0) {
+      for (const video of week.videos) {
+        stats.totalVideoTakes += video.takes;
+        stats.totalVideoKilometersTraveled += video.kilometersRecorded;
+      }
+      stats.totalContent.videoCount += week.videos.length;
     }
 
     if (week.blog) stats.totalContent.blogCount++;

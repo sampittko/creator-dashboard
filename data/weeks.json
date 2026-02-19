@@ -6,9 +6,9 @@
     "minutesWorked": 0,
     "wins": "",
     "blog": null,
-    "video": null,
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": []
   },
   {
     "weekId": "2025-W02",
@@ -17,9 +17,9 @@
     "minutesWorked": 0,
     "wins": "",
     "blog": null,
-    "video": null,
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": []
   },
   {
     "weekId": "2025-W03",
@@ -28,9 +28,9 @@
     "minutesWorked": 0,
     "wins": "",
     "blog": null,
-    "video": null,
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": []
   },
   {
     "weekId": "2025-W04",
@@ -39,9 +39,9 @@
     "minutesWorked": 0,
     "wins": "",
     "blog": null,
-    "video": null,
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": []
   },
   {
     "weekId": "2025-W05",
@@ -53,9 +53,9 @@
       "publishedAt": "2025-01-31",
       "url": "https://fwt.wtf/kickoff"
     },
-    "video": null,
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": []
   },
   {
     "weekId": "2025-W06",
@@ -67,9 +67,9 @@
       "publishedAt": "2025-02-07",
       "url": "https://fwt.wtf/self-awareness"
     },
-    "video": null,
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": []
   },
   {
     "weekId": "2025-W07",
@@ -81,9 +81,9 @@
       "publishedAt": "2025-02-14",
       "url": "https://fwt.wtf/digital-minimalism"
     },
-    "video": null,
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": []
   },
   {
     "weekId": "2025-W08",
@@ -95,9 +95,9 @@
       "publishedAt": "2025-02-21",
       "url": "https://fwt.wtf/tech-independence"
     },
-    "video": null,
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": []
   },
   {
     "weekId": "2025-W09",
@@ -109,14 +109,16 @@
       "publishedAt": "2025-02-27",
       "url": "https://fwt.wtf/my-story"
     },
-    "video": {
-      "publishedAt": "2025-02-28",
-      "url": "https://fwt.wtf/my-story-video",
-      "takes": 9,
-      "kilometersRecorded": 28
-    },
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-02-28",
+        "url": "https://fwt.wtf/my-story-video",
+        "takes": 9,
+        "kilometersRecorded": 28
+      }
+    ]
   },
   {
     "weekId": "2025-W10",
@@ -128,14 +130,16 @@
       "publishedAt": "2025-03-06",
       "url": "https://fwt.wtf/first-step"
     },
-    "video": {
-      "publishedAt": "2025-03-07",
-      "url": "https://fwt.wtf/first-step-video",
-      "takes": 4,
-      "kilometersRecorded": 14
-    },
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-03-07",
+        "url": "https://fwt.wtf/first-step-video",
+        "takes": 4,
+        "kilometersRecorded": 14
+      }
+    ]
   },
   {
     "weekId": "2025-W11",
@@ -147,14 +151,16 @@
       "publishedAt": "2025-03-13",
       "url": "https://fwt.wtf/second-step"
     },
-    "video": {
-      "publishedAt": "2025-03-14",
-      "url": "https://fwt.wtf/second-step-video",
-      "takes": 1,
-      "kilometersRecorded": 14
-    },
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-03-14",
+        "url": "https://fwt.wtf/second-step-video",
+        "takes": 1,
+        "kilometersRecorded": 14
+      }
+    ]
   },
   {
     "weekId": "2025-W12",
@@ -166,14 +172,16 @@
       "publishedAt": "2025-03-20",
       "url": "https://fwt.wtf/final-step"
     },
-    "video": {
-      "publishedAt": "2025-03-21",
-      "url": "https://fwt.wtf/final-step-video",
-      "takes": 2,
-      "kilometersRecorded": 14
-    },
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-03-21",
+        "url": "https://fwt.wtf/final-step-video",
+        "takes": 2,
+        "kilometersRecorded": 14
+      }
+    ]
   },
   {
     "weekId": "2025-W13",
@@ -185,17 +193,19 @@
       "publishedAt": "2025-03-27",
       "url": "https://fwt.wtf/delete-your-chats"
     },
-    "video": {
-      "publishedAt": "2025-03-28",
-      "url": "https://fwt.wtf/delete-your-chats-video",
-      "takes": 1,
-      "kilometersRecorded": 27
-    },
     "devLogVideo": null,
     "otherLinks": [
       {
         "url": "https://fwt.wtf/tatryit",
         "label": "Meetup (SK)"
+      }
+    ],
+    "videos": [
+      {
+        "publishedAt": "2025-03-28",
+        "url": "https://fwt.wtf/delete-your-chats-video",
+        "takes": 1,
+        "kilometersRecorded": 27
       }
     ]
   },
@@ -209,14 +219,16 @@
       "publishedAt": "2025-04-03",
       "url": "https://fwt.wtf/outsmart-the-feed"
     },
-    "video": {
-      "publishedAt": "2025-04-04",
-      "url": "https://fwt.wtf/outsmart-the-feed-video",
-      "takes": 3,
-      "kilometersRecorded": 40
-    },
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-04-04",
+        "url": "https://fwt.wtf/outsmart-the-feed-video",
+        "takes": 3,
+        "kilometersRecorded": 40
+      }
+    ]
   },
   {
     "weekId": "2025-W15",
@@ -228,14 +240,16 @@
       "publishedAt": "2025-04-10",
       "url": "https://fwt.wtf/low-data-living"
     },
-    "video": {
-      "publishedAt": "2025-04-11",
-      "url": "https://fwt.wtf/low-data-living-video",
-      "takes": 6,
-      "kilometersRecorded": 22
-    },
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-04-11",
+        "url": "https://fwt.wtf/low-data-living-video",
+        "takes": 6,
+        "kilometersRecorded": 22
+      }
+    ]
   },
   {
     "weekId": "2025-W16",
@@ -247,17 +261,19 @@
       "publishedAt": "2025-04-17",
       "url": "https://fwt.wtf/choose-your-digital-path"
     },
-    "video": {
-      "publishedAt": "2025-04-18",
-      "url": "https://fwt.wtf/choose-your-digital-path-video",
-      "takes": 12,
-      "kilometersRecorded": 11
-    },
     "devLogVideo": null,
     "otherLinks": [
       {
         "url": "https://fwt.wtf/hlasypopradu",
         "label": "Podcast (SK)"
+      }
+    ],
+    "videos": [
+      {
+        "publishedAt": "2025-04-18",
+        "url": "https://fwt.wtf/choose-your-digital-path-video",
+        "takes": 12,
+        "kilometersRecorded": 11
       }
     ]
   },
@@ -271,14 +287,16 @@
       "publishedAt": "2025-04-24",
       "url": "https://fwt.wtf/break-the-default"
     },
-    "video": {
-      "publishedAt": "2025-04-25",
-      "url": "https://fwt.wtf/break-the-default-video",
-      "takes": 5,
-      "kilometersRecorded": 42
-    },
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-04-25",
+        "url": "https://fwt.wtf/break-the-default-video",
+        "takes": 5,
+        "kilometersRecorded": 42
+      }
+    ]
   },
   {
     "weekId": "2025-W18",
@@ -290,14 +308,16 @@
       "publishedAt": "2025-05-01",
       "url": "https://fwt.wtf/slow-your-scroll"
     },
-    "video": {
-      "publishedAt": "2025-05-02",
-      "url": "https://fwt.wtf/slow-your-scroll-video",
-      "takes": 4,
-      "kilometersRecorded": 124
-    },
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-05-02",
+        "url": "https://fwt.wtf/slow-your-scroll-video",
+        "takes": 4,
+        "kilometersRecorded": 124
+      }
+    ]
   },
   {
     "weekId": "2025-W19",
@@ -309,14 +329,16 @@
       "publishedAt": "2025-05-08",
       "url": "https://fwt.wtf/cut-the-spam"
     },
-    "video": {
-      "publishedAt": "2025-05-09",
-      "url": "https://fwt.wtf/cut-the-spam-video",
-      "takes": 10,
-      "kilometersRecorded": 32
-    },
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-05-09",
+        "url": "https://fwt.wtf/cut-the-spam-video",
+        "takes": 10,
+        "kilometersRecorded": 32
+      }
+    ]
   },
   {
     "weekId": "2025-W20",
@@ -328,14 +350,16 @@
       "publishedAt": "2025-05-15",
       "url": "https://fwt.wtf/engineers-regret"
     },
-    "video": {
-      "publishedAt": "2025-05-16",
-      "url": "https://fwt.wtf/engineers-regret-video",
-      "takes": 12,
-      "kilometersRecorded": 62
-    },
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-05-16",
+        "url": "https://fwt.wtf/engineers-regret-video",
+        "takes": 12,
+        "kilometersRecorded": 62
+      }
+    ]
   },
   {
     "weekId": "2025-W21",
@@ -347,14 +371,16 @@
       "publishedAt": "2025-05-23",
       "url": "https://fwt.wtf/the-analog-edge"
     },
-    "video": {
-      "publishedAt": "2025-05-23",
-      "url": "https://fwt.wtf/the-analog-edge-video",
-      "takes": 3,
-      "kilometersRecorded": 42
-    },
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-05-23",
+        "url": "https://fwt.wtf/the-analog-edge-video",
+        "takes": 3,
+        "kilometersRecorded": 42
+      }
+    ]
   },
   {
     "weekId": "2025-W22",
@@ -366,14 +392,16 @@
       "publishedAt": "2025-05-30",
       "url": "https://fwt.wtf/track-reflect-repeat"
     },
-    "video": {
-      "publishedAt": "2025-05-30",
-      "url": "https://fwt.wtf/track-reflect-repeat-video",
-      "takes": 6,
-      "kilometersRecorded": 72
-    },
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-05-30",
+        "url": "https://fwt.wtf/track-reflect-repeat-video",
+        "takes": 6,
+        "kilometersRecorded": 72
+      }
+    ]
   },
   {
     "weekId": "2025-W23",
@@ -385,14 +413,16 @@
       "publishedAt": "2025-06-06",
       "url": "https://fwt.wtf/offload-not-obsess"
     },
-    "video": {
-      "publishedAt": "2025-06-06",
-      "url": "https://fwt.wtf/offload-not-obsess-video",
-      "takes": 2,
-      "kilometersRecorded": 40
-    },
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-06-06",
+        "url": "https://fwt.wtf/offload-not-obsess-video",
+        "takes": 2,
+        "kilometersRecorded": 40
+      }
+    ]
   },
   {
     "weekId": "2025-W24",
@@ -404,14 +434,16 @@
       "publishedAt": "2025-06-13",
       "url": "https://fwt.wtf/free-with-tech"
     },
-    "video": {
-      "publishedAt": "2025-06-13",
-      "url": "https://fwt.wtf/free-with-tech-video",
-      "takes": 2,
-      "kilometersRecorded": 14
-    },
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-06-13",
+        "url": "https://fwt.wtf/free-with-tech-video",
+        "takes": 2,
+        "kilometersRecorded": 14
+      }
+    ]
   },
   {
     "weekId": "2025-W25",
@@ -423,16 +455,18 @@
       "publishedAt": "2025-06-20",
       "url": "https://fwt.wtf/built-my-system"
     },
-    "video": {
-      "publishedAt": "2025-06-20",
-      "url": "https://fwt.wtf/built-my-system-video",
-      "takes": 4,
-      "kilometersRecorded": 120
-    },
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog1"]
     },
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-06-20",
+        "url": "https://fwt.wtf/built-my-system-video",
+        "takes": 4,
+        "kilometersRecorded": 120
+      }
+    ]
   },
   {
     "weekId": "2025-W26",
@@ -444,16 +478,18 @@
       "publishedAt": "2025-06-27",
       "url": "https://fwt.wtf/paper-and-pixel"
     },
-    "video": {
-      "publishedAt": "2025-06-27",
-      "url": "https://fwt.wtf/paper-and-pixel-video",
-      "takes": 2,
-      "kilometersRecorded": 14
-    },
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog2"]
     },
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-06-27",
+        "url": "https://fwt.wtf/paper-and-pixel-video",
+        "takes": 2,
+        "kilometersRecorded": 14
+      }
+    ]
   },
   {
     "weekId": "2025-W27",
@@ -465,16 +501,18 @@
       "publishedAt": "2025-07-04",
       "url": "https://fwt.wtf/track-twice"
     },
-    "video": {
-      "publishedAt": "2025-07-04",
-      "url": "https://fwt.wtf/track-twice-video",
-      "takes": 4,
-      "kilometersRecorded": 32
-    },
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog3", "https://fwt.wtf/devlog4"]
     },
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-07-04",
+        "url": "https://fwt.wtf/track-twice-video",
+        "takes": 4,
+        "kilometersRecorded": 32
+      }
+    ]
   },
   {
     "weekId": "2025-W28",
@@ -486,16 +524,18 @@
       "publishedAt": "2025-07-11",
       "url": "https://fwt.wtf/wrist-to-page"
     },
-    "video": {
-      "publishedAt": "2025-07-11",
-      "url": "https://fwt.wtf/wrist-to-page-video",
-      "takes": 1,
-      "kilometersRecorded": 170
-    },
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog5"]
     },
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-07-11",
+        "url": "https://fwt.wtf/wrist-to-page-video",
+        "takes": 1,
+        "kilometersRecorded": 170
+      }
+    ]
   },
   {
     "weekId": "2025-W29",
@@ -507,16 +547,18 @@
       "publishedAt": "2025-07-18",
       "url": "https://fwt.wtf/so-i-did-this"
     },
-    "video": {
-      "publishedAt": "2025-07-18",
-      "url": "https://fwt.wtf/so-i-did-this-video",
-      "takes": 6,
-      "kilometersRecorded": 30
-    },
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog6"]
     },
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-07-18",
+        "url": "https://fwt.wtf/so-i-did-this-video",
+        "takes": 6,
+        "kilometersRecorded": 30
+      }
+    ]
   },
   {
     "weekId": "2025-W30",
@@ -525,16 +567,18 @@
     "minutesWorked": 956,
     "wins": "Mood Reader (now moxi) is a new simple app I made that I use as part of my reflections in analog journaling. It is now testable on TestFlight. Made a demo video of all 3 apps for this week.",
     "blog": null,
-    "video": {
-      "publishedAt": "2025-07-25",
-      "url": "https://fwt.wtf/paper-power-tools",
-      "takes": 4,
-      "kilometersRecorded": 42
-    },
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog7"]
     },
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-07-25",
+        "url": "https://fwt.wtf/paper-power-tools",
+        "takes": 4,
+        "kilometersRecorded": 42
+      }
+    ]
   },
   {
     "weekId": "2025-W31",
@@ -542,16 +586,18 @@
     "status": "perfect",
     "minutesWorked": 1620,
     "wins": "Started building My Digital Toolkit (an idea that keeps coming back). Iterated joex & axis in a way that I can focus on marketing and final optimizations for 1.0 App Store releases in august. Survived a week that was simply tough mentally.",
-    "video": {
-      "publishedAt": "2025-08-01",
-      "url": "https://fwt.wtf/tech-on-my-terms",
-      "takes": 2,
-      "kilometersRecorded": 27
-    },
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog8"]
     },
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-08-01",
+        "url": "https://fwt.wtf/tech-on-my-terms",
+        "takes": 2,
+        "kilometersRecorded": 27
+      }
+    ]
   },
   {
     "weekId": "2025-W32",
@@ -560,16 +606,18 @@
     "minutesWorked": 1252,
     "wins": "#freewithtech official landing page is live after a 2-day sprint. Last fixes and improvements implemented for axis and joex Apple Watch apps.",
     "blog": null,
-    "video": {
-      "publishedAt": "2025-08-08",
-      "url": "https://fwt.wtf/digital-slave",
-      "takes": 2,
-      "kilometersRecorded": 16
-    },
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog9"]
     },
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-08-08",
+        "url": "https://fwt.wtf/digital-slave",
+        "takes": 2,
+        "kilometersRecorded": 16
+      }
+    ]
   },
   {
     "weekId": "2025-W33",
@@ -578,16 +626,18 @@
     "minutesWorked": 1634,
     "wins": "I've submitted fwt. axis and fwt. joex Apple Watch apps to Apple Review after creating their landing pages on the official site URL. I've revived My Digital Toolkit project and set a goal to build a MVP by the end of August.",
     "blog": null,
-    "video": {
-      "publishedAt": "2025-08-15",
-      "url": "https://fwt.wtf/beyond-reset",
-      "takes": 1,
-      "kilometersRecorded": 5
-    },
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog10"]
     },
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-08-15",
+        "url": "https://fwt.wtf/beyond-reset",
+        "takes": 1,
+        "kilometersRecorded": 5
+      }
+    ]
   },
   {
     "weekId": "2025-W34",
@@ -596,12 +646,6 @@
     "minutesWorked": 988,
     "wins": "Experimented with YouTube shorts for the first time and documented fwt. axis and joex app usage in my daily life this way. Failed hard by realizing that Apple Watch standalone apps cannot be released without iOS counterparts on the App Store. Gotta continue building my way forward, but harder.",
     "blog": null,
-    "video": {
-      "publishedAt": "2025-08-22",
-      "url": "https://fwt.wtf/quiet-progress",
-      "takes": 1,
-      "kilometersRecorded": 5
-    },
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog11"]
     },
@@ -626,6 +670,14 @@
         "url": "https://fwt.wtf/short5",
         "label": "Short #5"
       }
+    ],
+    "videos": [
+      {
+        "publishedAt": "2025-08-22",
+        "url": "https://fwt.wtf/quiet-progress",
+        "takes": 1,
+        "kilometersRecorded": 5
+      }
     ]
   },
   {
@@ -635,12 +687,6 @@
     "minutesWorked": 1364,
     "wins": "Last week's realization was just an illusion and I've managed to go through App Review process successfully for both fwt. joex and fwt. axis apps. Releases are scheduled for the 1st of September which means that everything is going according to the plans! Recorded app launch videos for Product Hunt together with 27th video for the channel.",
     "blog": null,
-    "video": {
-      "publishedAt": "2025-08-29",
-      "url": "https://fwt.wtf/digital-wellness-values",
-      "takes": 2,
-      "kilometersRecorded": 28
-    },
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog12"]
     },
@@ -653,6 +699,14 @@
         "url": "https://fwt.wtf/joex-launch-video",
         "label": "joex Product Hunt"
       }
+    ],
+    "videos": [
+      {
+        "publishedAt": "2025-08-29",
+        "url": "https://fwt.wtf/digital-wellness-values",
+        "takes": 2,
+        "kilometersRecorded": 28
+      }
     ]
   },
   {
@@ -662,12 +716,6 @@
     "minutesWorked": 1201,
     "wins": "Product Hunt launches of fwt. axis & fwt. joex where fwt. axis got featured in PH Daily newsletter, ending up #8 out of 275 app launches in total on the 1st of September.",
     "blog": null,
-    "video": {
-      "publishedAt": "2025-09-05",
-      "url": "https://fwt.wtf/years-inside-screens",
-      "takes": 3,
-      "kilometersRecorded": 5
-    },
     "devLogVideo": null,
     "otherLinks": [
       {
@@ -682,6 +730,14 @@
         "url": "https://fwt.wtf/short8",
         "label": "Short #8"
       }
+    ],
+    "videos": [
+      {
+        "publishedAt": "2025-09-05",
+        "url": "https://fwt.wtf/years-inside-screens",
+        "takes": 3,
+        "kilometersRecorded": 5
+      }
     ]
   },
   {
@@ -691,14 +747,16 @@
     "minutesWorked": 302,
     "wins": "Chilled down after 8 months of work. This month is all about reflection and planning for the 4th phase of my #freewithtech journey.",
     "blog": null,
-    "video": {
-      "publishedAt": "2025-09-12",
-      "url": "https://fwt.wtf/analog-is-not-enough",
-      "takes": 1,
-      "kilometersRecorded": 23
-    },
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-09-12",
+        "url": "https://fwt.wtf/analog-is-not-enough",
+        "takes": 1,
+        "kilometersRecorded": 23
+      }
+    ]
   },
   {
     "weekId": "2025-W38",
@@ -707,14 +765,16 @@
     "minutesWorked": 324,
     "wins": "30 perfect weeks in a row is a testament to my commitment since January 2025.",
     "blog": null,
-    "video": {
-      "publishedAt": "2025-09-19",
-      "url": "https://fwt.wtf/privacy-balance",
-      "takes": 1,
-      "kilometersRecorded": 62
-    },
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-09-19",
+        "url": "https://fwt.wtf/privacy-balance",
+        "takes": 1,
+        "kilometersRecorded": 62
+      }
+    ]
   },
   {
     "weekId": "2025-W39",
@@ -723,14 +783,16 @@
     "minutesWorked": 160,
     "wins": "",
     "blog": null,
-    "video": {
-      "publishedAt": "2025-09-26",
-      "url": "https://fwt.wtf/shattered-connections",
-      "takes": 4,
-      "kilometersRecorded": 0
-    },
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-09-26",
+        "url": "https://fwt.wtf/shattered-connections",
+        "takes": 4,
+        "kilometersRecorded": 0
+      }
+    ]
   },
   {
     "weekId": "2025-W40",
@@ -739,9 +801,9 @@
     "minutesWorked": 0,
     "wins": "",
     "blog": null,
-    "video": null,
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": []
   },
   {
     "weekId": "2025-W41",
@@ -750,14 +812,16 @@
     "minutesWorked": 408,
     "wins": "Bounced back with another video after skipping a week due to health issues.",
     "blog": null,
-    "video": {
-      "publishedAt": "2025-10-10",
-      "url": "https://fwt.wtf/ai-is-not-a-friend",
-      "takes": 2,
-      "kilometersRecorded": 22
-    },
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-10-10",
+        "url": "https://fwt.wtf/ai-is-not-a-friend",
+        "takes": 2,
+        "kilometersRecorded": 22
+      }
+    ]
   },
   {
     "weekId": "2025-W42",
@@ -766,14 +830,16 @@
     "minutesWorked": 483,
     "wins": "I've been elaborating on Journal Companions as a concept. Stay tuned to learn more next week.",
     "blog": null,
-    "video": {
-      "publishedAt": "2025-10-17",
-      "url": "https://fwt.wtf/no-more-dumbphones",
-      "takes": 2,
-      "kilometersRecorded": 34
-    },
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-10-17",
+        "url": "https://fwt.wtf/no-more-dumbphones",
+        "takes": 2,
+        "kilometersRecorded": 34
+      }
+    ]
   },
   {
     "weekId": "2025-W43",
@@ -782,14 +848,16 @@
     "minutesWorked": 1453,
     "wins": "Launched Journal Companions directory as a concept for implementing digital-analog bridge in your life. I also made 2 bug fixes and 1 new feature for free with tech apps that are included in the directory. Lovely autumn weather invited me to record 2 videos in 1 week. This means that I already know what is coming for next week!",
     "blog": null,
-    "video": {
-      "publishedAt": "2025-10-24",
-      "url": "https://fwt.wtf/journal-companions",
-      "takes": 5,
-      "kilometersRecorded": 27
-    },
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-10-24",
+        "url": "https://fwt.wtf/journal-companions",
+        "takes": 5,
+        "kilometersRecorded": 27
+      }
+    ]
   },
   {
     "weekId": "2025-W44",
@@ -798,14 +866,16 @@
     "minutesWorked": 442,
     "wins": "Shipped fwt. joex v1.2.0 with 2 new features. I've received the 1st payout directly from Apple as an indie hacker since the launch of my two apps on the 1st of September. When purpose meets consistent action, time takes care of the rest.",
     "blog": null,
-    "video": {
-      "publishedAt": "2025-10-31",
-      "url": "https://fwt.wtf/respectful-tech",
-      "takes": 1,
-      "kilometersRecorded": 40
-    },
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-10-31",
+        "url": "https://fwt.wtf/respectful-tech",
+        "takes": 1,
+        "kilometersRecorded": 40
+      }
+    ]
   },
   {
     "weekId": "2025-W45",
@@ -814,14 +884,16 @@
     "minutesWorked": 644,
     "wins": "Shipped bug fixes for fwt. joex and fwt. axis, making both apps responsive with a couple of other minor improvements to the overal app usability.",
     "blog": null,
-    "video": {
-      "publishedAt": "2025-11-07",
-      "url": "https://fwt.wtf/phone-stays-home",
-      "takes": 1,
-      "kilometersRecorded": 22
-    },
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-11-07",
+        "url": "https://fwt.wtf/phone-stays-home",
+        "takes": 1,
+        "kilometersRecorded": 22
+      }
+    ]
   },
   {
     "weekId": "2025-W46",
@@ -830,14 +902,16 @@
     "minutesWorked": 910,
     "wins": "Bringing even more stable experience to the users of fwt. axis app by fixing a couple of major bugs that caused crashes.",
     "blog": null,
-    "video": {
-      "publishedAt": "2025-11-14",
-      "url": "https://fwt.wtf/deferred-complexity",
-      "takes": 3,
-      "kilometersRecorded": 80
-    },
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-11-14",
+        "url": "https://fwt.wtf/deferred-complexity",
+        "takes": 3,
+        "kilometersRecorded": 80
+      }
+    ]
   },
   {
     "weekId": "2025-W47",
@@ -846,14 +920,16 @@
     "minutesWorked": 496,
     "wins": "Further bug fixes and improvements for my fwt. axis & fwt. joex Journal Companion Apps (JCAs)",
     "blog": null,
-    "video": {
-      "publishedAt": "2025-11-21",
-      "url": "https://fwt.wtf/did-i-really-need-this",
-      "takes": 1,
-      "kilometersRecorded": 14
-    },
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": [
+      {
+        "publishedAt": "2025-11-21",
+        "url": "https://fwt.wtf/did-i-really-need-this",
+        "takes": 1,
+        "kilometersRecorded": 14
+      }
+    ]
   },
   {
     "weekId": "2025-W48",
@@ -862,9 +938,9 @@
     "minutesWorked": 23,
     "wins": "Focused on my new side project that allows anyone to chat with me 24/7 + personal website refresh. I am also realigning as my content is receiving less than 10 views per week.",
     "blog": null,
-    "video": null,
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": []
   },
   {
     "weekId": "2025-W49",
@@ -873,9 +949,9 @@
     "minutesWorked": 474,
     "wins": "Reflected on 38 videos in 40 weeks. Significant app stability and performance improvements for fwt. axis released.",
     "blog": null,
-    "video": null,
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": []
   },
   {
     "weekId": "2025-W50",
@@ -884,9 +960,9 @@
     "minutesWorked": 79,
     "wins": "I attended Green I/O conference in Paris where I reflected on my past projects in Climate Tech space. On a worshop for NGOs there, I presented #freewithtech and how I've personally discovered digital freedom on my own journey.",
     "blog": null,
-    "video": null,
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": []
   },
   {
     "weekId": "2025-W51",
@@ -895,9 +971,9 @@
     "minutesWorked": 150,
     "wins": "",
     "blog": null,
-    "video": null,
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": []
   },
   {
     "weekId": "2025-W52",
@@ -906,9 +982,9 @@
     "minutesWorked": 0,
     "wins": "",
     "blog": null,
-    "video": null,
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": []
   },
   {
     "weekId": "2026-W01",
@@ -917,9 +993,9 @@
     "minutesWorked": 40,
     "wins": "",
     "blog": null,
-    "video": null,
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": []
   },
   {
     "weekId": "2026-W02",
@@ -928,9 +1004,9 @@
     "minutesWorked": 0,
     "wins": "",
     "blog": null,
-    "video": null,
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": []
   },
   {
     "weekId": "2026-W03",
@@ -939,9 +1015,9 @@
     "minutesWorked": 0,
     "wins": "",
     "blog": null,
-    "video": null,
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": []
   },
   {
     "weekId": "2026-W04",
@@ -950,9 +1026,9 @@
     "minutesWorked": 18,
     "wins": "",
     "blog": null,
-    "video": null,
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": []
   },
   {
     "weekId": "2026-W05",
@@ -961,9 +1037,9 @@
     "minutesWorked": 458,
     "wins": "",
     "blog": null,
-    "video": null,
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": []
   },
   {
     "weekId": "2026-W06",
@@ -972,9 +1048,9 @@
     "minutesWorked": 589,
     "wins": "",
     "blog": null,
-    "video": null,
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": []
   },
   {
     "weekId": "2026-W07",
@@ -983,8 +1059,8 @@
     "minutesWorked": 0,
     "wins": "",
     "blog": null,
-    "video": null,
     "devLogVideo": null,
-    "otherLinks": null
+    "otherLinks": null,
+    "videos": []
   }
 ]

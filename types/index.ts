@@ -34,7 +34,7 @@ export interface WeeklyEntry {
   minutesWorked: number;
   wins: string;
   blog: BlogEntry | null;
-  video: VideoEntry | null;
+  videos: VideoEntry[];
   devLogVideo: DevLogVideoEntry | null;
   otherLinks: OtherLink[] | null;
 }

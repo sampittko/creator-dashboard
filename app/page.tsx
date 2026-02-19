@@ -216,103 +216,128 @@ export default async function DashboardPage({
       </div>
 
       <div className="grid gap-4 mb-4">
-        {weeks.map((week) => (
-          <div
-            key={week.weekId}
-            id={week.weekId}
-            className="border rounded p-4 scroll-mt-24 transition-shadow transition-colors duration-200 target:bg-[rgba(206,186,244,0.2)] target:shadow-[0_0_0_3px_rgba(206,186,244,0.8)] target:animate-[scroll-target-fade_5s_ease-out_forwards]"
-          >
-            <div className="text-sm text-gray-500 dark:text-gray-400">
-              {week.weekId}
-            </div>
+        {weeks.map((week) => {
+          const totalVideoTakes = week.videos.reduce(
+            (total, video) => total + video.takes,
+            0
+          );
+          const totalVideoKilometers = week.videos.reduce(
+            (total, video) => total + video.kilometersRecorded,
+            0
+          );
 
-            {week.status !== "skipped" ? <div className="font-bold">{week.topic || "—"}</div> : null}
-
-            {week.status === "pending" ? (
-              <div className="mt-2 text-sm text-[#333] bg-[#CEBAF4] rounded p-2">
-                ⏳ Data is added every Saturday. Check back soon!
+          return (
+            <div
+              key={week.weekId}
+              id={week.weekId}
+              className="border rounded p-4 scroll-mt-24 transition-shadow transition-colors duration-200 target:bg-[rgba(206,186,244,0.2)] target:shadow-[0_0_0_3px_rgba(206,186,244,0.8)] target:animate-[scroll-target-fade_5s_ease-out_forwards]"
+            >
+              <div className="text-sm text-gray-500 dark:text-gray-400">
+                {week.weekId}
               </div>
-            ) : (
-              <>
-                <div className="text-sm mt-1">
-                  <span className="font-medium">Status:</span>{" "}
-                  {STATUS_LABELS[week.status]}
+
+              {week.status !== "skipped" ? (
+                <div className="font-bold">{week.topic || "—"}</div>
+              ) : null}
+
+              {week.status === "pending" ? (
+                <div className="mt-2 text-sm text-[#333] bg-[#CEBAF4] rounded p-2">
+                  ⏳ Data is added every Saturday. Check back soon!
                 </div>
+              ) : (
+                <>
+                  <div className="text-sm mt-1">
+                    <span className="font-medium">Status:</span>{" "}
+                    {STATUS_LABELS[week.status]}
+                  </div>
 
-                {week.status !== "skipped" ? <div className="text-sm mt-1">
-                  <span className="font-medium">Time:</span>{" "}
-                  {Math.round(week.minutesWorked / 60)}h
-                </div> : null}
+                  {week.status !== "skipped" ? (
+                    <div className="text-sm mt-1">
+                      <span className="font-medium">Time:</span>{" "}
+                      {Math.round(week.minutesWorked / 60)}h
+                    </div>
+                  ) : null}
 
-                {week.status !== "skipped" ? <div className="text-sm mt-1">
-                  <span className="font-medium">Video Takes:</span>{" "}
-                  {week.video?.takes || 0}
-                </div> : null}
+                  {week.status !== "skipped" ? (
+                    <div className="text-sm mt-1">
+                      <span className="font-medium">Video Takes:</span>{" "}
+                      {totalVideoTakes}
+                    </div>
+                  ) : null}
 
-                {week.status !== "skipped" ? <div className="text-sm mt-1">
-                  <span className="font-medium">
-                    Travel Distance for Video Recording:
-                  </span>{" "}
-                  {week.video?.kilometersRecorded || 0}km
-                </div> : ""}
-
-                <div className="mt-2 flex flex-wrap items-center gap-2 text-sm">
-                  {week.video && (
-                    <a
-                      href={week.video.url}
-                      target="_blank"
-                      className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] py-1 px-3 rounded shadow whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CEBAF4]"
-                    >
-                      Video
-                    </a>
+                  {week.status !== "skipped" ? (
+                    <div className="text-sm mt-1">
+                      <span className="font-medium">
+                        Travel Distance for Video Recording:
+                      </span>{" "}
+                      {totalVideoKilometers}km
+                    </div>
+                  ) : (
+                    ""
                   )}
-                  {week.blog && (
-                    <a
-                      href={week.blog.url}
-                      target="_blank"
-                      className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] py-1 px-3 rounded shadow whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CEBAF4]"
-                    >
-                      Blog
-                    </a>
-                  )}
-                  {week.devLogVideo && (
-                    <>
-                      {week.devLogVideo.urls.map((url, urlIndex, urls) => (
-                        <a
-                          key={urlIndex}
-                          href={url}
-                          target="_blank"
-                          className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] py-1 px-3 rounded shadow whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CEBAF4]"
-                        >
-                          Dev Log
-                          {urls.length > 1 ? ` #${urlIndex + 1}` : ""}
-                        </a>
-                      ))}
-                    </>
-                  )}
-                  {week.otherLinks && (
-                    <>
-                      {week.otherLinks.map(({ url, label }, urlIndex) => (
-                        <a
-                          key={urlIndex}
-                          href={url}
-                          target="_blank"
-                          className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] py-1 px-3 rounded shadow whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CEBAF4]"
-                        >
-                          {label}
-                        </a>
-                      ))}
-                    </>
-                  )}
-                </div>
 
-                {week.wins ? <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 whitespace-pre-wrap">
-                  Weekly win(s): {week.wins || "None documented"}
-                </div> : null}
-              </>
-            )}
-          </div>
-        ))}
+                  <div className="mt-2 flex flex-wrap items-center gap-2 text-sm">
+                    {week.videos.map((video, index) => (
+                      <a
+                        key={video.url}
+                        href={video.url}
+                        target="_blank"
+                        className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] py-1 px-3 rounded shadow whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CEBAF4]"
+                      >
+                        Video
+                        {week.videos.length > 1 ? ` #${index + 1}` : ""}
+                      </a>
+                    ))}
+                    {week.blog && (
+                      <a
+                        href={week.blog.url}
+                        target="_blank"
+                        className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] py-1 px-3 rounded shadow whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CEBAF4]"
+                      >
+                        Blog
+                      </a>
+                    )}
+                    {week.devLogVideo && (
+                      <>
+                        {week.devLogVideo.urls.map((url, urlIndex, urls) => (
+                          <a
+                            key={urlIndex}
+                            href={url}
+                            target="_blank"
+                            className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] py-1 px-3 rounded shadow whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CEBAF4]"
+                          >
+                            Dev Log
+                            {urls.length > 1 ? ` #${urlIndex + 1}` : ""}
+                          </a>
+                        ))}
+                      </>
+                    )}
+                    {week.otherLinks && (
+                      <>
+                        {week.otherLinks.map(({ url, label }, urlIndex) => (
+                          <a
+                            key={urlIndex}
+                            href={url}
+                            target="_blank"
+                            className="text-sm bg-[#CEBAF4] hover:bg-transparent text-[#333] dark:hover:text-[#f4f4f4] hover:text-[#333] py-1 px-3 rounded shadow whitespace-nowrap focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CEBAF4]"
+                          >
+                            {label}
+                          </a>
+                        ))}
+                      </>
+                    )}
+                  </div>
+
+                  {week.wins ? (
+                    <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 whitespace-pre-wrap">
+                      Weekly win(s): {week.wins || "None documented"}
+                    </div>
+                  ) : null}
+                </>
+              )}
+            </div>
+          );
+        })}
       </div>
 
       <ScrollToTop />
