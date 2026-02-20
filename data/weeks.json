@@ -1115,6 +1115,37 @@
   },
   {
     "weekId": "2026-W07",
+    "status": "perfect",
+    "minutesWorked": 1085,
+    "wins": "fwt. got resurrected for 2026 ahead: first Journal Companions app updates, 2 videos for the YouTube channel and also a devlog documenting app updates. I am not dead, neither is the #freewithtech lifestyle. Tune in again.",
+    "devLogVideo": {
+      "urls": ["https://fwt.wtf/devlog13"]
+    },
+    "contents": [
+      {
+        "topic": "Paper First Life: The Human OS for the AI Era",
+        "blog": null,
+        "video": {
+          "publishedAt": "2026-02-17",
+          "url": "https://fwt.wtf/ai-cant-replace-this",
+          "takes": 3,
+          "kilometersRecorded": 16
+        }
+      },
+      {
+        "topic": "100 Days With My Apple Watch as My Main Device",
+        "blog": null,
+        "video": {
+          "publishedAt": "2026-02-19",
+          "url": "https://fwt.wtf/phone-who-needs-it",
+          "takes": 4,
+          "kilometersRecorded": 16
+        }
+      }
+    ]
+  },
+  {
+    "weekId": "2026-W08",
     "status": "pending",
     "minutesWorked": 0,
     "wins": "",
