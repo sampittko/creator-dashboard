@@ -1146,6 +1146,15 @@
   },
   {
     "weekId": "2026-W08",
+    "status": "skipped",
+    "minutesWorked": 1418,
+    "wins": "Explored Obsidian plugin ecosystem by building my own plugin that helps me map my digital footprint (tweeted about this @sampittko). Improved phone visual on the website by making it interactive with live YouTube video feed. Made stability improvements to fwt. axis Journal Companion app.",
+    "devLogVideo": null,
+    "otherLinks": null,
+    "contents": []
+  },
+  {
+    "weekId": "2026-W09",
     "status": "pending",
     "minutesWorked": 0,
     "wins": "",
