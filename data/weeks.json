@@ -1175,6 +1175,26 @@
   },
   {
     "weekId": "2026-W10",
+    "status": "perfect",
+    "minutesWorked": 0,
+    "wins": "",
+    "devLogVideo": null,
+    "otherLinks": null,
+    "contents": [
+      {
+        "topic": "Your Phone Is Ruining This Moment",
+        "blog": null,
+        "video": {
+          "publishedAt": "2026-03-08",
+          "url": "https://fwt.wtf/think-twice",
+          "takes": 1,
+          "kilometersRecorded": 44
+        }
+      }
+    ]
+  },
+  {
+    "weekId": "2026-W11",
     "status": "pending",
     "minutesWorked": 0,
     "wins": "",
