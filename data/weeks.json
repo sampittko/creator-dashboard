@@ -1176,8 +1176,8 @@
   {
     "weekId": "2026-W10",
     "status": "perfect",
-    "minutesWorked": 0,
-    "wins": "",
+    "minutesWorked": 625,
+    "wins": "Created a landing page for fwt. echo that also includes a waitlist that you can sign up on. Also prototyped new ideas related to voice journaling concept that echo implements.",
     "devLogVideo": null,
     "otherLinks": null,
     "contents": [
