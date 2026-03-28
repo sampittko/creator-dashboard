@@ -1195,11 +1195,31 @@
   },
   {
     "weekId": "2026-W11",
-    "status": "pending",
-    "minutesWorked": 0,
+    "status": "skipped",
+    "minutesWorked": 176,
     "wins": "",
     "devLogVideo": null,
     "otherLinks": null,
     "contents": []
+  },
+  {
+    "weekId": "2026-W12",
+    "status": "perfect",
+    "minutesWorked": 689,
+    "wins": "",
+    "devLogVideo": null,
+    "otherLinks": null,
+    "contents": [
+      {
+        "topic": "A Jury Hit Meta and YouTube for $6M and Why It Matters",
+        "blog": null,
+        "video": {
+          "publishedAt": "2026-03-27",
+          "url": "https://fwt.wtf/addictive-design",
+          "takes": 1,
+          "kilometersRecorded": 16
+        }
+      }
+    ]
   }
 ]
