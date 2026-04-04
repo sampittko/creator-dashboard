@@ -1221,5 +1221,16 @@
         }
       }
     ]
+  },
+  {
+    "weekId": "2026-W13",
+    "status": "skipped",
+    "minutesWorked": 212,
+    "wins": "Improved fwt. axis Journal Companion App stability. Published fwt.wtf/skills as a directory of skills for LLM agents that anyone can use to optimize their digital toolklit for living #freewithtech.",
+    "devLogVideo": {
+      "urls": ["https://fwt.wtf/devlog14"]
+    },
+    "otherLinks": null,
+    "contents": []
   }
 ]
