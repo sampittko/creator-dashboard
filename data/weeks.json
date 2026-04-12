@@ -1232,5 +1232,34 @@
     },
     "otherLinks": null,
     "contents": []
+  },
+  {
+    "weekId": "2026-W14",
+    "status": "skipped",
+    "minutesWorked": 456,
+    "wins": "",
+    "devLogVideo": null,
+    "otherLinks": null,
+    "contents": []
+  },
+  {
+    "weekId": "2026-W15",
+    "status": "pending",
+    "minutesWorked": 74,
+    "wins": "",
+    "devLogVideo": null,
+    "otherLinks": null,
+    "contents": [
+      {
+        "topic": "My Phone Addiction Damaged Real Connection",
+        "blog": null,
+        "video": {
+          "publishedAt": "2026-04-12",
+          "url": "https://fwt.wtf/rebuild-relationships",
+          "takes": 1,
+          "kilometersRecorded": 50
+        }
+      }
+    ]
   }
 ]
