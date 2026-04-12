@@ -1232,5 +1232,23 @@
     },
     "otherLinks": null,
     "contents": []
+  },
+  {
+    "weekId": "2026-W14",
+    "status": "skipped",
+    "minutesWorked": 456,
+    "wins": "",
+    "devLogVideo": null,
+    "otherLinks": null,
+    "contents": []
+  },
+  {
+    "weekId": "2026-W15",
+    "status": "pending",
+    "minutesWorked": 0,
+    "wins": "",
+    "devLogVideo": null,
+    "otherLinks": null,
+    "contents": []
   }
 ]
