@@ -1264,12 +1264,21 @@
   },
   {
     "weekId": "2026-W16",
-    "status": "pending",
-    "minutesWorked": 0,
+    "status": "skipped",
+    "minutesWorked": 121,
     "wins": "",
     "devLogVideo": {
       "urls": ["https://fwt.wtf/devlog15"]
     },
+    "otherLinks": null,
+    "contents": []
+  },
+  {
+    "weekId": "2026-W17",
+    "status": "pending",
+    "minutesWorked": 0,
+    "wins": "",
+    "devLogVideo": null,
     "otherLinks": null,
     "contents": []
   }
